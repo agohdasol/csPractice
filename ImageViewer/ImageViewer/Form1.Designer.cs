@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPath = new System.Windows.Forms.Label();
+            this.lstDir = new System.Windows.Forms.ListView();
+            this.picSelect = new System.Windows.Forms.PictureBox();
+            this.imglstTmp = new System.Windows.Forms.ImageList(this.components);
+            this.tipPath = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -40,7 +43,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSelect)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -53,7 +56,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel1_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 0;
@@ -68,45 +71,51 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.listView1);
-            this.splitContainer2.Panel1.Controls.Add(this.label1);
-            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel1_Paint);
+            this.splitContainer2.Panel1.Controls.Add(this.lstDir);
+            this.splitContainer2.Panel1.Controls.Add(this.lblPath);
+            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer2_Panel1_Paint);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.pictureBox1);
+            this.splitContainer2.Panel2.Controls.Add(this.picSelect);
             this.splitContainer2.Size = new System.Drawing.Size(262, 446);
             this.splitContainer2.SplitterDistance = 279;
             this.splitContainer2.TabIndex = 0;
             // 
-            // label1
+            // lblPath
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblPath.AutoSize = true;
+            this.lblPath.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPath.Location = new System.Drawing.Point(0, 0);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(45, 15);
+            this.lblPath.TabIndex = 0;
+            this.lblPath.Text = "label1";
             // 
-            // listView1
+            // lstDir
             // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 19);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(328, 330);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lstDir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstDir.HideSelection = false;
+            this.lstDir.Location = new System.Drawing.Point(0, 19);
+            this.lstDir.Name = "lstDir";
+            this.lstDir.Size = new System.Drawing.Size(328, 330);
+            this.lstDir.TabIndex = 1;
+            this.lstDir.UseCompatibleStateImageBehavior = false;
             // 
-            // pictureBox1
+            // picSelect
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(328, 204);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picSelect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picSelect.Location = new System.Drawing.Point(0, 0);
+            this.picSelect.Name = "picSelect";
+            this.picSelect.Size = new System.Drawing.Size(328, 204);
+            this.picSelect.TabIndex = 0;
+            this.picSelect.TabStop = false;
+            // 
+            // imglstTmp
+            // 
+            this.imglstTmp.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imglstTmp.ImageSize = new System.Drawing.Size(16, 16);
+            this.imglstTmp.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // Form1
             // 
@@ -124,7 +133,7 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSelect)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -133,9 +142,11 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListView lstDir;
+        private System.Windows.Forms.Label lblPath;
+        private System.Windows.Forms.PictureBox picSelect;
+        private System.Windows.Forms.ImageList imglstTmp;
+        private System.Windows.Forms.ToolTip tipPath;
     }
 }
 
