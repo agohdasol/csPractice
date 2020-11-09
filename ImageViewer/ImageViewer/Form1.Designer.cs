@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace ImageViewer
+﻿namespace ImageViewer
 {
     partial class Form1
     {
@@ -30,22 +28,14 @@ namespace ImageViewer
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.lstDir = new System.Windows.Forms.ListView();
-            this.lblPath = new System.Windows.Forms.Label();
-            this.picSelect = new System.Windows.Forms.PictureBox();
-            this.imglstTmp = new System.Windows.Forms.ImageList(this.components);
-            this.tipPath = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSelect)).BeginInit();
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -57,84 +47,38 @@ namespace ImageViewer
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1177, 633);
-            this.splitContainer1.SplitterDistance = 389;
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
+            this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.lstDir);
-            this.splitContainer2.Panel1.Controls.Add(this.lblPath);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.picSelect);
-            this.splitContainer2.Size = new System.Drawing.Size(385, 629);
-            this.splitContainer2.SplitterDistance = 238;
+            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel1_Paint);
+            this.splitContainer2.Size = new System.Drawing.Size(262, 446);
+            this.splitContainer2.SplitterDistance = 87;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // lstDir
-            // 
-            this.lstDir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstDir.HideSelection = false;
-            this.lstDir.Location = new System.Drawing.Point(0, 15);
-            this.lstDir.Name = "lstDir";
-            this.lstDir.Size = new System.Drawing.Size(385, 223);
-            this.lstDir.TabIndex = 1;
-            this.lstDir.UseCompatibleStateImageBehavior = false;
-            // 
-            // lblPath
-            // 
-            this.lblPath.AutoSize = true;
-            this.lblPath.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPath.Location = new System.Drawing.Point(0, 0);
-            this.lblPath.Name = "lblPath";
-            this.lblPath.Size = new System.Drawing.Size(45, 15);
-            this.lblPath.TabIndex = 0;
-            this.lblPath.Text = "label1";
-            // 
-            // picSelect
-            // 
-            this.picSelect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picSelect.Location = new System.Drawing.Point(0, 0);
-            this.picSelect.Name = "picSelect";
-            this.picSelect.Size = new System.Drawing.Size(385, 387);
-            this.picSelect.TabIndex = 0;
-            this.picSelect.TabStop = false;
-            // 
-            // imglstTmp
-            // 
-            this.imglstTmp.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imglstTmp.ImageSize = new System.Drawing.Size(16, 16);
-            this.imglstTmp.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 633);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
-            this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSelect)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,12 +86,7 @@ namespace ImageViewer
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private SplitContainer splitContainer2;
-        private ListView lstDir;
-        private Label lblPath;
-        private PictureBox picSelect;
-        private ImageList imglstTmp;
-        private ToolTip tipPath;
+        private System.Windows.Forms.SplitContainer splitContainer2;
     }
 }
 

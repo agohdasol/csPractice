@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewer", "ImageViewer\ImageViewer.csproj", "{DC86CF93-CBBB-49D7-AEFA-616DFAD9A062}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewer", "ImageViewer\ImageViewer.csproj", "{931E5F33-590F-48A6-89EF-056A95A1241F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DC86CF93-CBBB-49D7-AEFA-616DFAD9A062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC86CF93-CBBB-49D7-AEFA-616DFAD9A062}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC86CF93-CBBB-49D7-AEFA-616DFAD9A062}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC86CF93-CBBB-49D7-AEFA-616DFAD9A062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931E5F33-590F-48A6-89EF-056A95A1241F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931E5F33-590F-48A6-89EF-056A95A1241F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931E5F33-590F-48A6-89EF-056A95A1241F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931E5F33-590F-48A6-89EF-056A95A1241F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {964F81EA-3D93-4B52-B457-2222C38A1E2A}
+		SolutionGuid = {A42218FE-914F-4343-A3F8-104D6B32A4EF}
 	EndGlobalSection
 EndGlobal
