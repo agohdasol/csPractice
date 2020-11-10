@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ImageViewer
 {
-    public partial class Form1 : Form
+    public partial class FrmSelect : Form
     {
-        public Form1()
+        public FrmSelect()
         {
             InitializeComponent();
-        }
-
-        private void SplitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void SplitContainer2_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

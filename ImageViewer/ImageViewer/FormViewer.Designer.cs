@@ -1,6 +1,6 @@
 ﻿namespace ImageViewer
 {
-    partial class Form1
+    partial class FormViewer
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormViewer));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.lstDir = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblPath = new System.Windows.Forms.Label();
             this.picSelect = new System.Windows.Forms.PictureBox();
             this.imglstTmp = new System.Windows.Forms.ImageList(this.components);
             this.tipPath = new System.Windows.Forms.ToolTip(this.components);
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -96,6 +96,11 @@
             this.lstDir.TabIndex = 1;
             this.lstDir.UseCompatibleStateImageBehavior = false;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "드라이브 및 폴더";
+            this.columnHeader1.Width = 200;
+            // 
             // lblPath
             // 
             this.lblPath.AutoSize = true;
@@ -123,19 +128,14 @@
             this.imglstTmp.Images.SetKeyName(1, "drive.png");
             this.imglstTmp.Images.SetKeyName(2, "folder.png");
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "드라이브 및 폴더";
-            this.columnHeader1.Width = 200;
-            // 
-            // Form1
+            // FormViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormViewer";
+            this.Text = "FormViewer";
             this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
