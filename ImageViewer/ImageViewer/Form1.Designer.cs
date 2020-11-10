@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.lblPath = new System.Windows.Forms.Label();
             this.lstDir = new System.Windows.Forms.ListView();
+            this.lblPath = new System.Windows.Forms.Label();
             this.picSelect = new System.Windows.Forms.PictureBox();
             this.imglstTmp = new System.Windows.Forms.ImageList(this.components);
             this.tipPath = new System.Windows.Forms.ToolTip(this.components);
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -82,6 +84,18 @@
             this.splitContainer2.SplitterDistance = 279;
             this.splitContainer2.TabIndex = 0;
             // 
+            // lstDir
+            // 
+            this.lstDir.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.lstDir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstDir.HideSelection = false;
+            this.lstDir.Location = new System.Drawing.Point(0, 15);
+            this.lstDir.Name = "lstDir";
+            this.lstDir.Size = new System.Drawing.Size(262, 264);
+            this.lstDir.TabIndex = 1;
+            this.lstDir.UseCompatibleStateImageBehavior = false;
+            // 
             // lblPath
             // 
             this.lblPath.AutoSize = true;
@@ -92,30 +106,27 @@
             this.lblPath.TabIndex = 0;
             this.lblPath.Text = "label1";
             // 
-            // lstDir
-            // 
-            this.lstDir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstDir.HideSelection = false;
-            this.lstDir.Location = new System.Drawing.Point(0, 19);
-            this.lstDir.Name = "lstDir";
-            this.lstDir.Size = new System.Drawing.Size(328, 330);
-            this.lstDir.TabIndex = 1;
-            this.lstDir.UseCompatibleStateImageBehavior = false;
-            // 
             // picSelect
             // 
             this.picSelect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picSelect.Location = new System.Drawing.Point(0, 0);
             this.picSelect.Name = "picSelect";
-            this.picSelect.Size = new System.Drawing.Size(328, 204);
+            this.picSelect.Size = new System.Drawing.Size(262, 163);
             this.picSelect.TabIndex = 0;
             this.picSelect.TabStop = false;
             // 
             // imglstTmp
             // 
-            this.imglstTmp.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imglstTmp.ImageSize = new System.Drawing.Size(16, 16);
+            this.imglstTmp.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTmp.ImageStream")));
             this.imglstTmp.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTmp.Images.SetKeyName(0, "up.png");
+            this.imglstTmp.Images.SetKeyName(1, "drive.png");
+            this.imglstTmp.Images.SetKeyName(2, "folder.png");
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "드라이브 및 폴더";
+            this.columnHeader1.Width = 200;
             // 
             // Form1
             // 
@@ -147,6 +158,7 @@
         private System.Windows.Forms.PictureBox picSelect;
         private System.Windows.Forms.ImageList imglstTmp;
         private System.Windows.Forms.ToolTip tipPath;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
 
