@@ -95,6 +95,7 @@
             this.lstDir.Size = new System.Drawing.Size(262, 264);
             this.lstDir.TabIndex = 1;
             this.lstDir.UseCompatibleStateImageBehavior = false;
+            this.lstDir.DoubleClick += new System.EventHandler(this.lstDir_DoubleClick);
             // 
             // columnHeader1
             // 
