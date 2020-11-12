@@ -15,6 +15,7 @@ namespace ImageViewer
     {
         // 전역변수 선언
         int m_nCnt;
+        int m_nSelLabel;
         public FormViewer()
         {
             InitializeComponent();
@@ -128,6 +129,131 @@ namespace ImageViewer
             pic.DoubleClick += new System.EventHandler(Ctrl_DoubleClick);
         }
 
+        // 라벨 컨트롤을 생성한다.
+        private void MakeLblCtrl(int nIndex, String strFileName)
+        {
+            Label lbl = new Label();
+            Point pos;
+
+            lbl.Name = "lbl" + nIndex.ToString(); // 이름
+            lbl.Tag = nIndex.ToString();
+            lbl.Size = new Size(80, 20); //크기
+            lbl.TextAlign = ContentAlignment.MiddleLeft;
+
+            GetPos(nIndex, out pos);
+
+            lbl.Location = pos;
+            lbl.BorderStyle = BorderStyle.FixedSingle;
+            splitContainer1.Panel2.Controls.Add(lbl); // 패널에 추가
+            lbl.Text = strFileName; // 그림 이름 보여주기
+            lbl.BackColor = Color.GreenYellow;
+
+            // 클릭/더블클릭 이벤트와 연결한다.
+            lbl.Click += new System.EventHandler(Ctrl_Click);
+            lbl.DoubleClick += new System.EventHandler(Ctrl_DoubleClick);
+        }
+
+        private void Ctrl_Click(object sender, EventArgs e)
+        {
+            PictureBox pic;
+            Label lbl;
+
+            if (sender.GetType().Name.IndexOf("PictureBox") != -1) //클릭한 컨트롤이 픽처박스일경우
+            {
+                pic = (System.Windows.Forms.PictureBox)sender;
+
+                //라벨 컨트롤을 얻는다
+                lbl = (System.Windows.Forms.Label)GetCtrl("Label", Convert.ToInt32(pic.Tag) + 1);
+            }
+            else
+            {
+                lbl = (System.Windows.Forms.Label)sender;
+
+                //픽쳐박스 컨트롤을 얻는다
+                pic = (System.Windows.Forms.PictureBox)GetCtrl("PictureBox", Convert.ToInt32(lbl.Tag) - 1);
+            }
+            //클릭한 픽쳐박스의 내용을 picSelect에 보여준다
+            picSelect.Image = pic.Image;
+
+            //선택한 라벨 컨트롤의 색을 노란색으로 한다
+            lbl.BackColor = Color.Yellow;
+
+            //이전에 선택한 라벨 컨트롤의 색을 GreenYellow로 한다.
+            if (m_nSelLabel != -1 && m_nSelLabel != Convert.ToInt32(lbl.Tag))
+                GetCtrl("Label", m_nSelLabel).BackColor = Color.GreenYellow;
+
+            m_nSelLabel = Convert.ToInt32(lbl.Tag);
+        }
+
+        private void Ctrl_DoubleClick(object sender, EventArgs e)
+        {
+            PictureBox pic;
+            Label lbl;
+
+            if(sender.GetType().Name.IndexOf("PictureBox") != -1)   //클릭한 컨트롤이 픽처박스일 경우
+            {
+                pic = (System.Windows.Forms.PictureBox)sender;
+
+                //라벨 컨트롤을 얻는다
+                lbl = (System.Windows.Forms.Label)GetCtrl("Label", Convert.ToInt32(pic.Tag) + 1);
+            }
+            else //클릭한 컨트롤이 라벨일 경우
+            {
+                lbl = (System.Windows.Forms.Label)sender;
+            }
+
+            //폼을 생성한다.
+            ImageViewer.FrmSelect dlg = new ImageViewer.FrmSelect();
+            Size sizePic = new Size();
+
+            //폼의 캡션을 그림의 전체 경로로 한다.
+            dlg.Text = "그림 선택 - " + lblPath.Text + "\\" + lbl.Text;
+            //선택한 그림을 picSel에 보여준다
+            dlg.picSel.Image = System.Drawing.Bitmap.FromFile(lblPath.Text + "\\" + lbl.Text);
+
+            //폼의 크기를 적당히 조절한다.
+            sizePic = dlg.picSel.Size;
+            sizePic.Height += 30;
+            sizePic.Width += 15;
+
+            dlg.Size = sizePic;
+            dlg.picSel.Location = new Point(5, 5);
+
+            //폼을 모달 형태로 보여준다
+            dlg.ShowDialog();
+        }
+
+        private void MovePicCtrl()
+        {
+            int i = 0;
+            Point pos;
+
+            Control.ControlCollection myCtrl = splitContainer1.Panel2.Controls;
+
+            foreach(Control ctl in myCtrl)
+            {
+                GetPos(i, out pos);
+                ctl.Location = pos;
+                i++;
+            }
+        }
+        private Control GetCtrl(string strCtrlName, int nTag)
+        {
+            Control.ControlCollection myCtrl = splitContainer1.Panel2.Controls;
+
+            foreach(Control ctl in myCtrl)
+            {
+                //컨트롤 종류가 일치하고
+                if (ctl.GetType().Name.IndexOf(strCtrlName) != -1)
+                {
+                    //태그가 일치하면
+                    if (Convert.ToInt32(ctl.Tag.ToString()) == nTag)
+                        return ctl;
+                }
+            }
+
+            return null;
+        }
         private void GetPos(int nIndex, out Point pos)
         {
             pos = new Point();
@@ -227,6 +353,11 @@ namespace ImageViewer
 
             // 툴팁 연결
             tipPath.SetToolTip(lblPath, lblPath.Text);
+        }
+
+        private void splitContainer1_Panel2_Resize(object sender, EventArgs e)
+        {
+            MovePicCtrl();
         }
     }
 }

@@ -40,17 +40,19 @@
             this.picSel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picSel.TabIndex = 0;
             this.picSel.TabStop = false;
+            this.picSel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picSel_MouseDown);
             // 
-            // frmSelect
+            // FrmSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.picSel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "frmSelect";
+            this.Name = "FrmSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmSelect";
+            this.Load += new System.EventHandler(this.FrmSelect_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
