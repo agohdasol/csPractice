@@ -141,6 +141,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "FormViewer";
             this.Text = "FormViewer";
+            this.Load += new System.EventHandler(this.FormViewer_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);

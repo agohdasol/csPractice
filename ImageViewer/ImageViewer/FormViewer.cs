@@ -359,5 +359,16 @@ namespace ImageViewer
         {
             MovePicCtrl();
         }
+
+        private void FormViewer_Load(object sender, EventArgs e)
+        {
+            SetFolder("C:\\");
+            lblPath.Text = "C:";
+            SetImgFile("C:\\");
+            m_nSelLabel = -1;
+
+            // 툴팁 연결
+            tipPath.SetToolTip(lblPath, lblPath.Text);
+        }
     }
 }
