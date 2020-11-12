@@ -61,6 +61,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picSel;
+        public System.Windows.Forms.PictureBox picSel;
     }
 }
