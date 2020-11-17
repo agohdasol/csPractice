@@ -61,14 +61,14 @@ namespace SameSameGame
             // 
             this.panMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panMain.BackgroundImage")));
             this.panMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panMain.Location = new System.Drawing.Point(112, 75);
+            this.panMain.Location = new System.Drawing.Point(57, 35);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(604, 304);
+            this.panMain.Size = new System.Drawing.Size(690, 380);
             this.panMain.TabIndex = 0;
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(12, 415);
+            this.btnNew.Location = new System.Drawing.Point(12, 421);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(104, 23);
             this.btnNew.TabIndex = 1;
@@ -77,7 +77,7 @@ namespace SameSameGame
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(122, 415);
+            this.btnExit.Location = new System.Drawing.Point(122, 421);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(99, 23);
             this.btnExit.TabIndex = 2;
