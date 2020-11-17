@@ -1,0 +1,10 @@
+D:\csPractice\SameSameGame\bin\Debug\SameSameGame.exe.config
+D:\csPractice\SameSameGame\bin\Debug\SameSameGame.exe
+D:\csPractice\SameSameGame\bin\Debug\SameSameGame.pdb
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.csprojAssemblyReference.cache
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.Form1.resources
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.Properties.Resources.resources
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.csproj.GenerateResource.cache
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.csproj.CoreCompileInputs.cache
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.exe
+D:\csPractice\SameSameGame\obj\Debug\SameSameGame.pdb
