@@ -28,6 +28,8 @@ namespace SameSameGame
             InitializeComponent();
         }
 
+
+
         private void FindSameBlock(int nX, int nY)
         {
             //위로 찾기
@@ -84,9 +86,13 @@ namespace SameSameGame
             int i, j;
             int nIndex;
             int nX, nY;
-            bool[] bX = new bool[20];
+            bool [] bX = new bool[20];
 
-            for(i=0; i<20; i++)
+            for (i = 0; i < 20; i++)
+                bX[i] = false;
+
+            //빈칸을 정리
+            for(i=0;i<m_nSameCnt;i++)
             {
                 nIndex = m_nSel[i];
 
@@ -100,7 +106,7 @@ namespace SameSameGame
                 //찾은 빈칸의 위에도 계속 빈칸이면 무시한다
                 for(j=9; j>0; j--)
                 {
-                    if (m_nBlock[nX, j] == -1 && m_nBlock[nX, j-1] != -1)
+                    if (m_nBlock[nX, j] == -1 && m_nBlock[nX, j - 1] != -1)
                     {
                         nEmptyY = j;
                         break;
@@ -135,7 +141,7 @@ namespace SameSameGame
                     {
                         if(m_nBlock[nX, j] == -1)
                             //그림을 지우고
-                            panMain.Controls[j * 20 - +nX].Visible = false;
+                            panMain.Controls[j * 20 + nX].Visible = false;
                         else //그림을 다시 채운다
                         {
                             if (panMain.Controls[j * 20 + nX].Visible == false)
@@ -444,6 +450,18 @@ namespace SameSameGame
 
             m_nSameCnt = -1;
             m_nPointIndex = -1;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            int i;
+
+            // 컨트롤 생성
+            for (i = 0; i < 200; i++)
+                MakePicCtrl(i);
+
+            // 게임 초기화
+            initGame();
         }
     }
 }
