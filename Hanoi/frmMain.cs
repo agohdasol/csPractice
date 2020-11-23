@@ -144,7 +144,7 @@ namespace Hanoi
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            InitHanoi(Convert.ToInt32(nudCnt.Value));
         }
 
         private void pan_DragEnter(object sender, DragEventArgs e)
