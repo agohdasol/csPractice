@@ -46,7 +46,7 @@ namespace Hanoi
             this.panLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panLeft.BackgroundImage")));
             this.panLeft.Location = new System.Drawing.Point(12, 12);
             this.panLeft.Name = "panLeft";
-            this.panLeft.Size = new System.Drawing.Size(180, 250);
+            this.panLeft.Size = new System.Drawing.Size(220, 300);
             this.panLeft.TabIndex = 0;
             this.panLeft.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
             this.panLeft.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
@@ -55,9 +55,9 @@ namespace Hanoi
             // 
             this.panCenter.AllowDrop = true;
             this.panCenter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panCenter.BackgroundImage")));
-            this.panCenter.Location = new System.Drawing.Point(198, 12);
+            this.panCenter.Location = new System.Drawing.Point(238, 12);
             this.panCenter.Name = "panCenter";
-            this.panCenter.Size = new System.Drawing.Size(180, 250);
+            this.panCenter.Size = new System.Drawing.Size(220, 300);
             this.panCenter.TabIndex = 1;
             this.panCenter.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
             this.panCenter.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
@@ -66,16 +66,16 @@ namespace Hanoi
             // 
             this.panRight.AllowDrop = true;
             this.panRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panRight.BackgroundImage")));
-            this.panRight.Location = new System.Drawing.Point(384, 12);
+            this.panRight.Location = new System.Drawing.Point(464, 12);
             this.panRight.Name = "panRight";
-            this.panRight.Size = new System.Drawing.Size(180, 250);
+            this.panRight.Size = new System.Drawing.Size(220, 300);
             this.panRight.TabIndex = 2;
             this.panRight.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
             this.panRight.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // nudCnt
             // 
-            this.nudCnt.Location = new System.Drawing.Point(643, 146);
+            this.nudCnt.Location = new System.Drawing.Point(731, 144);
             this.nudCnt.Maximum = new decimal(new int[] {
             7,
             0,
@@ -98,7 +98,7 @@ namespace Hanoi
             // lblCnt
             // 
             this.lblCnt.AutoSize = true;
-            this.lblCnt.Location = new System.Drawing.Point(645, 183);
+            this.lblCnt.Location = new System.Drawing.Point(728, 181);
             this.lblCnt.Name = "lblCnt";
             this.lblCnt.Size = new System.Drawing.Size(45, 15);
             this.lblCnt.TabIndex = 4;
@@ -106,16 +106,17 @@ namespace Hanoi
             // 
             // btnRestart
             // 
-            this.btnRestart.Location = new System.Drawing.Point(570, 210);
+            this.btnRestart.Location = new System.Drawing.Point(690, 210);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(120, 23);
             this.btnRestart.TabIndex = 5;
             this.btnRestart.Text = "다시 시작하기";
             this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // btnAuto
             // 
-            this.btnAuto.Location = new System.Drawing.Point(570, 239);
+            this.btnAuto.Location = new System.Drawing.Point(690, 239);
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Size = new System.Drawing.Size(120, 23);
             this.btnAuto.TabIndex = 6;
@@ -127,7 +128,7 @@ namespace Hanoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 280);
+            this.ClientSize = new System.Drawing.Size(821, 325);
             this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblCnt);

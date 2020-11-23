@@ -296,5 +296,10 @@ namespace Hanoi
             m_nMoveCnt = 0;
             lblCnt.Text = m_nMoveCnt.ToString() + " 번";
         }
+
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+            InitHanoi(Convert.ToInt32(nudCnt.Value));
+        }
     }
 }

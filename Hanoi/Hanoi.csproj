@@ -81,25 +81,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h0.bmp" />
+    <EmbeddedResource Include="h0.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h1.bmp" />
+    <EmbeddedResource Include="h1.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h2.bmp" />
+    <EmbeddedResource Include="h2.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h3.bmp" />
+    <EmbeddedResource Include="h3.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h4.bmp" />
+    <EmbeddedResource Include="h4.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h5.bmp" />
+    <EmbeddedResource Include="h5.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\h6.bmp" />
+    <EmbeddedResource Include="h6.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
