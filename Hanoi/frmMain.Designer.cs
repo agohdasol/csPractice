@@ -48,6 +48,8 @@ namespace Hanoi
             this.panLeft.Name = "panLeft";
             this.panLeft.Size = new System.Drawing.Size(180, 250);
             this.panLeft.TabIndex = 0;
+            this.panLeft.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
+            this.panLeft.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // panCenter
             // 
@@ -57,6 +59,8 @@ namespace Hanoi
             this.panCenter.Name = "panCenter";
             this.panCenter.Size = new System.Drawing.Size(180, 250);
             this.panCenter.TabIndex = 1;
+            this.panCenter.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
+            this.panCenter.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // panRight
             // 
@@ -66,6 +70,8 @@ namespace Hanoi
             this.panRight.Name = "panRight";
             this.panRight.Size = new System.Drawing.Size(180, 250);
             this.panRight.TabIndex = 2;
+            this.panRight.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
+            this.panRight.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // nudCnt
             // 
@@ -115,6 +121,7 @@ namespace Hanoi
             this.btnAuto.TabIndex = 6;
             this.btnAuto.Text = "자동 맞추기";
             this.btnAuto.UseVisualStyleBackColor = true;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             // 
             // frmMain
             // 

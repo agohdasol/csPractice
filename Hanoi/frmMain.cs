@@ -18,6 +18,9 @@ namespace Hanoi
         const int BLOCK_WIDTH = 160;
         const int BLOCK_HEIGHT = 30;
 
+        string m_strDragTag;
+        int m_nMoveCnt;
+
         //PictureBox 생성
         //pan 컨트롤에 추가
         private void MakeBlock(Panel pan, int nIndex, int nImage, bool bMoving)
@@ -85,6 +88,55 @@ namespace Hanoi
             else
                 return panRight;
         }
+
+        private void pic_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (IsGameEnd(Convert.ToInt32(nudCnt.Value))) return;
+
+            if(e.Button == MouseButtons.Left)
+            {
+                PictureBox pic = (PictureBox)sender;
+
+                if (IsDragPic(pic))
+                {
+                    m_strDragTag = pic.Tag.ToString();
+
+                    //모든 Panel 의 AllowDrop을 true로
+                    panLeft.AllowDrop = true;
+                    panCenter.AllowDrop = true;
+                    panRight.AllowDrop = true;
+
+                    //현재 클릭한 pic의 부모 패널은 false
+                    GetPanCtrl(pic.Tag.ToString()).AllowDrop = false;
+
+                    pic.DoDragDrop(pic.Image, DragDropEffects.Move);
+                }
+                else
+                    m_strDragTag = "";
+            }
+        }
+
+        private bool IsDragPic(PictureBox pic)
+        {
+            int i, nMax;
+            Panel pan;
+
+            pan = GetPanCtrl(pic.Tag.ToString());
+            nMax = 1;
+
+            //패널에 있는 pic 컨트롤의 최대 수를 구함
+            for (i = 0; i < pan.Controls.Count; i++)
+            {
+                if (Convert.ToInt32(pan.Controls[i].Tag.ToString().Substring(1, 1)) > nMax)
+                    nMax = Convert.ToInt32(pan.Controls[i].Tag.ToString().Substring(1, 1));
+            }
+
+            //비교값이 컨트롤의 tag과 같으면 true
+            if (nMax == Convert.ToInt32(pic.Tag.ToString().Substring(1, 1)))
+                return true;
+            else
+                return false;
+        }
         public frmMain()
         {
             InitializeComponent();
@@ -93,6 +145,156 @@ namespace Hanoi
         private void frmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pan_DragEnter(object sender, DragEventArgs e)
+        {
+            //데이터를 검사
+            if(e.Data.GetDataPresent(DataFormats.Bitmap) && m_strDragTag != "")
+            {
+                Panel pan;
+                pan = (Panel)sender;
+
+                if (IsDragEnter(pan, m_strDragTag))
+                    e.Effect = DragDropEffects.Move;
+                else
+                    e.Effect = DragDropEffects.None;
+            }
+        }
+
+        private bool IsDragEnter(Panel pan, string strTag)
+        {
+            int i, nMax;
+            nMax = 1;
+
+            //패널에 있는 pic 컨트롤의 최대 수를 구함
+            for (i = 0; i < pan.Controls.Count; i++)
+            {
+                if (Convert.ToInt32(pan.Controls[i].Tag.ToString().Substring(1, 1)) > nMax)
+                    nMax = Convert.ToInt32(pan.Controls[i].Tag.ToString().Substring(1, 1));
+            }
+
+            //비어있는 panel이면 true
+            if (nMax == 1) return true;
+
+            //비교값이 컨트롤의 tag값보다 더 작을때
+            //드래그한 블럭이 더 좁은 블록이면
+            if (nMax < Convert.ToInt32(strTag.ToString().Substring(1, 1)))
+                return true;
+            else
+                return false;
+        }
+
+        private void pan_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Bitmap) && m_strDragTag != "")
+            {
+                int nCnt;
+                Panel pan;
+
+                pan = (Panel)sender;
+
+                //Drop할 Panel에 PictureBox개수를 저장
+                nCnt = pan.Controls.Count;
+
+                //이동한 블럭 삭제
+                RemoveBlock(m_strDragTag);
+
+                //pic 생성
+                MakeBlock(pan, nCnt, Convert.ToInt32(m_strDragTag.ToString().Substring(1, 1)), true);
+
+                m_nMoveCnt += 1;
+                lblCnt.Text = m_nMoveCnt.ToString();
+
+
+                //게임종료검사
+                if (IsGameEnd(Convert.ToInt32(nudCnt.Value)))
+                    MessageBox.Show("게임종료");
+            }
+        }
+
+        private bool IsGameEnd(int nCnt)
+        {
+            //오른쪽 패널 블럭재수가 전체 블럭개수와 같으면 종료
+            if (panRight.Controls.Count == nCnt)
+                return true;
+            else
+                return false;
+        }
+
+        private void btnAuto_Click(object sender, EventArgs e)
+        {
+            InitHanoi(Convert.ToInt32(nudCnt.Value));
+
+            AutoHanoi(Convert.ToInt32(nudCnt.Value), panLeft, panCenter, panRight);
+        }
+
+        //자동으로 블럭 이동
+        //재귀호출 이용
+        private void AutoHanoi(int nCnt, Panel panFrom, Panel panBy, Panel panTo)
+        {
+            if (nCnt == 1)
+                MoveBlock(panFrom, panTo);
+            else
+            {
+                AutoHanoi(nCnt - 1, panFrom, panTo, panBy);
+                MoveBlock(panFrom, panTo);
+                AutoHanoi(nCnt - 1, panBy, panFrom, panTo);
+            }
+        }
+
+        private void MoveBlock(Panel panFrom, Panel panTo)
+        {
+            //panFrom의 최상위 pic을 찾음
+            //최상위 pic은 tag의 두번째자리가 가장 큰 경우
+            int i, nMax;
+            PictureBox picMax = new PictureBox();
+
+            nMax = 1;
+
+            //패널에 있는 pic 컨트롤의 최대수를 구함
+            for (i = 0; i < panFrom.Controls.Count; i++)
+            {
+                if (Convert.ToInt32(panFrom.Controls[i].Tag.ToString().Substring(1, 1)) > nMax)
+                    nMax = Convert.ToInt32(panFrom.Controls[i].Tag.ToString().Substring(1, 1));
+                picMax = (PictureBox)panFrom.Controls[i];
+            }
+
+            //찾은 pic을 옮김
+            int nCnt;
+            //Drop할 Panel에 PictureBox 개수 저장
+            nCnt = panTo.Controls.Count;
+
+            //이동한 블럭 삭제
+            RemoveBlock(picMax.Tag.ToString());
+
+            //pic을 만든다
+            MakeBlock(panTo, nCnt, Convert.ToInt32(picMax.Tag.ToString().Substring(1, 1)), true);
+
+            m_nMoveCnt += 1;
+            lblCnt.Text = m_nMoveCnt.ToString() + " 번";
+
+            //게임종료검사
+            if (IsGameEnd(Convert.ToInt32(nudCnt.Value)))
+                MessageBox.Show("게임종료");
+        }
+
+        // 블럭 갯수에 맞게 하노이탑을 초기화 한다.
+        private void InitHanoi(int nCnt)
+        {
+            int i;
+
+            // 우선 Panel에 있는 컨트롤을을 삭제한다.
+            panLeft.Controls.Clear();
+            panCenter.Controls.Clear();
+            panRight.Controls.Clear();
+
+            // panLeft에 PictureBox 컨트롤을 생성 한다.
+            for (i = 0; i < nCnt; i++)
+                MakeBlock(panLeft, i, i, false);
+
+            m_nMoveCnt = 0;
+            lblCnt.Text = m_nMoveCnt.ToString() + " 번";
         }
     }
 }
