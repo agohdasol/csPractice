@@ -40,6 +40,28 @@ namespace TextEditer
             this.imglstTree = new System.Windows.Forms.ImageList(this.components);
             this.fileDlg = new System.Windows.Forms.OpenFileDialog();
             this.saveDlg = new System.Windows.Forms.SaveFileDialog();
+            this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.편집ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.찾기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFileNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFileOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFileSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFileSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEditCut = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEditCopy = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEditPaste = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEditDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.MenuEditAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEditTime = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.MenuEditDown = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEditUp = new System.Windows.Forms.ToolStripMenuItem();
+            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.MenuFileEnd = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuSearchFind = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuSearchReplace = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -49,9 +71,13 @@ namespace TextEditer
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.파일ToolStripMenuItem,
+            this.편집ToolStripMenuItem,
+            this.찾기ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,7 +85,7 @@ namespace TextEditer
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 24);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -71,7 +97,7 @@ namespace TextEditer
             // 
             this.splitContainer1.Panel2.Controls.Add(this.txtMain);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 426);
+            this.splitContainer1.Size = new System.Drawing.Size(800, 422);
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -89,9 +115,9 @@ namespace TextEditer
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.HideSelection = false;
-            this.treeView1.Location = new System.Drawing.Point(0, 19);
+            this.treeView1.Location = new System.Drawing.Point(0, 15);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(330, 511);
+            this.treeView1.Size = new System.Drawing.Size(264, 405);
             this.treeView1.TabIndex = 1;
             // 
             // label2
@@ -111,7 +137,7 @@ namespace TextEditer
             this.txtMain.Multiline = true;
             this.txtMain.Name = "txtMain";
             this.txtMain.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtMain.Size = new System.Drawing.Size(528, 409);
+            this.txtMain.Size = new System.Drawing.Size(528, 405);
             this.txtMain.TabIndex = 1;
             this.txtMain.WordWrap = false;
             // 
@@ -132,6 +158,152 @@ namespace TextEditer
             // 
             this.saveDlg.Filter = "텍스트파일(*.txt)|*.txt|모든파일(*.*)|*.*";
             // 
+            // 파일ToolStripMenuItem
+            // 
+            this.파일ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuFileNew,
+            this.MenuFileOpen,
+            this.MenuFileSave,
+            this.MenuFileSaveAs,
+            this.종료ToolStripMenuItem,
+            this.MenuFileEnd});
+            this.파일ToolStripMenuItem.Name = "파일ToolStripMenuItem";
+            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.파일ToolStripMenuItem.Text = "파일";
+            // 
+            // 편집ToolStripMenuItem
+            // 
+            this.편집ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuEditCut,
+            this.MenuEditCopy,
+            this.MenuEditPaste,
+            this.MenuEditDelete,
+            this.toolStripMenuItem1,
+            this.MenuEditAll,
+            this.MenuEditTime,
+            this.toolStripMenuItem2,
+            this.MenuEditDown,
+            this.MenuEditUp});
+            this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.편집ToolStripMenuItem.Text = "편집";
+            // 
+            // 찾기ToolStripMenuItem
+            // 
+            this.찾기ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuSearchFind,
+            this.MenuSearchReplace});
+            this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.찾기ToolStripMenuItem.Text = "찾기";
+            this.찾기ToolStripMenuItem.Click += new System.EventHandler(this.찾기ToolStripMenuItem_Click);
+            // 
+            // MenuFileNew
+            // 
+            this.MenuFileNew.Name = "MenuFileNew";
+            this.MenuFileNew.Size = new System.Drawing.Size(224, 26);
+            this.MenuFileNew.Text = "새로만들기";
+            // 
+            // MenuFileOpen
+            // 
+            this.MenuFileOpen.Name = "MenuFileOpen";
+            this.MenuFileOpen.Size = new System.Drawing.Size(224, 26);
+            this.MenuFileOpen.Text = "열기";
+            // 
+            // MenuFileSave
+            // 
+            this.MenuFileSave.Name = "MenuFileSave";
+            this.MenuFileSave.Size = new System.Drawing.Size(224, 26);
+            this.MenuFileSave.Text = "저장";
+            // 
+            // MenuFileSaveAs
+            // 
+            this.MenuFileSaveAs.Name = "MenuFileSaveAs";
+            this.MenuFileSaveAs.Size = new System.Drawing.Size(224, 26);
+            this.MenuFileSaveAs.Text = "다른이름으로 저장";
+            // 
+            // MenuEditCut
+            // 
+            this.MenuEditCut.Name = "MenuEditCut";
+            this.MenuEditCut.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditCut.Text = "잘라내기";
+            // 
+            // MenuEditCopy
+            // 
+            this.MenuEditCopy.Name = "MenuEditCopy";
+            this.MenuEditCopy.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditCopy.Text = "복사";
+            // 
+            // MenuEditPaste
+            // 
+            this.MenuEditPaste.Name = "MenuEditPaste";
+            this.MenuEditPaste.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditPaste.Text = "붙여넣기";
+            // 
+            // MenuEditDelete
+            // 
+            this.MenuEditDelete.Name = "MenuEditDelete";
+            this.MenuEditDelete.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditDelete.Text = "삭제";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // MenuEditAll
+            // 
+            this.MenuEditAll.Name = "MenuEditAll";
+            this.MenuEditAll.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditAll.Text = "전체선택";
+            this.MenuEditAll.Click += new System.EventHandler(this.전체선택ToolStripMenuItem_Click);
+            // 
+            // MenuEditTime
+            // 
+            this.MenuEditTime.Name = "MenuEditTime";
+            this.MenuEditTime.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditTime.Text = "시간/날짜";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 6);
+            // 
+            // MenuEditDown
+            // 
+            this.MenuEditDown.Name = "MenuEditDown";
+            this.MenuEditDown.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditDown.Text = "소문자로";
+            // 
+            // MenuEditUp
+            // 
+            this.MenuEditUp.Name = "MenuEditUp";
+            this.MenuEditUp.Size = new System.Drawing.Size(224, 26);
+            this.MenuEditUp.Text = "대문자로";
+            // 
+            // 종료ToolStripMenuItem
+            // 
+            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(221, 6);
+            // 
+            // MenuFileEnd
+            // 
+            this.MenuFileEnd.Name = "MenuFileEnd";
+            this.MenuFileEnd.Size = new System.Drawing.Size(224, 26);
+            this.MenuFileEnd.Text = "종료";
+            // 
+            // MenuSearchFind
+            // 
+            this.MenuSearchFind.Name = "MenuSearchFind";
+            this.MenuSearchFind.Size = new System.Drawing.Size(224, 26);
+            this.MenuSearchFind.Text = "찾기";
+            // 
+            // MenuSearchReplace
+            // 
+            this.MenuSearchReplace.Name = "MenuSearchReplace";
+            this.MenuSearchReplace.Size = new System.Drawing.Size(224, 26);
+            this.MenuSearchReplace.Text = "바꾸기";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -143,6 +315,8 @@ namespace TextEditer
             this.Name = "FrmMain";
             this.Text = "문서 편집기";
             this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -165,6 +339,27 @@ namespace TextEditer
         private System.Windows.Forms.ImageList imglstTree;
         private System.Windows.Forms.OpenFileDialog fileDlg;
         private System.Windows.Forms.SaveFileDialog saveDlg;
+        private System.Windows.Forms.ToolStripMenuItem 파일ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuFileNew;
+        private System.Windows.Forms.ToolStripMenuItem MenuFileOpen;
+        private System.Windows.Forms.ToolStripMenuItem MenuFileSave;
+        private System.Windows.Forms.ToolStripMenuItem MenuFileSaveAs;
+        private System.Windows.Forms.ToolStripSeparator 종료ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuFileEnd;
+        private System.Windows.Forms.ToolStripMenuItem 편집ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditCut;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditCopy;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditPaste;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditDelete;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditAll;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditTime;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditDown;
+        private System.Windows.Forms.ToolStripMenuItem MenuEditUp;
+        private System.Windows.Forms.ToolStripMenuItem 찾기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuSearchFind;
+        private System.Windows.Forms.ToolStripMenuItem MenuSearchReplace;
     }
 }
 

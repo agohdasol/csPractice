@@ -21,5 +21,15 @@ namespace TextEditer
         {
 
         }
+
+        private void 찾기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 전체선택ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
