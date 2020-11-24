@@ -30,15 +30,16 @@ namespace TextEditer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.txtMain = new System.Windows.Forms.TextBox();
+            this.imglstTree = new System.Windows.Forms.ImageList(this.components);
+            this.fileDlg = new System.Windows.Forms.OpenFileDialog();
+            this.saveDlg = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -68,7 +69,7 @@ namespace TextEditer
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.txtMain);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Size = new System.Drawing.Size(800, 426);
             this.splitContainer1.SplitterDistance = 266;
@@ -87,6 +88,7 @@ namespace TextEditer
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.HideSelection = false;
             this.treeView1.Location = new System.Drawing.Point(0, 19);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(330, 511);
@@ -102,23 +104,33 @@ namespace TextEditer
             this.label2.TabIndex = 0;
             this.label2.Text = "내용";
             // 
-            // textBox1
+            // txtMain
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(660, 31);
-            this.textBox1.TabIndex = 1;
+            this.txtMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMain.Location = new System.Drawing.Point(0, 15);
+            this.txtMain.Multiline = true;
+            this.txtMain.Name = "txtMain";
+            this.txtMain.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtMain.Size = new System.Drawing.Size(528, 409);
+            this.txtMain.TabIndex = 1;
+            this.txtMain.WordWrap = false;
             // 
-            // imageList1
+            // imglstTree
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTree.ImageStream")));
+            this.imglstTree.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTree.Images.SetKeyName(0, "root.bmp");
+            this.imglstTree.Images.SetKeyName(1, "seltext.bmp");
+            this.imglstTree.Images.SetKeyName(2, "text.bmp");
             // 
-            // openFileDialog1
+            // fileDlg
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.fileDlg.FileName = "openFileDialog1";
+            this.fileDlg.Filter = "텍스트파일(*.txt)|*.txt|모든파일(*.*)|*.*";
+            // 
+            // saveDlg
+            // 
+            this.saveDlg.Filter = "텍스트파일(*.txt)|*.txt|모든파일(*.*)|*.*";
             // 
             // FrmMain
             // 
@@ -148,11 +160,11 @@ namespace TextEditer
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMain;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ImageList imglstTree;
+        private System.Windows.Forms.OpenFileDialog fileDlg;
+        private System.Windows.Forms.SaveFileDialog saveDlg;
     }
 }
 

@@ -1,0 +1,10 @@
+D:\csPractice\TextEditer\bin\Debug\TextEditer.exe.config
+D:\csPractice\TextEditer\bin\Debug\TextEditer.exe
+D:\csPractice\TextEditer\bin\Debug\TextEditer.pdb
+D:\csPractice\TextEditer\obj\Debug\TextEditer.csprojAssemblyReference.cache
+D:\csPractice\TextEditer\obj\Debug\TextEditer.FrmMain.resources
+D:\csPractice\TextEditer\obj\Debug\TextEditer.Properties.Resources.resources
+D:\csPractice\TextEditer\obj\Debug\TextEditer.csproj.GenerateResource.cache
+D:\csPractice\TextEditer\obj\Debug\TextEditer.csproj.CoreCompileInputs.cache
+D:\csPractice\TextEditer\obj\Debug\TextEditer.exe
+D:\csPractice\TextEditer\obj\Debug\TextEditer.pdb

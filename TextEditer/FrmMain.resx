@@ -120,13 +120,49 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>154, 17</value>
+  <metadata name="imglstTree.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 18</value>
   </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="imglstTree.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACQ
+        BgAAAk1TRnQBSQFMAgEBAwEAAQgBAAEIAQABEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABEAMAAQEBAAEYBgABDBIABv8hAA//IQAP/yEACf8wAAn/AQACMQEAAjEBAAIxAQACMQEAAjEBAAIx
+        AQACMQEAAjEBAAIxAQACMQEAAjEBAAIxAQACMQP/A4QhxgMACf8DhCHGAwAG/zAABv8BAAKcAQACnAEA
+        ApwBAAKcAQACnAEAApwBAAKcAQACnAEAApwBAAKcAQACnAEAApwBAAIxAQACMQP/A4QBgAL/AYAC/wGA
+        Av8BgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/A8YDAAn/A4Qe/wPGAwAG/zAABv8BAAKcA/8BnAHO
+        Af8BnAL/AZwBzgH/AZwC/wGcAc4B/wGcAc4B/wGcAc4B/wGcAc4B/wFjAs4BAAKcAQACMQEAAjED/wOE
+        AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/AYAC/wPGAwAJ/wOEHv8DxgMABv8wAAP/
+        AQACnAP/AZwC/wGcAv8BnAHOAf8BnAL/AZwBzgH/AZwC/wGcAc4B/wGcAc4B/wGcAc4B/wFjAs4BAAIx
+        AQACnAEAAjED/wOEAYAC/wGAAv8SAAGAAv8BgAL/A8YDAAn/A4QG/xIABv8DxgMABv8wAAP/AQACnAP/
+        AZwC/wGcAv8BnAL/AZwC/wGcAv8BnAHOAf8BnAL/AZwBzgH/AZwBzgH/AQACnAEAAjEBAAKcAQACMQP/
+        A4QBgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/A8YDAAn/A4Qe/wPGAwAG/zEA
+        ApwD/wGcAv8BnAL/AZwC/wGcAv8BnAHOAf8BnAL/AZwC/wGcAc4B/wGcAv8BYwLOAQACMQH/ApwEAAIx
+        A/8DhAGAAv8BgAL/EgABgAL/AYAC/wPGAwAJ/wOEBv8SAAb/A8YDAAb/MQACnAP/AZwC/wGcAv8BnAL/
+        AZwC/wGcAv8BnAL/AZwBzgH/AZwC/wGcAc4B/wFjAs4BAAIxAf8CzgH/As4DAAP/A4QBgAL/AYAC/wGA
+        Av8BgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/A8YDAAn/A4Qe/wPGAwAG/zEAApwBAAKcAQACnAEA
+        ApwBAAKcAQACnAEAApwBAAKcAQACnAEAApwBAAKcAQACnAH/ApwC/wHOAf8CzgMAA/8DhAGAAv8BgAL/
+        EgABgAL/AYAC/wPGAwAJ/wOEBv8SAAb/A8YDAAb/MAAD/wEAAoQBnAJjAv8BzgH/As4BnAEAATEB/wKc
+        Af8CzgGcAQABMQH/ApwB/wLOAf8CzgH/As4B/wLOBAACMQP/A4QBgAL/AYAC/wGAAv8BgAL/AYAC/wGA
+        Av8BgAL/AYAC/wGAAv8BgAL/A8YDAAn/A4Qe/wPGAwAG/zAAA/8BAAKEAWMCzgGcAmMC/wHOA/8BzgIx
+        Av8BnAP/Ac4CMQX/Ac4B/wLOAwABYwLOAQACMQP/A4QBgAL/AYAC/wkAAYAC/wYAAYAC/wGAAv8DxgMA
+        Cf8DhAb/CQAD/wYABv8DxgMABv8wAAP/AQAChAFjAs4BYwLOAZwCYwL/Ac4E/wFjAQAC/wGcBf8BzgH/
+        As4EAAKcAQACnAb/A4QBgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/A8YDAAn/
+        A4Qe/wPGAwAG/zAABv8BAAKEAWMCzgFjAs4BnAJjAv8BzgT/AZwBMQL/Ac4B/wLOAwAP/wOEAYAC/wGA
+        Av8BgAL/AYAC/wGAAv8BgAL/AYAC/wGAAv8BgAL/AYAC/wPGAwAJ/wOEHv8DxgMABv8wAAn/AQAChAEA
+        AoQBAAKEAZwCYwL/Ac4E/wLOAwAS/wOEAYAC/wMAAYAC/wMAAYAC/wMAAYAC/wMAAYAC/wMAA/8DAAn/
+        A4QD/wMAA/8DAAP/AwAD/wMAA/8DAAP/AwAG/zAAFf8BnAJjAv8BzgMAGP8DAAP/A4QD/wOEA/8DhAP/
+        A4QD/wMAD/8DAAP/A4QD/wOEA/8DhAP/A4QD/wMACf8wABj/AZwCYx7/AwAD/wMAA/8DAAP/AwAD/wMA
+        Ff8DAAP/AwAD/wMAA/8DAAP/AwAM/zAAAUIBTQE+BwABPgMAASgDAAFAAwABEAMAAQEBAAEBBQABgBcA
+        A/+BAAs=
+</value>
+  </data>
+  <metadata name="fileDlg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>285, 17</value>
   </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="saveDlg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>455, 17</value>
   </metadata>
 </root>
