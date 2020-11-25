@@ -113,12 +113,14 @@ namespace TextEditer
             this.MenuFileSave.Name = "MenuFileSave";
             this.MenuFileSave.Size = new System.Drawing.Size(224, 26);
             this.MenuFileSave.Text = "저장";
+            this.MenuFileSave.Click += new System.EventHandler(this.MenuFileSave_Click);
             // 
             // MenuFileSaveAs
             // 
             this.MenuFileSaveAs.Name = "MenuFileSaveAs";
             this.MenuFileSaveAs.Size = new System.Drawing.Size(224, 26);
             this.MenuFileSaveAs.Text = "다른이름으로 저장";
+            this.MenuFileSaveAs.Click += new System.EventHandler(this.MenuFileSaveAs_Click);
             // 
             // 종료ToolStripMenuItem
             // 
@@ -316,6 +318,7 @@ namespace TextEditer
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMain";
             this.Text = "문서 편집기";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -124,5 +124,95 @@ namespace TextEditer
                 txtMain.Enabled = true;
             }
         }
+
+        private void MenuFileSave_Click(object sender, EventArgs e)
+        {
+            if (treeText.SelectedNode == treeText.Nodes[0])
+                return;
+
+            string strPath;
+
+            strPath = treeText.SelectedNode.Text;
+            if (strPath.IndexOf("\\") == -1)
+                SaveAsFile();
+            else
+                SaveFile(strPath);
+
+        }
+        private void SaveFile(string strPath)
+        {
+            System.IO.FileInfo fileInfo = new System.IO.FileInfo(strPath);
+            System.IO.FileStream fileTxt;
+
+            //기본 인코딩 타입 얻기
+            System.Text.Encoding enc = System.Text.Encoding.Default;
+
+            //기존파일삭제
+            if (fileInfo != null)
+                fileInfo.Delete();
+
+            //파일 저장
+            fileTxt = System.IO.File.Open(strPath, System.IO.FileMode.OpenOrCreate);
+            fileTxt.Write(enc.GetBytes(txtMain.Text), 0, enc.GetByteCount(txtMain.Text));
+
+            fileTxt.Close();
+        }
+
+        private void SaveAsFile()
+        {
+            if (treeText.SelectedNode == treeText.Nodes[0])
+                return;
+            string strPath;
+            string strDir, strFile;
+            string strTxtPath;
+
+            strPath = treeText.SelectedNode.Text;
+
+            if (strPath.IndexOf("\\") == -1)
+                saveDlg.FileName = strPath + ".txt";
+            else
+            {
+                //폴더와 파일명 분리
+                strDir = strPath.Substring(0, strPath.LastIndexOf("\\"));
+                strFile = strPath.Substring(strPath.LastIndexOf("\\"), strPath.Length - strPath.LastIndexOf("\\"));
+                strFile = strFile.Remove(0, 1);
+                saveDlg.InitialDirectory = strDir;
+                saveDlg.FileName = strFile;
+            }
+
+            //파일패스를 얻는다
+            if (saveDlg.ShowDialog() == DialogResult.OK)
+            {
+                strTxtPath = saveDlg.FileName;
+                SaveFile(strTxtPath);
+            }
+        }
+
+        private void MenuFileSaveAs_Click(object sender, EventArgs e)
+        {
+            SaveAsFile();
+        }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            int nCnt;
+            int i;
+            string strPath;
+            nCnt = treeText.Nodes[0].GetNodeCount(true);
+
+            //노드의 갯수만큼 루프를 돌린다
+            for (i = 0; i < nCnt; i++)
+            {
+                strPath = treeText.Nodes[0].Nodes[i].Text;
+                treeText.SelectedNode = treeText.Nodes[0].Nodes[i];
+                if(MessageBox.Show(strPath+" 파일을 저장하시겠습니까?", "저장", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    if (strPath.IndexOf("\\") == -1)
+                        SaveAsFile();
+                    else
+                        SaveFile(strPath);
+                }
+            }
+        }
     }
 }
