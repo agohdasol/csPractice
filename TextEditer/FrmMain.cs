@@ -214,5 +214,48 @@ namespace TextEditer
                 }
             }
         }
+
+        private void MenuEditCut_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(txtMain.SelectedText);
+            txtMain.SelectedText = "";
+        }
+
+        private void MenuEditCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(txtMain.SelectedText);
+        }
+
+        private void MenuEditDelete_Click(object sender, EventArgs e)
+        {
+            txtMain.SelectedText = "";
+        }
+
+        private void MenuEditPaste_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.GetDataObject().GetDataPresent(DataFormats.Text))
+                txtMain.SelectedText = Clipboard.GetDataObject().GetData(DataFormats.Text, true).ToString();
+
+        }
+
+        private void MenuEditAll_Click(object sender, EventArgs e)
+        {
+            txtMain.SelectAll();
+        }
+
+        private void MenuEditTime_Click(object sender, EventArgs e)
+        {
+            txtMain.SelectedText = DateTime.Now.ToLongTimeString();
+        }
+
+        private void MenuEditDown_Click(object sender, EventArgs e)
+        {
+            txtMain.SelectedText = txtMain.SelectedText.ToLower();
+        }
+
+        private void MenuEditUp_Click(object sender, EventArgs e)
+        {
+            txtMain.SelectedText = txtMain.SelectedText.ToUpper();
+        }
     }
 }

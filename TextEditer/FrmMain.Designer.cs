@@ -155,24 +155,28 @@ namespace TextEditer
             this.MenuEditCut.Name = "MenuEditCut";
             this.MenuEditCut.Size = new System.Drawing.Size(224, 26);
             this.MenuEditCut.Text = "잘라내기";
+            this.MenuEditCut.Click += new System.EventHandler(this.MenuEditCut_Click);
             // 
             // MenuEditCopy
             // 
             this.MenuEditCopy.Name = "MenuEditCopy";
             this.MenuEditCopy.Size = new System.Drawing.Size(224, 26);
             this.MenuEditCopy.Text = "복사";
+            this.MenuEditCopy.Click += new System.EventHandler(this.MenuEditCopy_Click);
             // 
             // MenuEditPaste
             // 
             this.MenuEditPaste.Name = "MenuEditPaste";
             this.MenuEditPaste.Size = new System.Drawing.Size(224, 26);
             this.MenuEditPaste.Text = "붙여넣기";
+            this.MenuEditPaste.Click += new System.EventHandler(this.MenuEditPaste_Click);
             // 
             // MenuEditDelete
             // 
             this.MenuEditDelete.Name = "MenuEditDelete";
             this.MenuEditDelete.Size = new System.Drawing.Size(224, 26);
             this.MenuEditDelete.Text = "삭제";
+            this.MenuEditDelete.Click += new System.EventHandler(this.MenuEditDelete_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -184,12 +188,14 @@ namespace TextEditer
             this.MenuEditAll.Name = "MenuEditAll";
             this.MenuEditAll.Size = new System.Drawing.Size(224, 26);
             this.MenuEditAll.Text = "전체선택";
+            this.MenuEditAll.Click += new System.EventHandler(this.MenuEditAll_Click);
             // 
             // MenuEditTime
             // 
             this.MenuEditTime.Name = "MenuEditTime";
             this.MenuEditTime.Size = new System.Drawing.Size(224, 26);
             this.MenuEditTime.Text = "시간/날짜";
+            this.MenuEditTime.Click += new System.EventHandler(this.MenuEditTime_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -201,12 +207,14 @@ namespace TextEditer
             this.MenuEditDown.Name = "MenuEditDown";
             this.MenuEditDown.Size = new System.Drawing.Size(224, 26);
             this.MenuEditDown.Text = "소문자로";
+            this.MenuEditDown.Click += new System.EventHandler(this.MenuEditDown_Click);
             // 
             // MenuEditUp
             // 
             this.MenuEditUp.Name = "MenuEditUp";
             this.MenuEditUp.Size = new System.Drawing.Size(224, 26);
             this.MenuEditUp.Text = "대문자로";
+            this.MenuEditUp.Click += new System.EventHandler(this.MenuEditUp_Click);
             // 
             // SearchToolStripMenuItem
             // 
