@@ -236,6 +236,7 @@ namespace TextEditer
             this.MenuSearchReplace.Name = "MenuSearchReplace";
             this.MenuSearchReplace.Size = new System.Drawing.Size(224, 26);
             this.MenuSearchReplace.Text = "바꾸기";
+            this.MenuSearchReplace.Click += new System.EventHandler(this.MenuSearchReplace_Click);
             // 
             // splitContainer1
             // 
@@ -347,7 +348,7 @@ namespace TextEditer
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeText;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMain;
+        public System.Windows.Forms.TextBox txtMain;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList imglstTree;
         private System.Windows.Forms.OpenFileDialog fileDlg;

@@ -8,3 +8,4 @@ D:\csPractice\TextEditer\obj\Debug\TextEditer.csproj.GenerateResource.cache
 D:\csPractice\TextEditer\obj\Debug\TextEditer.csproj.CoreCompileInputs.cache
 D:\csPractice\TextEditer\obj\Debug\TextEditer.exe
 D:\csPractice\TextEditer\obj\Debug\TextEditer.pdb
+D:\csPractice\TextEditer\obj\Debug\TextEditer.FrmReplace.resources

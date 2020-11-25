@@ -257,5 +257,18 @@ namespace TextEditer
         {
             txtMain.SelectedText = txtMain.SelectedText.ToUpper();
         }
+
+        private void MenuSearchReplace_Click(object sender, EventArgs e)
+        {
+            if (treeText.SelectedNode == null)
+                return;
+
+            if ((treeText.SelectedNode == treeText.Nodes[0]))
+                return;
+
+            TextEditer.FrmReplace dlg = new TextEditer.FrmReplace();
+            dlg.Init(this);
+            dlg.Show();
+        }
     }
 }
