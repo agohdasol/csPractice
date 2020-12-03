@@ -112,11 +112,12 @@ namespace TipManager
             this.mnuUpdate.Name = "mnuUpdate";
             this.mnuUpdate.Size = new System.Drawing.Size(142, 26);
             this.mnuUpdate.Text = "팁 수정";
+            this.mnuUpdate.Click += new System.EventHandler(this.mnuUpdate_Click);
             // 
             // mnuDelete
             // 
             this.mnuDelete.Name = "mnuDelete";
-            this.mnuDelete.Size = new System.Drawing.Size(224, 26);
+            this.mnuDelete.Size = new System.Drawing.Size(142, 26);
             this.mnuDelete.Text = "팁 삭제";
             this.mnuDelete.Click += new System.EventHandler(this.mnuDelete_Click);
             // 
@@ -124,7 +125,6 @@ namespace TipManager
             // 
             this.mnuSep.Name = "mnuSep";
             this.mnuSep.Size = new System.Drawing.Size(139, 6);
-            this.mnuSep.Click += new System.EventHandler(this.구분선ToolStripMenuItem_Click);
             // 
             // mnuExit
             // 
@@ -145,6 +145,7 @@ namespace TipManager
             this.mnuSave.Name = "mnuSave";
             this.mnuSave.Size = new System.Drawing.Size(177, 26);
             this.mnuSave.Text = "팁 내용 저장";
+            this.mnuSave.Click += new System.EventHandler(this.mnuSave_Click);
             // 
             // mnuView
             // 
@@ -158,15 +159,16 @@ namespace TipManager
             // mnuSearch
             // 
             this.mnuSearch.Name = "mnuSearch";
-            this.mnuSearch.Size = new System.Drawing.Size(142, 26);
+            this.mnuSearch.Size = new System.Drawing.Size(224, 26);
             this.mnuSearch.Text = "검색";
-            this.mnuSearch.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.mnuSearch.Click += new System.EventHandler(this.mnuSearch_Click);
             // 
             // mnuResult
             // 
             this.mnuResult.Name = "mnuResult";
-            this.mnuResult.Size = new System.Drawing.Size(142, 26);
+            this.mnuResult.Size = new System.Drawing.Size(224, 26);
             this.mnuResult.Text = "결과 창";
+            this.mnuResult.Click += new System.EventHandler(this.mnuResult_Click);
             // 
             // toolStrip1
             // 
@@ -184,6 +186,7 @@ namespace TipManager
             this.toolStrip1.Size = new System.Drawing.Size(1555, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // tibAdd
             // 
@@ -340,6 +343,7 @@ namespace TipManager
             this.lvResult.Size = new System.Drawing.Size(1032, 213);
             this.lvResult.TabIndex = 2;
             this.lvResult.UseCompatibleStateImageBehavior = false;
+            this.lvResult.ItemActivate += new System.EventHandler(this.lvResult_ItemActivate);
             // 
             // panBottom
             // 

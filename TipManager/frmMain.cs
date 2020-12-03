@@ -19,16 +19,6 @@ namespace TipManager
             InitializeComponent();
         }
 
-        private void 구분선ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             ShowResultList(false);
@@ -267,6 +257,201 @@ namespace TipManager
             lvItem.SubItems.Add(lvTitle);
 
             lvResult.Items.Add(lvItem);
+        }
+
+        private void lvResult_ItemActivate(object sender, EventArgs e)
+        {
+            TreeNode tnNode;
+            int nIndex;
+
+            nIndex = GetSelectedItem();
+
+            if (nIndex >= 0)
+            {
+                string strSeq, strTitle;
+
+                strSeq = lvResult.Items[nIndex].Tag.ToString();
+                strTitle = lvResult.Items[nIndex].SubItems[1].ToString();
+
+                tnNode = FindItem(strSeq);
+
+                if (tnNode != null)
+                    treeContents.SelectedNode = tnNode;
+
+                rtxNote.Text = GetTipNote(strSeq);
+            }
+        }
+        private TreeNode FindItem(string strSeq)
+        {
+            TreeNode tnItem = treeContents.Nodes[0];
+            string strFind;
+
+            while (tnItem != null)
+            {
+                strFind = tnItem.Tag.ToString();
+
+                if (strFind != null)
+                {
+                    if (strFind.Equals(strSeq))
+                        return tnItem;
+                }
+                tnItem = GetNextNode(tnItem);
+            }
+            return null;
+        }
+        private TreeNode GetNextNode(TreeNode tnItem)
+        {
+            TreeNode tnChild, tnNode, tnParent;
+
+            tnChild = tnItem.FirstNode;
+            if (tnChild != null)
+                return tnChild;
+
+            tnNode = tnItem.NextNode;
+
+            if (tnNode != null)
+                return tnNode;
+
+            tnParent = tnItem.Parent;
+            while (tnParent != null)
+            {
+                tnNode = tnParent.NextNode;
+                if (tnNode != null)
+                    return tnNode;
+
+                tnParent = tnParent.Parent;
+            }
+            return null;
+        }
+
+        private void mnuUpdate_Click(object sender, EventArgs e)
+        {
+            frmAdd frmUpdate = new frmAdd();
+            TreeNode tnItem;
+
+            tnItem = treeContents.SelectedNode;
+
+            if (!tnItem.Tag.ToString().Equals(""))
+            {
+                TreeNode tnGroup;
+
+                tnGroup = tnItem.Parent;
+
+                frmUpdate.SetParent(this);
+                frmUpdate.SetMode((int)FORM_MODE.FM_UPDATE);
+                frmUpdate.SetUpdateInfo(tnGroup.Text, tnItem.Text, tnItem.Tag.ToString());
+                frmUpdate.ShowDialog(this);
+            }
+            else
+                MessageBox.Show("수정할 팁 제목을 선택하세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private bool DeleteItem(string strSeq)
+        {
+            string strSQL;
+            OleDbCommand oleCmd;
+            OleDbTransaction oleTran;
+
+            strSQL = "DELETE FROM TIP WHERE TF_SEQ = " + strSeq;
+
+            try
+            {
+                oleCmd = new OleDbCommand(strSQL, m_oleConn);
+
+                oleTran = m_oleConn.BeginTransaction();
+                oleCmd.Transaction = oleTran;
+
+                oleCmd.ExecuteNonQuery();
+
+                oleTran.Commit();
+                return true;
+            }
+            catch(OleDbException err)
+            {
+                MessageBox.Show(err.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        private void mnuSave_Click(object sender, EventArgs e)
+        {
+            TreeNode tnItem;
+
+            tnItem = treeContents.SelectedNode;
+
+            if (tnItem.SelectedImageIndex == (int)TREE_IMAGE.TI_ITEM)
+            {
+                string strSQL;
+                string strNote;
+                OleDbCommand oleCmd;
+                OleDbTransaction oleTran;
+
+                strNote = rtxNote.Text;
+                strNote = strNote.Replace("'", "''");
+
+                strSQL = "UPDATE TIP SET TF_NOTE = '" + strNote + "' WHERE TF_SEQ = " + tnItem.Tag;
+
+                try
+                {
+                    oleCmd = new OleDbCommand(strSQL, m_oleConn);
+
+                    oleTran = m_oleConn.BeginTransaction();
+                    oleCmd.Transaction = oleTran;
+
+                    oleCmd.ExecuteNonQuery();
+
+                    oleTran.Commit();
+                }
+                catch (OleDbException err)
+                {
+                    MessageBox.Show(err.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+                MessageBox.Show("트리 아이템에서 팁 제목을 선택하신 후, 변경된 팁 내용을 저장하셔야 합니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            rtxNote.SelectAll();
+            rtxNote.SelectionColor = Color.Black;
+            rtxNote.Select(0, 0);
+        }
+
+        private void mnuSearch_Click(object sender, EventArgs e)
+        {
+            frmSearch frmFind = new frmSearch();
+
+            frmFind.SetParent(this);
+            frmFind.ShowDialog(this);
+        }
+
+        private void mnuResult_Click(object sender, EventArgs e)
+        {
+            if (m_bResultShow == true)
+            {
+                ShowResultList(false);
+                m_bResultShow = false;
+                ((ToolStripButton)toolStrip1.Items[4]).Checked = false;
+            }
+            else
+            {
+                ShowResultList(true);
+                m_bResultShow = true;
+                ((ToolStripButton)toolStrip1.Items[4]).Checked = true;
+            }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Name == "tlbAdd")
+                mnuAdd_Click(sender, e);
+            else if (e.ClickedItem.Name == "tlbUpdate")
+                mnuUpdate_Click(sender, e);
+            else if (e.ClickedItem.Name == "tlbDelete")
+                mnuDelete_Click(sender, e);
+            else if (e.ClickedItem.Name == "tlbSearch")
+                mnuSearch_Click(sender, e);
+            else if (e.ClickedItem.Name == "tlbResult")
+                mnuResult_Click(sender, e);
+            else if (e.ClickedItem.Name == "tlbSave")
+                mnuSave_Click(sender, e);
         }
     }
 }
