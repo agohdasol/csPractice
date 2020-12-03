@@ -14,6 +14,52 @@ namespace TipManager
     public partial class frmMain : Form
     {
         public OleDbConnection m_oleConn;
+
+        //트리 이미지
+        public enum TREE_IMAGE
+        {
+            TI_PARENT = 0,
+            TI_ITEM
+        }
+
+        //frmAdd의 사용 용도
+        public enum FORM_MODE
+        {
+            FM_INSERT = 0,       //추가 모드
+            FM_UPDATE           //수정 모드
+        }
+
+        bool m_bResultShow;    //검색 결과 Show/Hide
+                               // TreeView 초기화
+        private void InitTree()
+        {
+            treeContents.Nodes.Clear();
+            treeContents.ShowRootLines = true;
+            treeContents.HideSelection = false;
+
+            //루트노드 생성
+            treeContents.Nodes.Add(new TreeNode("나만의 팁", (int)TREE_IMAGE.TI_PARENT, (int)TREE_IMAGE.TI_PARENT));
+
+            //상태바에 루트노드 텍스트 설정
+            wndStatusBar.Text = treeContents.Nodes[0].Text;
+        }
+
+        // 리스트뷰 초기화
+        private void InitList()
+        {
+            //리스트뷰 속성설정
+            lvResult.View = View.Details;
+            lvResult.MultiSelect = false;
+            lvResult.FullRowSelect = true;
+            lvResult.Activation = ItemActivation.TwoClick;
+
+            lvResult.HeaderStyle = ColumnHeaderStyle.Nonclickable;
+
+            //컬럼 추가
+            lvResult.Columns.Add("그룹", 80, HorizontalAlignment.Left);
+            lvResult.Columns.Add("제목", lvResult.Width - 90, HorizontalAlignment.Left);
+
+        }
         public frmMain()
         {
             InitializeComponent();
@@ -452,6 +498,16 @@ namespace TipManager
                 mnuResult_Click(sender, e);
             else if (e.ClickedItem.Name == "tlbSave")
                 mnuSave_Click(sender, e);
+        }
+
+        private void mnuAdd_Click(object sender, EventArgs e)
+        {
+            frmAdd frmTipAdd = new frmAdd();
+
+            frmTipAdd.SetParent(this);
+
+            frmTipAdd.SetMode((int)FORM_MODE.FM_INSERT);
+            frmTipAdd.ShowDialog(this);
         }
     }
 }

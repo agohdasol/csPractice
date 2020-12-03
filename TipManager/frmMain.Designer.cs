@@ -51,7 +51,7 @@ namespace TipManager
             this.tipResult = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tipSave = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.wndStatusBar = new System.Windows.Forms.StatusStrip();
             this.sp1 = new System.Windows.Forms.SplitContainer();
             this.treeContents = new System.Windows.Forms.TreeView();
             this.imglstTree = new System.Windows.Forms.ImageList(this.components);
@@ -104,32 +104,33 @@ namespace TipManager
             // mnuAdd
             // 
             this.mnuAdd.Name = "mnuAdd";
-            this.mnuAdd.Size = new System.Drawing.Size(142, 26);
+            this.mnuAdd.Size = new System.Drawing.Size(224, 26);
             this.mnuAdd.Text = "팁 추가";
+            this.mnuAdd.Click += new System.EventHandler(this.mnuAdd_Click);
             // 
             // mnuUpdate
             // 
             this.mnuUpdate.Name = "mnuUpdate";
-            this.mnuUpdate.Size = new System.Drawing.Size(142, 26);
+            this.mnuUpdate.Size = new System.Drawing.Size(224, 26);
             this.mnuUpdate.Text = "팁 수정";
             this.mnuUpdate.Click += new System.EventHandler(this.mnuUpdate_Click);
             // 
             // mnuDelete
             // 
             this.mnuDelete.Name = "mnuDelete";
-            this.mnuDelete.Size = new System.Drawing.Size(142, 26);
+            this.mnuDelete.Size = new System.Drawing.Size(224, 26);
             this.mnuDelete.Text = "팁 삭제";
             this.mnuDelete.Click += new System.EventHandler(this.mnuDelete_Click);
             // 
             // mnuSep
             // 
             this.mnuSep.Name = "mnuSep";
-            this.mnuSep.Size = new System.Drawing.Size(139, 6);
+            this.mnuSep.Size = new System.Drawing.Size(221, 6);
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(142, 26);
+            this.mnuExit.Size = new System.Drawing.Size(224, 26);
             this.mnuExit.Text = "종료";
             // 
             // mnuEdit
@@ -143,7 +144,7 @@ namespace TipManager
             // mnuSave
             // 
             this.mnuSave.Name = "mnuSave";
-            this.mnuSave.Size = new System.Drawing.Size(177, 26);
+            this.mnuSave.Size = new System.Drawing.Size(224, 26);
             this.mnuSave.Text = "팁 내용 저장";
             this.mnuSave.Click += new System.EventHandler(this.mnuSave_Click);
             // 
@@ -255,14 +256,14 @@ namespace TipManager
             this.tipSave.Size = new System.Drawing.Size(24, 24);
             this.tipSave.Text = "저장";
             // 
-            // statusStrip1
+            // wndStatusBar
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1555, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
+            this.wndStatusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.wndStatusBar.Location = new System.Drawing.Point(0, 581);
+            this.wndStatusBar.Name = "wndStatusBar";
+            this.wndStatusBar.Size = new System.Drawing.Size(1555, 24);
+            this.wndStatusBar.TabIndex = 2;
+            this.wndStatusBar.Text = "statusStrip1";
             // 
             // sp1
             // 
@@ -278,7 +279,7 @@ namespace TipManager
             // sp1.Panel2
             // 
             this.sp1.Panel2.Controls.Add(this.sp2);
-            this.sp1.Size = new System.Drawing.Size(1555, 528);
+            this.sp1.Size = new System.Drawing.Size(1555, 526);
             this.sp1.SplitterDistance = 517;
             this.sp1.TabIndex = 3;
             // 
@@ -291,7 +292,7 @@ namespace TipManager
             this.treeContents.Location = new System.Drawing.Point(0, 0);
             this.treeContents.Name = "treeContents";
             this.treeContents.SelectedImageIndex = 0;
-            this.treeContents.Size = new System.Drawing.Size(515, 526);
+            this.treeContents.Size = new System.Drawing.Size(515, 524);
             this.treeContents.TabIndex = 0;
             this.treeContents.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeContents_AfterSelect);
             // 
@@ -319,8 +320,8 @@ namespace TipManager
             this.sp2.Panel2.Controls.Add(this.lvResult);
             this.sp2.Panel2.Controls.Add(this.panBottom);
             this.sp2.Panel2.Controls.Add(this.panTop);
-            this.sp2.Size = new System.Drawing.Size(1034, 528);
-            this.sp2.SplitterDistance = 184;
+            this.sp2.Size = new System.Drawing.Size(1034, 526);
+            this.sp2.SplitterDistance = 183;
             this.sp2.TabIndex = 0;
             // 
             // rtxNote
@@ -329,7 +330,7 @@ namespace TipManager
             this.rtxNote.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtxNote.Location = new System.Drawing.Point(0, 0);
             this.rtxNote.Name = "rtxNote";
-            this.rtxNote.Size = new System.Drawing.Size(1032, 182);
+            this.rtxNote.Size = new System.Drawing.Size(1032, 181);
             this.rtxNote.TabIndex = 0;
             this.rtxNote.Text = "";
             // 
@@ -340,7 +341,7 @@ namespace TipManager
             this.lvResult.HideSelection = false;
             this.lvResult.Location = new System.Drawing.Point(0, 125);
             this.lvResult.Name = "lvResult";
-            this.lvResult.Size = new System.Drawing.Size(1032, 213);
+            this.lvResult.Size = new System.Drawing.Size(1032, 212);
             this.lvResult.TabIndex = 2;
             this.lvResult.UseCompatibleStateImageBehavior = false;
             this.lvResult.ItemActivate += new System.EventHandler(this.lvResult_ItemActivate);
@@ -350,7 +351,7 @@ namespace TipManager
             this.panBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panBottom.Location = new System.Drawing.Point(0, 125);
             this.panBottom.Name = "panBottom";
-            this.panBottom.Size = new System.Drawing.Size(1032, 213);
+            this.panBottom.Size = new System.Drawing.Size(1032, 212);
             this.panBottom.TabIndex = 1;
             // 
             // panTop
@@ -388,7 +389,7 @@ namespace TipManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1555, 605);
             this.Controls.Add(this.sp1);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.wndStatusBar);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -419,7 +420,7 @@ namespace TipManager
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip wndStatusBar;
         private System.Windows.Forms.SplitContainer sp1;
         private System.Windows.Forms.TreeView treeContents;
         private System.Windows.Forms.SplitContainer sp2;
