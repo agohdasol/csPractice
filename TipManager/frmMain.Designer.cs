@@ -116,8 +116,9 @@ namespace TipManager
             // mnuDelete
             // 
             this.mnuDelete.Name = "mnuDelete";
-            this.mnuDelete.Size = new System.Drawing.Size(142, 26);
+            this.mnuDelete.Size = new System.Drawing.Size(224, 26);
             this.mnuDelete.Text = "팁 삭제";
+            this.mnuDelete.Click += new System.EventHandler(this.mnuDelete_Click);
             // 
             // mnuSep
             // 
@@ -289,6 +290,7 @@ namespace TipManager
             this.treeContents.SelectedImageIndex = 0;
             this.treeContents.Size = new System.Drawing.Size(515, 526);
             this.treeContents.TabIndex = 0;
+            this.treeContents.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeContents_AfterSelect);
             // 
             // imglstTree
             // 
@@ -388,6 +390,7 @@ namespace TipManager
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
