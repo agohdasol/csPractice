@@ -103,6 +103,7 @@ namespace TipManager
             this.Name = "frmAdd";
             this.ShowInTaskbar = false;
             this.Text = "추가";
+            this.Load += new System.EventHandler(this.frmAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
