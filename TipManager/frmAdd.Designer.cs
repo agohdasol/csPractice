@@ -78,6 +78,7 @@ namespace TipManager
             this.btnOK.TabIndex = 4;
             this.btnOK.Text = "확인";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 

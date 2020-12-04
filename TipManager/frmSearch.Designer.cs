@@ -30,10 +30,10 @@ namespace TipManager
         private void InitializeComponent()
         {
             this.groupBoxSearch = new System.Windows.Forms.GroupBox();
-            this.rbtnTitle = new System.Windows.Forms.RadioButton();
-            this.rbtnGroup = new System.Windows.Forms.RadioButton();
-            this.rbtnNote = new System.Windows.Forms.RadioButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.rbtnNote = new System.Windows.Forms.RadioButton();
+            this.rbtnGroup = new System.Windows.Forms.RadioButton();
+            this.rbtnTitle = new System.Windows.Forms.RadioButton();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBoxSearch.SuspendLayout();
@@ -52,27 +52,12 @@ namespace TipManager
             this.groupBoxSearch.TabStop = false;
             this.groupBoxSearch.Text = "검색 정보를 선택하세요.";
             // 
-            // rbtnTitle
+            // txtSearch
             // 
-            this.rbtnTitle.AutoSize = true;
-            this.rbtnTitle.Location = new System.Drawing.Point(20, 21);
-            this.rbtnTitle.Name = "rbtnTitle";
-            this.rbtnTitle.Size = new System.Drawing.Size(58, 19);
-            this.rbtnTitle.TabIndex = 0;
-            this.rbtnTitle.TabStop = true;
-            this.rbtnTitle.Text = "제목";
-            this.rbtnTitle.UseVisualStyleBackColor = true;
-            // 
-            // rbtnGroup
-            // 
-            this.rbtnGroup.AutoSize = true;
-            this.rbtnGroup.Location = new System.Drawing.Point(131, 21);
-            this.rbtnGroup.Name = "rbtnGroup";
-            this.rbtnGroup.Size = new System.Drawing.Size(58, 19);
-            this.rbtnGroup.TabIndex = 1;
-            this.rbtnGroup.TabStop = true;
-            this.rbtnGroup.Text = "그룹";
-            this.rbtnGroup.UseVisualStyleBackColor = true;
+            this.txtSearch.Location = new System.Drawing.Point(6, 46);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(296, 25);
+            this.txtSearch.TabIndex = 3;
             // 
             // rbtnNote
             // 
@@ -85,12 +70,27 @@ namespace TipManager
             this.rbtnNote.Text = "내용";
             this.rbtnNote.UseVisualStyleBackColor = true;
             // 
-            // txtSearch
+            // rbtnGroup
             // 
-            this.txtSearch.Location = new System.Drawing.Point(6, 46);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(296, 25);
-            this.txtSearch.TabIndex = 3;
+            this.rbtnGroup.AutoSize = true;
+            this.rbtnGroup.Location = new System.Drawing.Point(131, 21);
+            this.rbtnGroup.Name = "rbtnGroup";
+            this.rbtnGroup.Size = new System.Drawing.Size(58, 19);
+            this.rbtnGroup.TabIndex = 1;
+            this.rbtnGroup.TabStop = true;
+            this.rbtnGroup.Text = "그룹";
+            this.rbtnGroup.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTitle
+            // 
+            this.rbtnTitle.AutoSize = true;
+            this.rbtnTitle.Location = new System.Drawing.Point(20, 21);
+            this.rbtnTitle.Name = "rbtnTitle";
+            this.rbtnTitle.Size = new System.Drawing.Size(58, 19);
+            this.rbtnTitle.TabIndex = 0;
+            this.rbtnTitle.TabStop = true;
+            this.rbtnTitle.Text = "제목";
+            this.rbtnTitle.UseVisualStyleBackColor = true;
             // 
             // btnSearch
             // 
@@ -100,6 +100,7 @@ namespace TipManager
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "검색";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnCancel
             // 
