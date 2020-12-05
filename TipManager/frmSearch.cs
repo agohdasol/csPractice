@@ -12,11 +12,17 @@ namespace TipManager
 {
     public partial class frmSearch : Form
     {
+        //부모(frmMain)를 가리킬 객체
+        frmMain m_frmParent;
         public frmSearch()
         {
             InitializeComponent();
         }
-
+        // 부모 설정
+        public void SetParent(frmMain frmParent)
+        {
+            m_frmParent = frmParent;
+        }
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (txtSearch.Text.Equals(""))

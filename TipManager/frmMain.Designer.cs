@@ -428,7 +428,7 @@ namespace TipManager
         private System.Windows.Forms.Panel panBottom;
         private System.Windows.Forms.Panel panTop;
         private System.Windows.Forms.ListView lvResult;
-        private System.Windows.Forms.Label lblResult;
+        public System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.PictureBox picResultClose;
         private System.Windows.Forms.ImageList imglstTree;
         private System.Windows.Forms.ToolStripMenuItem mnuFile;

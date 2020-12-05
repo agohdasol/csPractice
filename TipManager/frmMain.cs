@@ -78,6 +78,20 @@ namespace TipManager
                 return;
             }
         }
+        private void InitRichText()
+        {
+            //MultiLine 속성을 갖고 있는 RichTextBox 컨트롤에서 Tab 키를 누를 때
+            //AcceptsTab 속성이 설정되지 않으면 사용자가 Tab 키를 눌렀을 때, 
+            //RichTextBox 내에서 탭 키로 작용하는것이 아니라 폼 내의 컨트롤의 
+            //탭 순서에 따라 다음 컨트롤로 포커스를 이동하게 된다.
+            //그러므로 해당 컨트롤에 탭 문자를 입력할지 여부를 나타내는 값을 
+            //가져오거나 설정하는 AcceptsTab 속성을 설정해주어야 한다.
+            rtxNote.AcceptsTab = true;
+            rtxNote.Multiline = true;
+            rtxNote.ForeColor = Color.Black;
+
+            rtxNote.Text = "";
+        }
         private bool InitDatabase()
         {
             try
@@ -174,7 +188,7 @@ namespace TipManager
         public string GetConnectionStr()
         {
             string strConn;
-            strConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "\\Tip.accdb";
+            strConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "\\Tip.mdb";
             return strConn;
         }
 
@@ -233,6 +247,26 @@ namespace TipManager
                 else
                     wndStatusBar.Text = e.Node.Text;
             }
+        }
+        private String GetStatusText(TreeNode tnItem)
+        {
+            TreeNode tnParent;
+            String strStatus;
+
+            //선택한 아이템의 부모(=그룹이름)를 얻는다.
+            tnParent = tnItem.Parent;
+
+            //부모모드와 인자로 넘어온 tnItem의 텍스트를 더해 경로를 설정한다.
+            strStatus = tnParent.Text;
+            strStatus += "/";
+            strStatus += tnItem.Text;
+
+            return strStatus;
+
+        }
+        private int GetSelectedItem()
+        {
+            return lvResult.SelectedItems[0].Index;
         }
         public string GetTipNote(string strSeq)
         {
@@ -484,6 +518,33 @@ namespace TipManager
             }
         }
 
+        public void GetGroupNameList(ref String strGroup)
+        {
+            TreeNode tnItem = treeContents.Nodes[0];
+            TreeNode tnTemp = null;
+            String strNode;
+
+            //첫번째 자식 노드(=그룹) 얻기
+            tnTemp = tnItem.FirstNode;
+
+            while (tnTemp != null)
+            {
+                System.Windows.Forms.Application.DoEvents();
+
+                //트리 아이템 텍스트를 얻는다.
+                strNode = tnTemp.Text;
+
+                strGroup += strNode;
+                strGroup += ";";
+
+                //다음 형제 노드로 이동
+                tnTemp = tnTemp.NextNode;
+            }
+
+
+            if (!strGroup.Equals("")) //마지막의 ;을 뺀다.
+                strGroup = strGroup.Substring(0, strGroup.Length - 1);
+        }
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             if (e.ClickedItem.Name == "tlbAdd")
@@ -508,6 +569,91 @@ namespace TipManager
 
             frmTipAdd.SetMode((int)FORM_MODE.FM_INSERT);
             frmTipAdd.ShowDialog(this);
+        }
+
+        public void UpdateTreeItem(String strGroup, String strTitle)
+        {
+
+            TreeNode tnItem, tnGroup;
+
+            //선택된 노드를 얻는다.
+            tnItem = treeContents.SelectedNode;
+            tnGroup = tnItem.Parent;
+
+            tnItem.Text = strTitle;
+            tnGroup.Text = strGroup;
+
+            treeContents.Refresh();
+
+        }
+        public String GetNextSeqNum()
+        {
+            String strSeq = "";
+
+            try
+            {
+                String strSQL;
+                OleDbDataReader oleDR;
+
+                //현재 TIP 테이블에서 TF_SEQ 필드 중 최대 값을 얻는다.
+                strSQL = "SELECT MAX(TF_SEQ) AS MAX_SEQ FROM TIP";
+                OleDbCommand oleCmd = new OleDbCommand(strSQL, m_oleConn);
+
+                oleDR = oleCmd.ExecuteReader();
+
+                if (oleDR.Read())
+                    //TF_SEQ 필드는 자동증가 이므로 다음 SEQ 값은 필드에서 최고 큰 값 +1 이된다.
+                    strSeq = (Convert.ToInt32(oleDR["MAX_SEQ"].ToString()) + 1).ToString();
+
+                oleDR.Close();
+            }
+            catch (OleDbException e)
+            {
+                MessageBox.Show(e.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return "";
+            }
+
+            return strSeq;
+
+        }
+
+        public void AddTreeItem(String strSeq, String strGroup, String strTitle, String strNote)
+        {
+            TreeNode tnGroup, tnParent, tnItem;
+
+            //해당 그룹이름이 현재 TreeView에 존재하는지 검사한다.
+            tnGroup = GetGroupNodePos(strGroup);
+
+            //만약 현재 존재하지 않는 그룹노드라면 생성한다.
+            if (tnGroup == null)
+            {
+                //그룹 노드 생성
+                tnParent = new TreeNode(strGroup, (int)TREE_IMAGE.TI_PARENT, (int)TREE_IMAGE.TI_PARENT);
+
+                //그룹 추가
+                treeContents.Nodes[0].Nodes.Add(tnParent);
+
+                //생성된 그룹에 팁 타이틀 추가
+                tnItem = new TreeNode(strTitle, (int)TREE_IMAGE.TI_ITEM, (int)TREE_IMAGE.TI_ITEM);
+                tnParent.Nodes.Add(tnItem);
+                tnItem.Tag = strSeq;
+            }
+            else
+            {
+                //존재하는 그룹 노드이므로 해당 그룹 밑에 팁 제목을 추가한다.
+                tnItem = new TreeNode(strTitle, (int)TREE_IMAGE.TI_ITEM, (int)TREE_IMAGE.TI_ITEM);
+                tnItem.Tag = strSeq;
+
+                //이미 존재하는 그룹이므로 및에 팁 타이틀 추가
+                tnGroup.Nodes.Add(tnItem);
+            }
+
+            //사용자의 팁 내용을 받을 준비를 한다.
+            rtxNote.Text = "";
+
+            //추가된 노드 선택
+            treeContents.SelectedNode = tnItem;
+
         }
     }
 }

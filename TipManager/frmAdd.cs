@@ -13,11 +13,35 @@ namespace TipManager
 {
     public partial class frmAdd : Form
     {
+        frmMain m_frmParent;
+
+        private const int ADD_MODE = 0;
+        private const int UPDATE_MODE = 1;
+
+        public int m_nMode;       //0 : ADD, 1 : UPDATE
+
+        UPDATE_INFO m_uiInfo;
+
+        //데이터 수정을 위해 정보를 저장할 구조체
+        public struct UPDATE_INFO
+        {
+            public String m_strGroup;
+            public String m_strTitle;
+            public String m_strKey;
+        }
         public frmAdd()
         {
             InitializeComponent();
         }
 
+        private void Init()
+        {
+            txtTitle.Clear();
+
+            cbGroup.Text = "";
+            cbGroup.Items.Clear();
+
+        }
         private void frmAdd_Load(object sender, EventArgs e)
         {
             Init();
@@ -30,13 +54,13 @@ namespace TipManager
 
             if (!strGroup.Equals(""))
             {
-                strArrItem = strGroup.Split(";");
+                strArrItem = strGroup.Split(';');
 
                 for (nIndex = 0; nIndex < strArrItem.Length; nIndex++)
                     cbGroup.Items.Add(strArrItem[nIndex]);
             }
 
-            if (m_nMode == UPGRADE_MODE)
+            if (m_nMode == UPDATE_MODE)
             {
                 cbGroup.SelectedText = m_uiInfo.m_strGroup;
                 txtTitle.Text = m_uiInfo.m_strTitle;
@@ -44,29 +68,7 @@ namespace TipManager
             else
                 cbGroup.SelectedIndex = 0;
         }
-        public void GetGroupNameList(ref string strGroup)
-        {
-            TreeNode tnItem = treeContents.Nodes[0];
-            TreeNode tnTemp = null;
-            string strNode;
-
-            tnTemp = tnItem.FirstNode;
-
-            while (tnTemp != null)
-            {
-                System.Windows.Forms.Application.DoEvents();
-
-                strNode = tnTemp.Text;
-
-                strGroup += strNode;
-                strGroup += ";";
-
-                tnTemp = tnTemp.NextNode;
-            }
-
-            if (!strGroup.Equals(""))
-                strGroup = strGroup.Substring(0, strGroup.Length - 1);
-        }
+        
 
         private void btnOK_Click(object sender, EventArgs e)
         {
@@ -89,7 +91,7 @@ namespace TipManager
             }
             if (m_nMode == ADD_MODE)
             {
-                strTitle strSeq;
+                string strSeq;
                 strSeq = m_frmParent.GetNextSeqNum();
 
                 strSQL = "INSERT INTO TIP VALUES(" + strSeq + ",'" + strTitle + ",'" + strGroup + ",'" + "')";
@@ -135,31 +137,33 @@ namespace TipManager
             }
             this.Close();
         }
-        public string GetNextSeqNum()
+        // 부모 설정
+        public void SetParent(frmMain frmParent)
         {
-            string strSeq = "";
+            m_frmParent = frmParent;
+        }
 
-            try
+        public void SetUpdateInfo(String strGroup, String strItem, String strKey)
+        {
+            m_uiInfo.m_strGroup = strGroup;
+            m_uiInfo.m_strTitle = strItem;
+            m_uiInfo.m_strKey = strKey;
+        }
+        // 폼의 사용 용도를 설정한다.(nMode - 0 : Add, 1 : Update)
+        public void SetMode(int nMode)
+        {
+
+            if (nMode == ADD_MODE)
             {
-                string strSQL;
-                OleDbDataReader oleDR;
-
-                strSQL = "SELECT MAX(TF_SEQ) AS MAX_SEQ FROM TIP";
-                OleDbCommand oleCmd = new OleDbCommand(strSQL, m_oleConn);
-
-                oleDR = oleCmd.ExecuteReader();
-
-                if (oleDR.Read())
-                    strSeq = (Convert.ToInt32(oleDR["MAX_SEQ"].ToString()) + 1).ToString();
-
-                oleDR.Close();
+                this.Text = "팁 추가";
+                m_nMode = nMode;
             }
-            catch(OleDbException err)
+            else
             {
-                MessageBox.Show(err.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return "";
+                this.Text = "팁 수정";
+                m_nMode = nMode;
             }
-            return strSeq;
+
         }
     }
 }

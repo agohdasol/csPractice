@@ -1,0 +1,12 @@
+D:\csPractice\TipManager\bin\Debug\TipManager.exe.config
+D:\csPractice\TipManager\bin\Debug\TipManager.exe
+D:\csPractice\TipManager\bin\Debug\TipManager.pdb
+D:\csPractice\TipManager\obj\Debug\TipManager.csprojAssemblyReference.cache
+D:\csPractice\TipManager\obj\Debug\TipManager.frmAdd.resources
+D:\csPractice\TipManager\obj\Debug\TipManager.frmMain.resources
+D:\csPractice\TipManager\obj\Debug\TipManager.frmSearch.resources
+D:\csPractice\TipManager\obj\Debug\TipManager.Properties.Resources.resources
+D:\csPractice\TipManager\obj\Debug\TipManager.csproj.GenerateResource.cache
+D:\csPractice\TipManager\obj\Debug\TipManager.csproj.CoreCompileInputs.cache
+D:\csPractice\TipManager\obj\Debug\TipManager.exe
+D:\csPractice\TipManager\obj\Debug\TipManager.pdb

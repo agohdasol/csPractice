@@ -29,7 +29,7 @@ namespace TipManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbGroup = new System.Windows.Forms.ComboBox();
             this.lblGroup = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.lblTipTitle = new System.Windows.Forms.Label();
@@ -37,13 +37,13 @@ namespace TipManager
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbGroup
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(136, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(387, 23);
-            this.comboBox1.TabIndex = 0;
+            this.cbGroup.FormattingEnabled = true;
+            this.cbGroup.Location = new System.Drawing.Point(136, 25);
+            this.cbGroup.Name = "cbGroup";
+            this.cbGroup.Size = new System.Drawing.Size(387, 23);
+            this.cbGroup.TabIndex = 0;
             // 
             // lblGroup
             // 
@@ -99,7 +99,7 @@ namespace TipManager
             this.Controls.Add(this.lblTipTitle);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.lblGroup);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmAdd";
             this.ShowInTaskbar = false;
@@ -112,7 +112,7 @@ namespace TipManager
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbGroup;
         private System.Windows.Forms.Label lblGroup;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lblTipTitle;
