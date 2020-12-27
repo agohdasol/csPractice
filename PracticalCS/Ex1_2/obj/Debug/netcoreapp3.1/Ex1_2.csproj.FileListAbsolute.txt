@@ -1,0 +1,13 @@
+D:\csPractice\PracticalCS\Ex1_2\bin\Debug\netcoreapp3.1\Ex1_2.exe
+D:\csPractice\PracticalCS\Ex1_2\bin\Debug\netcoreapp3.1\Ex1_2.deps.json
+D:\csPractice\PracticalCS\Ex1_2\bin\Debug\netcoreapp3.1\Ex1_2.runtimeconfig.json
+D:\csPractice\PracticalCS\Ex1_2\bin\Debug\netcoreapp3.1\Ex1_2.runtimeconfig.dev.json
+D:\csPractice\PracticalCS\Ex1_2\bin\Debug\netcoreapp3.1\Ex1_2.dll
+D:\csPractice\PracticalCS\Ex1_2\bin\Debug\netcoreapp3.1\Ex1_2.pdb
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.csprojAssemblyReference.cache
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.AssemblyInfoInputs.cache
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.AssemblyInfo.cs
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.csproj.CoreCompileInputs.cache
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.dll
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.pdb
+D:\csPractice\PracticalCS\Ex1_2\obj\Debug\netcoreapp3.1\Ex1_2.genruntimeconfig.cache
