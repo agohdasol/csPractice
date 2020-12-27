@@ -10,3 +10,4 @@ D:\csPractice\PracticalCS\Ch2\obj\Debug\netcoreapp3.1\Ch2.csproj.CoreCompileInpu
 D:\csPractice\PracticalCS\Ch2\obj\Debug\netcoreapp3.1\Ch2.dll
 D:\csPractice\PracticalCS\Ch2\obj\Debug\netcoreapp3.1\Ch2.pdb
 D:\csPractice\PracticalCS\Ch2\obj\Debug\netcoreapp3.1\Ch2.genruntimeconfig.cache
+D:\csPractice\PracticalCS\Ch2\obj\Debug\netcoreapp3.1\Ch2.csprojAssemblyReference.cache

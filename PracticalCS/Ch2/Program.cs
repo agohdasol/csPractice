@@ -8,12 +8,37 @@ namespace Ch2
         {
             return feet * 0.3048;
         }
+        static double MeterToFeet(int meter)
+        {
+            return meter / 0.3048;
+        }
+        static void FeetToMeterList(int start, int stop)
+        {
+            for (int feet = start; feet <= stop; feet++)
+            {
+                double meter = FeetToMeter(feet);
+                Console.WriteLine("{0} ft = {1:0.0000} m", feet, meter);
+            }
+        }
+        static void MeterToFeetList(int start, int stop)
+        {
+            for (int meter = start; meter <= stop; meter++)
+            {
+                double feet = MeterToFeet(meter);
+                Console.WriteLine("{0} m = {1:0.0000} ft", meter, feet);
+            }
+        }
         static void Main(string[] args)
         {
-            for (int feet = 1; feet < 11; feet++)
+            if(args.Length>=1 && args[0] == "-tom")
             {
-                Console.WriteLine("{0} ft = {1:0.0000} m", feet, FeetToMeter(feet));
+                FeetToMeterList(1, 10);
             }
+            else
+            {
+                MeterToFeetList(1, 10);
+            }
+            
                 
         }
     }
