@@ -30,7 +30,7 @@ namespace Ex1_1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Product pulbbang = new Product(98, "풀빵", 210);
             Console.WriteLine(pulbbang.GetPriceIncludingTax());

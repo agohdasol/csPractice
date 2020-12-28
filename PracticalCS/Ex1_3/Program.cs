@@ -22,15 +22,15 @@ namespace Ex1_3
     }
     class Program
     {
-        public static void TestMethodObject(object obj)
+        public static void TestMethodObject(object _)
         {
             Console.WriteLine("오브젝트 인풋");
         }
-        public static void TestMethodPerson(Person obj)
+        public static void TestMethodPerson(Person _)
         {
             Console.WriteLine("Person 인풋");
         }
-        static void Main(string[] args)
+        static void Main()
         {
             Student student = new Student()
             {

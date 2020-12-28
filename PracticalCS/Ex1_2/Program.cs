@@ -34,7 +34,7 @@ namespace Ex1_2
             myStruct.X *= 2;
             myStruct.Y *= 2;
         }
-        static void Main(string[] args)
+        static void Main()
         {
             MyClass myClass = new MyClass(10, 15);
             MyStruct myStruct = new MyStruct(20, 25);

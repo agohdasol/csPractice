@@ -1,30 +1,34 @@
 ﻿using System;
 
-namespace Ch2
+namespace Ch2_1
 {
+    public static class FeetConverter
+    {
+        private const double ratio = 0.3048;
+        public static double ToMeter(int feet)
+        {
+            return feet * ratio;
+        }
+        public static double FromMeter(int meter)
+        {
+            return meter / ratio;
+        }
+    }
     class Program
     {
-        static double FeetToMeter(int feet)
-        {
-            return feet * 0.3048;
-        }
-        static double MeterToFeet(int meter)
-        {
-            return meter / 0.3048;
-        }
-        static void FeetToMeterList(int start, int stop)
+        static void PrintFeetToMeterList(int start, int stop)
         {
             for (int feet = start; feet <= stop; feet++)
             {
-                double meter = FeetToMeter(feet);
+                double meter = FeetConverter.ToMeter(feet);
                 Console.WriteLine("{0} ft = {1:0.0000} m", feet, meter);
             }
         }
-        static void MeterToFeetList(int start, int stop)
+        static void PrintMeterToFeetList(int start, int stop)
         {
             for (int meter = start; meter <= stop; meter++)
             {
-                double feet = MeterToFeet(meter);
+                double feet = FeetConverter.FromMeter(meter);
                 Console.WriteLine("{0} m = {1:0.0000} ft", meter, feet);
             }
         }
@@ -32,11 +36,11 @@ namespace Ch2
         {
             if(args.Length>=1 && args[0] == "-tom")
             {
-                FeetToMeterList(1, 10);
+                PrintFeetToMeterList(1, 10);
             }
             else
             {
-                MeterToFeetList(1, 10);
+                PrintMeterToFeetList(1, 10);
             }
             
                 
