@@ -13,10 +13,10 @@ namespace Ch2_2
     public class SalesCounter
     {
 #pragma warning disable IDE0044 // 읽기 전용 한정자 추가
-        private List<Sale> _sales;
+        private IEnumerable<Sale> _sales;
 #pragma warning restore IDE0044 // 읽기 전용 한정자 추가
 
-        public SalesCounter(List<Sale> sales)
+        public SalesCounter(IEnumerable<Sale> sales)
         {
             _sales = sales;
         }
@@ -24,10 +24,10 @@ namespace Ch2_2
         {
             _sales = ReadSales(filePath);
         }
-        public Dictionary<string, int> GetPerStoreSales()
+        public IDictionary<string, int> GetPerStoreSales()
         {
-            Dictionary<string, int> dict = new Dictionary<string, int>();
-            foreach (Sale sale in _sales)
+            var dict = new Dictionary<string, int>();
+            foreach (var sale in _sales)
             {
                 if (dict.ContainsKey(sale.ShopName))
                     dict[sale.ShopName] += sale.Amount;
@@ -36,7 +36,7 @@ namespace Ch2_2
             }
             return dict;
         }
-        static List<Sale> ReadSales(string filePath)
+        private static List<Sale> ReadSales(string filePath)
         {
             List<Sale> sales = new List<Sale>();
             string[] lines = File.ReadAllLines(filePath);
@@ -58,9 +58,9 @@ namespace Ch2_2
     {
         static void Main()
         {
-            SalesCounter sales = new SalesCounter("sales.csv");
-            Dictionary<string, int> amountPerStore = sales.GetPerStoreSales();
-            foreach(KeyValuePair<string, int> obj in amountPerStore)
+            var sales = new SalesCounter("sales.csv");
+            var amountPerStore = sales.GetPerStoreSales();
+            foreach(var obj in amountPerStore)
             {
                 Console.WriteLine("{0} {1}", obj.Key, obj.Value);
             }
