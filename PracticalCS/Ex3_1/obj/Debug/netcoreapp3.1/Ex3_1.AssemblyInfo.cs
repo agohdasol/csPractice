@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Ch3")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Ex3_1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Ch3")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Ch3")]
+[assembly: System.Reflection.AssemblyProductAttribute("Ex3_1")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Ex3_1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.
