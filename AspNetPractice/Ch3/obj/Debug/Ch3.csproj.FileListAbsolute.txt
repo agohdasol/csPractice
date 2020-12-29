@@ -56,3 +56,4 @@ D:\csPractice\AspNetPractice\Ch3\obj\Debug\Ch3.csproj.CoreCompileInputs.cache
 D:\csPractice\AspNetPractice\Ch3\obj\Debug\Ch3.csproj.CopyComplete
 D:\csPractice\AspNetPractice\Ch3\obj\Debug\Ch3.dll
 D:\csPractice\AspNetPractice\Ch3\obj\Debug\Ch3.pdb
+D:\csPractice\AspNetPractice\Ch3\obj\Debug\Ch3.csprojAssemblyReference.cache
