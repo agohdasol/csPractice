@@ -1,0 +1,12 @@
+D:\csPractice\PracticalCS\Ch4\bin\Debug\netcoreapp3.1\Ch4.exe
+D:\csPractice\PracticalCS\Ch4\bin\Debug\netcoreapp3.1\Ch4.deps.json
+D:\csPractice\PracticalCS\Ch4\bin\Debug\netcoreapp3.1\Ch4.runtimeconfig.json
+D:\csPractice\PracticalCS\Ch4\bin\Debug\netcoreapp3.1\Ch4.runtimeconfig.dev.json
+D:\csPractice\PracticalCS\Ch4\bin\Debug\netcoreapp3.1\Ch4.dll
+D:\csPractice\PracticalCS\Ch4\bin\Debug\netcoreapp3.1\Ch4.pdb
+D:\csPractice\PracticalCS\Ch4\obj\Debug\netcoreapp3.1\Ch4.AssemblyInfoInputs.cache
+D:\csPractice\PracticalCS\Ch4\obj\Debug\netcoreapp3.1\Ch4.AssemblyInfo.cs
+D:\csPractice\PracticalCS\Ch4\obj\Debug\netcoreapp3.1\Ch4.csproj.CoreCompileInputs.cache
+D:\csPractice\PracticalCS\Ch4\obj\Debug\netcoreapp3.1\Ch4.dll
+D:\csPractice\PracticalCS\Ch4\obj\Debug\netcoreapp3.1\Ch4.pdb
+D:\csPractice\PracticalCS\Ch4\obj\Debug\netcoreapp3.1\Ch4.genruntimeconfig.cache

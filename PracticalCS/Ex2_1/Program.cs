@@ -32,7 +32,7 @@ namespace Ex2_1
     }
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Song song1 = new Song("노래일번", "임의가수1", 84);
             Song song2 = new Song("노래이번", "임의가수2", 143);
