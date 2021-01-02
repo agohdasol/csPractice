@@ -67,10 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FrmHtml.aspx" />
     <Content Include="FrmHyperLink.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmHtml.aspx.cs">
+      <DependentUpon>FrmHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHtml.aspx.designer.cs">
+      <DependentUpon>FrmHtml.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmHyperLink.aspx.cs">
       <DependentUpon>FrmHyperLink.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

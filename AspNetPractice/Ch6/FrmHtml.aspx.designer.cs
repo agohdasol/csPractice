@@ -11,7 +11,7 @@ namespace Ch6
 {
 
 
-    public partial class FrmHyperLink
+    public partial class FrmHtml
     {
 
         /// <summary>
@@ -33,57 +33,48 @@ namespace Ch6
         protected global::System.Web.UI.WebControls.HyperLink LnkDotNetKorea;
 
         /// <summary>
-        /// ImgChange 컨트롤입니다.
+        /// ImgHome 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImgChange;
+        protected global::System.Web.UI.WebControls.Image ImgHome;
 
         /// <summary>
-        /// BtnChange 컨트롤입니다.
+        /// MapHome 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnChange;
+        protected global::System.Web.UI.WebControls.ImageMap MapHome;
 
         /// <summary>
-        /// MapImage 컨트롤입니다.
+        /// TblTable 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageMap MapImage;
+        protected global::System.Web.UI.WebControls.Table TblTable;
 
         /// <summary>
-        /// Table1 컨트롤입니다.
+        /// BulFavorite 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.BulletedList BulFavorite;
 
         /// <summary>
-        /// CtlMyTable 컨트롤입니다.
+        /// LitTest 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table CtlMyTable;
-
-        /// <summary>
-        /// LstFavorite 컨트롤입니다.
-        /// </summary>
-        /// <remarks>
-        /// 자동 생성 필드입니다.
-        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.BulletedList LstFavorite;
+        protected global::System.Web.UI.WebControls.Literal LitTest;
     }
 }
