@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj": {}
+    "D:\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj": {
+    "D:\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj",
+        "projectUniqueName": "D:\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj",
         "projectName": "Ch7",
-        "projectPath": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch7\\obj\\",
+        "projectPath": "D:\\csPractice\\PracticalCS\\Ch7\\Ch7.csproj",
+        "packagesPath": "C:\\Users\\agohd\\.nuget\\packages\\",
+        "outputPath": "D:\\csPractice\\PracticalCS\\Ch7\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\agohd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

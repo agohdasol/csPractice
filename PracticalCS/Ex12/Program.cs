@@ -103,6 +103,7 @@ namespace Ex12
         [XmlArray("masterpieces")]
         [XmlArrayItem("title", typeof(string))]
         public string[] Masterpieces { get; set; }
+        //12.2 - 1
         public static void NovelistDesirialize()
         {
             using var reader = XmlReader.Create("novelist.xml");
@@ -110,12 +111,32 @@ namespace Ex12
             var novelist = serializer.Deserialize(reader) as Novelist;
             Console.WriteLine(novelist.Name);
         }
+        //12.2 - 2
+        public static void NovelistJsonSerialize()
+        {
+            Novelist novelist = new Novelist {
+                Birth=new DateTime(1917,12,16),
+                Masterpieces=new string[] { 
+                    "2001 스페이스 오디세이",
+                    "유년기의 끝"
+                },
+                Name="아서 C. 클라크",
+            };
+            using var stream = new FileStream("novelist.json", FileMode.Create, FileAccess.Write);
+            var serializer = new DataContractJsonSerializer(novelist.GetType(),
+                new DataContractJsonSerializerSettings
+                {
+                    DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ssZ")
+                }
+            );
+            serializer.WriteObject(stream, novelist);
+        }
     }
     class Program
     {
         static void Main()
         {
-            Novelist.NovelistDesirialize();
+            Novelist.NovelistJsonSerialize();
         }
     }
 }
