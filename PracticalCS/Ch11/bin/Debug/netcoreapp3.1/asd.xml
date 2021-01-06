@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <option>
+        <enabled>true</enabled>
+        <min>0</min>
+        <max>100</max>
+        <step>10</step>
+    </option>
+</settings>
