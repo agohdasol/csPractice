@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfNovel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Ch12">
+  <Novel>
+    <Author>제임스 P. 호건</Author>
+    <Published>1977</Published>
+    <Title>별의 계승자</Title>
+  </Novel>
+  <Novel>
+    <Author>허버트 조지 웰즈</Author>
+    <Published>1895</Published>
+    <Title>타임머신</Title>
+  </Novel>
+</ArrayOfNovel>

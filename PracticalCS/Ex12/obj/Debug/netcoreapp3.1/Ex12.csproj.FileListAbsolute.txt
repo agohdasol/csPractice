@@ -1,0 +1,12 @@
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\bin\Debug\netcoreapp3.1\Ex12.exe
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\bin\Debug\netcoreapp3.1\Ex12.deps.json
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\bin\Debug\netcoreapp3.1\Ex12.runtimeconfig.json
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\bin\Debug\netcoreapp3.1\Ex12.runtimeconfig.dev.json
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\bin\Debug\netcoreapp3.1\Ex12.dll
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\bin\Debug\netcoreapp3.1\Ex12.pdb
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\obj\Debug\netcoreapp3.1\Ex12.AssemblyInfoInputs.cache
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\obj\Debug\netcoreapp3.1\Ex12.AssemblyInfo.cs
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\obj\Debug\netcoreapp3.1\Ex12.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\obj\Debug\netcoreapp3.1\Ex12.dll
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\obj\Debug\netcoreapp3.1\Ex12.pdb
+C:\Users\user\Documents\csPractice\PracticalCS\Ex12\obj\Debug\netcoreapp3.1\Ex12.genruntimeconfig.cache
