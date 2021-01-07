@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj": {}
+    "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj": {}
   },
   "projects": {
-    "D:\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj": {
+    "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj",
         "projectName": "Ex4",
-        "projectPath": "D:\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj",
-        "packagesPath": "C:\\Users\\agohd\\.nuget\\packages\\",
-        "outputPath": "D:\\csPractice\\PracticalCS\\Ex4\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ex4\\Ex4.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ex4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\agohd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
