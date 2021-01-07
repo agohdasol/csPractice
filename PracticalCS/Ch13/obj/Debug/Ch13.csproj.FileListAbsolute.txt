@@ -10,3 +10,15 @@ C:\Users\user\Documents\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.csproj.CoreCo
 C:\Users\user\Documents\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.csproj.CopyComplete
 C:\Users\user\Documents\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.exe
 C:\Users\user\Documents\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.pdb
+D:\csPractice\PracticalCS\Ch13\bin\Debug\Ch13.exe.config
+D:\csPractice\PracticalCS\Ch13\bin\Debug\Ch13.exe
+D:\csPractice\PracticalCS\Ch13\bin\Debug\Ch13.pdb
+D:\csPractice\PracticalCS\Ch13\bin\Debug\EntityFramework.dll
+D:\csPractice\PracticalCS\Ch13\bin\Debug\EntityFramework.SqlServer.dll
+D:\csPractice\PracticalCS\Ch13\bin\Debug\EntityFramework.xml
+D:\csPractice\PracticalCS\Ch13\bin\Debug\EntityFramework.SqlServer.xml
+D:\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.csprojAssemblyReference.cache
+D:\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.csproj.CoreCompileInputs.cache
+D:\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.csproj.CopyComplete
+D:\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.exe
+D:\csPractice\PracticalCS\Ch13\obj\Debug\Ch13.pdb

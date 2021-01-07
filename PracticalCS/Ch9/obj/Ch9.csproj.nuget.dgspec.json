@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj": {}
+    "D:\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj": {
+    "D:\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj",
+        "projectUniqueName": "D:\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj",
         "projectName": "Ch9",
-        "projectPath": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\csPractice\\PracticalCS\\Ch9\\obj\\",
+        "projectPath": "D:\\csPractice\\PracticalCS\\Ch9\\Ch9.csproj",
+        "packagesPath": "C:\\Users\\agohd\\.nuget\\packages\\",
+        "outputPath": "D:\\csPractice\\PracticalCS\\Ch9\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\agohd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
