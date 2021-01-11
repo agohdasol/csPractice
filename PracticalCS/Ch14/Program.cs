@@ -129,7 +129,8 @@ namespace Ch14
     }
     static void Main()
     {
-      GetTime();
+      //GetTime();
+      GetFromWiki();
     }
   }
 }
