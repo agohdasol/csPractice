@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevADONET", "DevADONET\DevA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch14", "Ch14\Ch14.csproj", "{763B1E98-7FC8-439F-86E0-B7DF4E2AD1C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch15", "Ch15\Ch15.csproj", "{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{763B1E98-7FC8-439F-86E0-B7DF4E2AD1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{763B1E98-7FC8-439F-86E0-B7DF4E2AD1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{763B1E98-7FC8-439F-86E0-B7DF4E2AD1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
