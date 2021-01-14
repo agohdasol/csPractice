@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Problems>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from NVarChar(176) to NVarChar(150).</ProblemDescription>
+    <SourceFile>D:\csPractice\AspNetPractice\DotNetNote.Database\dbo\Stored Procedures\SearchMemo.sql</SourceFile>
+    <Line>11</Line>
+    <Column>6</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+</Problems>

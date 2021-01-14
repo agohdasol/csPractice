@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch14", "Ch14\Ch14.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch15", "Ch15\Ch15.csproj", "{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DotNetNote.Database", "DotNetNote.Database\DotNetNote.Database.sqlproj", "{028214FC-BD3C-47B1-A131-CD277119BB05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,12 @@ Global
 		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6969F833-F7C3-47B7-A4F0-AD3866B4F5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
