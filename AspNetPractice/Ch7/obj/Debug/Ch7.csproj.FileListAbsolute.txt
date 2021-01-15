@@ -57,3 +57,4 @@ D:\csPractice\AspNetPractice\Ch7\obj\Debug\Ch7.csproj.CoreCompileInputs.cache
 D:\csPractice\AspNetPractice\Ch7\obj\Debug\Ch7.csproj.CopyComplete
 D:\csPractice\AspNetPractice\Ch7\obj\Debug\Ch7.dll
 D:\csPractice\AspNetPractice\Ch7\obj\Debug\Ch7.pdb
+D:\csPractice\AspNetPractice\Ch7\bin\AspNet.ScriptManager.jQuery.dll

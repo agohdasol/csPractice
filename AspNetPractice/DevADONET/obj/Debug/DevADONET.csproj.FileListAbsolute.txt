@@ -57,3 +57,5 @@ D:\csPractice\AspNetPractice\DevADONET\obj\Debug\DevADONET.csproj.CoreCompileInp
 D:\csPractice\AspNetPractice\DevADONET\obj\Debug\DevADONET.csproj.CopyComplete
 D:\csPractice\AspNetPractice\DevADONET\obj\Debug\DevADONET.dll
 D:\csPractice\AspNetPractice\DevADONET\obj\Debug\DevADONET.pdb
+D:\csPractice\AspNetPractice\DevADONET\bin\Dapper.dll
+D:\csPractice\AspNetPractice\DevADONET\bin\Dapper.xml
