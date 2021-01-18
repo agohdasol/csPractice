@@ -1,0 +1,9 @@
+D:\csPractice\AspNetPractice\Ch18\bin\Debug\netstandard2.0\Ch18.deps.json
+D:\csPractice\AspNetPractice\Ch18\bin\Debug\netstandard2.0\Ch18.dll
+D:\csPractice\AspNetPractice\Ch18\bin\Debug\netstandard2.0\Ch18.pdb
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Ch18.csprojAssemblyReference.cache
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Ch18.AssemblyInfoInputs.cache
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Ch18.AssemblyInfo.cs
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Ch18.csproj.CoreCompileInputs.cache
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Ch18.dll
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Ch18.pdb
