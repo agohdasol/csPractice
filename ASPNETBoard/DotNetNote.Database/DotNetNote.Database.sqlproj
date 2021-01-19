@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>DotNetNote</Name>
+    <Name>DotNetNote.Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{b3b874f9-65fc-40b1-92e3-8f35ea2e5230}</ProjectGuid>
+    <ProjectGuid>{c84b537f-9b6e-45ef-821c-08bce5460cef}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>DotNetNote</RootNamespace>
-    <AssemblyName>DotNetNote</AssemblyName>
+    <RootNamespace>DotNetNote.Database</RootNamespace>
+    <AssemblyName>DotNetNote.Database</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
