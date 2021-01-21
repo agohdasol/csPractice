@@ -101,3 +101,5 @@ D:\csPractice\ASPNETBoard\MemoEngine\obj\Debug\MemoEngine.csproj.CoreCompileInpu
 D:\csPractice\ASPNETBoard\MemoEngine\obj\Debug\MemoEngine.csproj.CopyComplete
 D:\csPractice\ASPNETBoard\MemoEngine\obj\Debug\MemoEngine.dll
 D:\csPractice\ASPNETBoard\MemoEngine\obj\Debug\MemoEngine.pdb
+D:\csPractice\ASPNETBoard\MemoEngine\bin\Dul.dll
+D:\csPractice\ASPNETBoard\MemoEngine\bin\Dul.pdb

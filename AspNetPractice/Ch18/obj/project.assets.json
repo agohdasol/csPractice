@@ -185,9 +185,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\csPractice\\AspNetPractice\\Ch18\\Ch18.csproj",
-      "projectName": "Ch18",
-      "projectPath": "D:\\csPractice\\AspNetPractice\\Ch18\\Ch18.csproj",
+      "projectUniqueName": "D:\\csPractice\\AspNetPractice\\Ch18\\Dul.csproj",
+      "projectName": "Dul",
+      "projectPath": "D:\\csPractice\\AspNetPractice\\Ch18\\Dul.csproj",
       "packagesPath": "C:\\Users\\agohd\\.nuget\\packages\\",
       "outputPath": "D:\\csPractice\\AspNetPractice\\Ch18\\obj\\",
       "projectStyle": "PackageReference",

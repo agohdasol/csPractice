@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GfNZFKdN/ZjaJiE59QlK5bmqzqTC7dh6xLM0G7H65kye1Qvv7tWypuB1G4mWDkz+c5rjJpO9P0WDczSrTsLa2A==",
+  "dgSpecHash": "xWWEWtTbGdFAtBoJUe/JyMzbxXMh/tvziVOAegMNkVhE3J/8MxdLpOZoTr9LmeOSI9ygHNamb9UDadrSqH0cAA==",
   "success": true,
-  "projectFilePath": "D:\\csPractice\\AspNetPractice\\Ch18\\Ch18.csproj",
+  "projectFilePath": "D:\\csPractice\\AspNetPractice\\Ch18\\Dul.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\agohd\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\agohd\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

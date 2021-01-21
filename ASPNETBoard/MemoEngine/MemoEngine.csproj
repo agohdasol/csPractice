@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.78\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -227,6 +230,9 @@
     <Compile Include="DotNetNote\BoardList.aspx.designer.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DotNetNote\Models\BoardWriteFormType.cs" />
+    <Compile Include="DotNetNote\Models\ContentEncodingType.cs" />
+    <Compile Include="DotNetNote\Models\Note.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -256,6 +262,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="DotNetNote\Controls\" />
+    <Folder Include="DotNetNote\Documents\" />
+    <Folder Include="DotNetNote\images\" />
+    <Folder Include="DotNetNote\MyFiles\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -268,6 +278,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AspNetPractice\Ch18\Dul.csproj">
+      <Project>{98e468d5-b54f-4e54-9f5f-9bad779b1ffa}</Project>
+      <Name>Dul</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
