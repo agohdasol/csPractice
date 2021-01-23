@@ -150,7 +150,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DotNetNote\BoardDown.aspx" />
     <Content Include="DotNetNote\BoardList.aspx" />
+    <Content Include="DotNetNote\Default.aspx" />
+    <Content Include="DotNetNote\ImageDown.aspx" />
+    <Content Include="DotNetNote\ImageText.aspx" />
+    <Content Include="DotNetNote\ThumbNail.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -223,6 +228,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DotNetNote\BoardDown.aspx.cs">
+      <DependentUpon>BoardDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardDown.aspx.designer.cs">
+      <DependentUpon>BoardDown.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DotNetNote\BoardList.aspx.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,12 +242,40 @@
     <Compile Include="DotNetNote\BoardList.aspx.designer.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DotNetNote\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\ImageDown.aspx.cs">
+      <DependentUpon>ImageDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\ImageDown.aspx.designer.cs">
+      <DependentUpon>ImageDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\ImageText.aspx.cs">
+      <DependentUpon>ImageText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\ImageText.aspx.designer.cs">
+      <DependentUpon>ImageText.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DotNetNote\Models\BoardWriteFormType.cs" />
     <Compile Include="DotNetNote\Models\ContentEncodingType.cs" />
     <Compile Include="DotNetNote\Models\Note.cs" />
     <Compile Include="DotNetNote\Models\NoteComment.cs" />
     <Compile Include="DotNetNote\Models\NoteCommentRepository.cs" />
     <Compile Include="DotNetNote\Models\NoteRepository.cs" />
+    <Compile Include="DotNetNote\ThumbNail.aspx.cs">
+      <DependentUpon>ThumbNail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\ThumbNail.aspx.designer.cs">
+      <DependentUpon>ThumbNail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
