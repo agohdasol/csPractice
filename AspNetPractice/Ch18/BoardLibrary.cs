@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
-namespace Ch18
+namespace Dul
 {
-  class BoardLibrary
+  public class BoardLibrary
   {
     public static string FuncStep(object objStep)
     {

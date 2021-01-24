@@ -6,3 +6,4 @@ D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Dul.AssemblyInfo.cs
 D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Dul.csproj.CoreCompileInputs.cache
 D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Dul.dll
 D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Dul.pdb
+D:\csPractice\AspNetPractice\Ch18\obj\Debug\netstandard2.0\Dul.csprojAssemblyReference.cache

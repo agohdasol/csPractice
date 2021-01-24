@@ -152,6 +152,8 @@
     <Content Include="Default.aspx" />
     <Content Include="DotNetNote\BoardDown.aspx" />
     <Content Include="DotNetNote\BoardList.aspx" />
+    <Content Include="DotNetNote\BoardWrite.aspx" />
+    <Content Include="DotNetNote\Controls\BoardEditorFormControl.ascx" />
     <Content Include="DotNetNote\Default.aspx" />
     <Content Include="DotNetNote\ImageDown.aspx" />
     <Content Include="DotNetNote\ImageText.aspx" />
@@ -242,6 +244,20 @@
     <Compile Include="DotNetNote\BoardList.aspx.designer.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DotNetNote\BoardWrite.aspx.cs">
+      <DependentUpon>BoardWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\BoardWrite.aspx.designer.cs">
+      <DependentUpon>BoardWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DotNetNote\Controls\BoardEditorFormControl.ascx.cs">
+      <DependentUpon>BoardEditorFormControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DotNetNote\Controls\BoardEditorFormControl.ascx.designer.cs">
+      <DependentUpon>BoardEditorFormControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="DotNetNote\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -305,7 +321,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="DotNetNote\Controls\" />
     <Folder Include="DotNetNote\Documents\" />
     <Folder Include="DotNetNote\images\" />
     <Folder Include="DotNetNote\MyFiles\" />

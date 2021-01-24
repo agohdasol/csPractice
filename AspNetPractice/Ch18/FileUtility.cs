@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
-namespace Ch18
+namespace Dul
 {
-  class FileUtility
+  public class FileUtility
   {
     public static string GetFileNameWithNumbering(string dir, string name)
     {

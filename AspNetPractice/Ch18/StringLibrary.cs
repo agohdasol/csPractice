@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ch18
+namespace Dul
 {
   public static class StringLibrary
   {

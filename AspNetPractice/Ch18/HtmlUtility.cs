@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ch18
+namespace Dul
 {
-  class HtmlUtility
+  public class HtmlUtility
   {
     public static string Encode(string strContent)
     {
