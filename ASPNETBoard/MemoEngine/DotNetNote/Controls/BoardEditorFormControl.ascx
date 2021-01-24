@@ -5,7 +5,7 @@
   }
 </style>
 <h2 style="text-align:center;">게시판</h2>
-<asp:Label ID="LblTitleDecription" runat="server" ForeColor="#ff0000"></asp:Label>
+<asp:Label ID="LblTitleDescription" runat="server" ForeColor="#ff0000"></asp:Label>
 <hr />
 <table style="width:600px; border-collapse:collapse; padding:5px; margin-left:auto;margin-right:auto;">
   <% if (!String.IsNullOrEmpty(Request.QueryString["Id"]) && FormType == DotNetNote.Models.BoardWriteFormType.Modify) { %>
@@ -14,7 +14,7 @@
       <span style="color:#ff0000;">*</span>번 호
     </td>
     <td style="width:500px;">
-      <% =Request.QueryString["Id"]; %>
+      <% =Request.QueryString["Id"] %>
     </td>
   </tr>
   <% } %>

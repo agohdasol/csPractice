@@ -1,40 +1,52 @@
-﻿using System;
-using System.IO;
-using DotNetNote.Models;
+﻿using DotNetNote.Models;
 using Dul;
+using System;
+using System.IO;
 
 namespace MemoEngine.DotNetNote.Controls
 {
   public partial class BoardEditorFormControl : System.Web.UI.UserControl
   {
+    /// <summary>
+    ///  공통 속성
+    /// </summary>
     public BoardWriteFormType FormType { get; set; }
-    private string _Id;
-    private string _BaseDir = String.Empty;
-    private string _FileName = String.Empty;
-    private int _FileSize = 0;
+
+    private string _Id;//앞(리스트)에서 넘겨져 온 번호 저장
+
+    private string _BaseDir = String.Empty;//파일 업로드 폴더
+    private string _FileName = String.Empty;//파일명 저장 필드
+    private int _FileSize = 0;//파일크기 저장 필드
+
     protected void Page_Load(object sender, EventArgs e)
     {
       _Id = Request.QueryString["Id"];
-      if (!Page.IsPostBack)
+
+      if (!Page.IsPostBack) // 처음 로드할 때에만 바인딩
       {
         switch (FormType)
         {
           case BoardWriteFormType.Write:
-            LblTitleDecription.Text = "글쓰기 - 다음 필드들을 채워주세요.";
+            LblTitleDescription.Text =
+                "글 쓰기 - 다음 필드들을 채워주세요.";
             break;
           case BoardWriteFormType.Modify:
-            LblTitleDecription.Text = "글 수정 - 아래 항목을 수정하세요.";
+            LblTitleDescription.Text =
+                "글 수정 - 아래 항목을 수정하세요.";
             DisplayDataForModify();
             break;
           case BoardWriteFormType.Reply:
-            LblTitleDecription.Text = "글 답변 - 다음 필드들을 채워주세요.";
+            LblTitleDescription.Text =
+                "글 답변 - 다음 필드들을 채워주세요.";
             DisplayDataForReply();
             break;
         }
       }
     }
+
     private void DisplayDataForModify()
     {
+      // 넘겨온 Id 값에 해당하는 레코드 하나 읽어서 Note 클래스에 바인딩
       var note = (new NoteRepository()).GetNoteById(Convert.ToInt32(_Id));
 
       TxtName.Text = note.Name;
@@ -43,19 +55,22 @@ namespace MemoEngine.DotNetNote.Controls
       TxtTitle.Text = note.Title;
       TxtContent.Text = note.Content;
 
+      // 인코딩 방식에 따른 데이터 출력
       string strEncoding = note.Encoding;
-      if (strEncoding == "Text")
+      if (strEncoding == "Text") // Text : 소스 그대로 표현
       {
         RdoEncoding.SelectedIndex = 0;
       }
-      else if (strEncoding == "Mixed")
+      else if (strEncoding == "Mixed") // Mixed : 엔터처리만
       {
         RdoEncoding.SelectedIndex = 2;
       }
-      else
+      else // HTML : HTML 형식으로 출력
       {
         RdoEncoding.SelectedIndex = 1;
       }
+
+      // 첨부된 파일명 및 파일크기 기록
       if (note.FileName.Length > 1)
       {
         ViewState["FileName"] = note.FileName;
@@ -63,7 +78,8 @@ namespace MemoEngine.DotNetNote.Controls
 
         PnlFile.Height = 50;
         LblFileNamePrevious.Visible = true;
-        LblFileNamePrevious.Text = $"기존에 업로드된 파일명 : {note.FileName}";
+        LblFileNamePrevious.Text =
+            $"기존에 업로드된 파일명: {note.FileName}";
       }
       else
       {
@@ -71,24 +87,33 @@ namespace MemoEngine.DotNetNote.Controls
         ViewState["FileSize"] = 0;
       }
     }
+
     private void DisplayDataForReply()
     {
+      // 넘겨온 Id 값에 해당하는 레코드 하나 읽어서 Note 클래스에 바인딩
       var note = (new NoteRepository()).GetNoteById(Convert.ToInt32(_Id));
 
       TxtTitle.Text = $"Re : {note.Title}";
-      TxtContent.Text = $"\n\nOn {note.PostDate}, '{note.Name}' wrote:\n----------\n>"
-        + $"{note.Content.Replace("\n", "\n>")}\n----------";
+      TxtContent.Text =
+          $"\n\nOn {note.PostDate}, '{note.Name}' wrote:\n----------\n>"
+          + $"{note.Content.Replace("\n", "\n>")}\n---------";
     }
+
     protected void BtnWrite_Click(object sender, EventArgs e)
     {
+      // 보안 문자를 정확히 입력했거나, 로그인이 된 상태라면...
       if (IsImageTextCorrect())
       {
-        UploadProcess();
+        UploadProcess(); // 파일 업로드 관련 코드 분리
+
         Note note = new Note();
+
         note.Id = Convert.ToInt32(_Id);
+
         note.Name = TxtName.Text;
         note.Email = HtmlUtility.Encode(TxtEmail.Text);
         note.Homepage = TxtHomepage.Text;
+        note.Title = HtmlUtility.Encode(TxtTitle.Text);
         note.Content = TxtContent.Text;
         note.FileName = _FileName;
         note.FileSize = _FileSize;
@@ -109,13 +134,14 @@ namespace MemoEngine.DotNetNote.Controls
             note.FileName = ViewState["FileName"].ToString();
             note.FileSize = Convert.ToInt32(ViewState["FileSize"]);
             int r = repository.UpdateNote(note);
-            if (r > 0)
+            if (r > 0) // 업데이트 완료
             {
               Response.Redirect($"BoardView.aspx?Id={_Id}");
             }
             else
             {
-              LblError.Text = "업데이트가 되지 않았습니다. 암호를 확인하세요.";
+              LblError.Text =
+                  "업데이트가 되지 않았습니다. 암호를 확인하세요.";
             }
             break;
           case BoardWriteFormType.Reply:
@@ -134,31 +160,50 @@ namespace MemoEngine.DotNetNote.Controls
         LblError.Text = "보안코드가 틀립니다. 다시 입력하세요.";
       }
     }
+
     private void UploadProcess()
     {
+      //파일 업로드 처리 시작
       _BaseDir = Server.MapPath("./MyFiles");
       _FileName = String.Empty;
       _FileSize = 0;
       if (TxtFileName.PostedFile != null)
       {
-        if(TxtFileName.PostedFile.FileName.Trim().Length>0 && TxtFileName.PostedFile.ContentLength > 0)
+        if (TxtFileName.PostedFile.FileName.Trim().Length > 0
+            && TxtFileName.PostedFile.ContentLength > 0)
         {
           if (FormType == BoardWriteFormType.Modify)
           {
-            ViewState["FileName"] = 
-              FileUtility.GetFileNameWithNumbering(_BaseDir, Path.GetFileName(TxtFileName.PostedFile.FileName));
-            ViewState["FileSize"] = TxtFileName.PostedFile.ContentLength;
-            TxtFileName.PostedFile.SaveAs(Path.Combine(_BaseDir, ViewState["FileName"].ToString()));
+            ViewState["FileName"] =
+                FileUtility.GetFileNameWithNumbering(
+                    _BaseDir, Path.GetFileName(
+                        TxtFileName.PostedFile.FileName));
+            ViewState["FileSize"] =
+                TxtFileName.PostedFile.ContentLength;
+            //업로드 처리 : SaveAs()
+            TxtFileName.PostedFile.SaveAs(
+                Path.Combine(_BaseDir,
+                    ViewState["FileName"].ToString()));
           }
-          else
+          else // BoardWrite, BoardReply
           {
-            _FileName = FileUtility.GetFileNameWithNumbering(_BaseDir, Path.GetFileName(TxtFileName.PostedFile.FileName));
+            _FileName =
+                FileUtility.GetFileNameWithNumbering(
+                    _BaseDir,
+                        Path.GetFileName(
+                            TxtFileName.PostedFile.FileName));
             _FileSize = TxtFileName.PostedFile.ContentLength;
-            TxtFileName.PostedFile.SaveAs(Path.Combine(_BaseDir, _FileName));
+            //업로드 처리 : SaveAs()
+            TxtFileName.PostedFile.SaveAs(
+                Path.Combine(_BaseDir, _FileName));
           }
         }
-      }
+      }//파일 업로드 처리 끝
     }
+
+    /// <summary>
+    /// 로그인하였거나, 이미지 텍스트를 정상적으로 입력하면 true 값 반환
+    /// </summary>
     private bool IsImageTextCorrect()
     {
       if (Page.User.Identity.IsAuthenticated)
@@ -172,8 +217,10 @@ namespace MemoEngine.DotNetNote.Controls
           return (TxtImageText.Text == Session["ImageText"].ToString());
         }
       }
-      return false;
+      return false; // 보안 코드를 통과하지 못함
     }
+
+    // 파일 첨부 레이어 보이기/감추기
     protected void ChkUpload_CheckedChanged(object sender, EventArgs e)
     {
       PnlFile.Visible = !PnlFile.Visible;
