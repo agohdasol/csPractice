@@ -50,22 +50,6 @@
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Memos]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="ForColumn">
-				<Entry>
-					<References Name="[dbo].[Memos].[PostDate]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
-		</Element>
-		<Element Type="SqlDefaultConstraint">
-			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[GetDate()]]></Value>
-			</Property>
-			<Relationship Name="DefiningTable">
-				<Entry>
 					<References Name="[dbo].[Notes]" />
 				</Entry>
 			</Relationship>
@@ -74,11 +58,11 @@
 					<References Name="[dbo].[Notes].[PostDate]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -90,11 +74,11 @@
 					<References Name="[dbo].[Notes].[ReadCount]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -106,11 +90,11 @@
 					<References Name="[dbo].[Notes].[FileSize]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -122,11 +106,11 @@
 					<References Name="[dbo].[Notes].[DownCount]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -138,11 +122,11 @@
 					<References Name="[dbo].[Notes].[Step]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -154,11 +138,11 @@
 					<References Name="[dbo].[Notes].[RefOrder]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -170,11 +154,11 @@
 					<References Name="[dbo].[Notes].[AnswerNum]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -186,11 +170,11 @@
 					<References Name="[dbo].[Notes].[ParentNum]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[0]]></Value>
+				<Value><![CDATA[((0))]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -202,11 +186,11 @@
 					<References Name="[dbo].[Notes].[CommentCount]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[(GetDate())]]></Value>
+				<Value><![CDATA[(getdate())]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
@@ -218,45 +202,23 @@
 					<References Name="[dbo].[NoteComments].[PostDate]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
 		</Element>
-		<Element Type="SqlPrimaryKeyConstraint">
-			<Relationship Name="ColumnSpecifications">
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Users].[UID]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="DefiningTable">
-				<Entry>
-					<References Name="[dbo].[Users]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
-		</Element>
-		<Element Type="SqlPrimaryKeyConstraint">
-			<Relationship Name="ColumnSpecifications">
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Memos].[Num]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
+		<Element Type="SqlDefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
 					<References Name="[dbo].[Memos]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Memos].[PostDate]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -275,7 +237,7 @@
 					<References Name="[dbo].[Notes]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -292,6 +254,44 @@
 			<Relationship Name="DefiningTable">
 				<Entry>
 					<References Name="[dbo].[NoteComments]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Users].[UID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Users]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Memos].[Num]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Memos]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
@@ -344,54 +344,7 @@
 				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 데이터&#xD;&#xA;Create Proc dbo.DeleteMemo&#xD;&#xA;(&#xD;&#xA;&#x9;@Num Int&#xD;&#xA;)&#xD;&#xA;As" />
 			</Annotation>
 		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DeleteUsers]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Delete Users Where UID = @UID]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References Name="[dbo].[Users]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Users].[UID]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DeleteUsers].[@UID]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DeleteUsers].[@UID]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="CreateOffset" Value="2" />
-				<Property Name="Length" Value="76" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="&#xD;&#xA;Create Proc dbo.DeleteUsers&#xD;&#xA;&#x9;@UID Int&#xD;&#xA;As" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_DeleteNote]">
+		<Element Type="SqlProcedure" Name="[dbo].[DeleteNote]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 	Declare @cnt Int
@@ -467,13 +420,13 @@
 					<References Name="[dbo].[Notes].[Id]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[DNN_DeleteNote].[@Id]" />
+					<References Name="[dbo].[DeleteNote].[@Id]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Notes].[Password]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[DNN_DeleteNote].[@Password]" />
+					<References Name="[dbo].[DeleteNote].[@Password]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Notes].[AnswerNum]" />
@@ -514,7 +467,7 @@
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_DeleteNote].[@Id]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[DeleteNote].[@Id]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -529,7 +482,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_DeleteNote].[@Password]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[DeleteNote].[@Password]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -551,13 +504,60 @@
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="1097" />
+				<Property Name="Length" Value="1093" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_DeleteNote]&#xD;&#xA;&#x9;@Id Int,&#xD;&#xA;&#x9;@Password NVarChar(30)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DeleteNote]&#xD;&#xA;&#x9;@Id Int,&#xD;&#xA;&#x9;@Password NVarChar(30)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_GetCountNotes]">
+		<Element Type="SqlProcedure" Name="[dbo].[DeleteUsers]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Delete Users Where UID = @UID]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Users]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Users].[UID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteUsers].[@UID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[DeleteUsers].[@UID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="2" />
+				<Property Name="Length" Value="76" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;Create Proc dbo.DeleteUsers&#xD;&#xA;&#x9;@UID Int&#xD;&#xA;As" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[GetCountNotes]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 	SELECT Count(*) From Notes]]></Value>
@@ -574,13 +574,56 @@
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="75" />
+				<Property Name="Length" Value="71" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_GetCountNotes]&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetCountNotes]&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_ListNotes]">
+		<Element Type="SqlProcedure" Name="[dbo].[ListMemo]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Select Num, Name, Email, Title, PostDate, PostIP
+	From Memos Order By Num Desc]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Memos]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Memos].[Num]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Memos].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Memos].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Memos].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Memos].[PostDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Memos].[PostIP]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="20" />
+				<Property Name="Length" Value="130" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 출력용 저장 프로시저&#xD;&#xA;Create Proc dbo.ListMemo&#xD;&#xA;As" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ListNotes]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 	With DotNetNoteOrderedLists
@@ -647,15 +690,15 @@
 					<References Name="[dbo].[Notes].[DownCount]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[DNN_ListNotes].[@Page]" />
+					<References Name="[dbo].[ListNotes].[@Page]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DynamicObjects">
 				<Entry>
-					<Element Type="SqlDynamicColumnSource" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists]">
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists]">
 						<Relationship Name="Columns">
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[Id]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[Id]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[Id]" />
@@ -664,7 +707,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[Name]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[Name]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[Name]" />
@@ -673,7 +716,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[Email]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[Email]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[Email]" />
@@ -682,7 +725,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[Title]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[Title]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[Title]" />
@@ -691,7 +734,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[PostDate]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[PostDate]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[PostDate]" />
@@ -700,7 +743,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[ReadCount]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[ReadCount]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[ReadCount]" />
@@ -709,7 +752,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[Ref]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[Ref]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[Ref]" />
@@ -718,7 +761,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[Step]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[Step]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[Step]" />
@@ -727,7 +770,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[RefOrder]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[RefOrder]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[RefOrder]" />
@@ -736,7 +779,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[AnswerNum]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[AnswerNum]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[AnswerNum]" />
@@ -745,7 +788,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[ParentNum]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[ParentNum]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[ParentNum]" />
@@ -754,7 +797,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[CommentCount]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[CommentCount]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[CommentCount]" />
@@ -763,7 +806,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[FileName]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[FileName]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[FileName]" />
@@ -772,7 +815,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[FileSize]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[FileSize]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[FileSize]" />
@@ -781,7 +824,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[DownCount]">
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[DownCount]">
 									<Relationship Name="ExpressionDependencies">
 										<Entry>
 											<References Name="[dbo].[Notes].[DownCount]" />
@@ -790,7 +833,7 @@
 								</Element>
 							</Entry>
 							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_ListNotes].[CTE1].[DotNetNoteOrderedLists].[RowNumber]" />
+								<Element Type="SqlComputedColumn" Name="[dbo].[ListNotes].[CTE1].[DotNetNoteOrderedLists].[RowNumber]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -798,7 +841,7 @@
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ListNotes].[@Page]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ListNotes].[@Page]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -819,1388 +862,10 @@
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="468" />
+				<Property Name="Length" Value="464" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_ListNotes]&#xD;&#xA;&#x9;@Page Int&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_ModifyNote]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Declare @cnt Int
-
-	Select @cnt = Count(*) From Notes
-	Where Id = @Id And Password = @Password
-
-	If @cnt > 0
-	Begin
-		Update Notes
-		Set
-			Name = @Name,
-			Email = @Email,
-			Title = @Title,
-			ModifyIp = @ModifyIp,
-			ModifyDate = GetDate(),
-			Content = @Content,
-			Encoding = @Encoding,
-			Homepage = @Homepage,
-			FileName = @FileName,
-			FileSize = @FileSize
-		Where Id = @Id
-		Select '1'
-	End
-	Else
-		Select '0']]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Password]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Password]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ModifyIp]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@ModifyIp]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ModifyDate]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Encoding]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Encoding]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Homepage]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@Homepage]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileSize]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ModifyNote].[@FileSize]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Name]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Email]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="100" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Title]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="150" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@ModifyIp]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="15" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Content]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[ntext]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Password]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="30" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Encoding]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="10" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Homepage]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="100" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@FileName]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="255" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@FileSize]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ModifyNote].[@Id]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="752" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_ModifyNote]&#xD;&#xA;&#x9;@Name&#x9;&#x9;&#x9;&#x9;NVarChar(25),&#xD;&#xA;&#x9;@Email&#x9;&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@Title&#x9;&#x9;&#x9;NVarChar(150),&#xD;&#xA;&#x9;@ModifyIp&#x9;&#x9;NVarChar(15),&#xD;&#xA;&#x9;@Content&#x9;&#x9;NText,&#xD;&#xA;&#x9;@Password&#x9;&#x9;NVarChar(30),&#xD;&#xA;&#x9;@Encoding&#x9;&#x9;NVarChar(10),&#xD;&#xA;&#x9;@Homepage&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@FileName&#x9;&#x9;NVarChar(255),&#xD;&#xA;&#x9;@FileSize&#x9;&#x9;Int,&#xD;&#xA;&#x9;@Id&#x9;&#x9;&#x9;&#x9;&#x9;Int&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_ReplyNote]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Declare @MaxRefOrder Int
-	Declare @MaxRefAnswerNum Int
-	Declare @ParentRef Int
-	Declare @ParentStep Int
-	Declare @ParentRefOrder Int
-
-	Update Notes Set AnswerNum = AnswerNum + 1 Where Id = @ParentNum
-
-	Select @MaxRefOrder = RefOrder, @MaxRefAnswerNum = AnswerNum From Notes
-	Where
-		ParentNum = @ParentNum And
-		RefOrder = (Select Max(RefOrder) From Notes Where ParentNum = @ParentNum)
-
-	If @MaxRefOrder Is Null
-	Begin
-		Select @MaxRefOrder = RefOrder From Notes Where Id = @ParentNum
-		Set @MaxRefAnswerNum = 0
-	End
-
-	Select
-		@ParentRef = Ref, @ParentStep = Step
-	From Notes Where Id = @ParentNum
-
-	Update Notes
-	Set
-		RefOrder = RefOrder + 1
-	Where
-		Ref = @ParentRef And RefOrder > (@MaxRefOrder + @MaxRefAnswerNum)
-
-	Insert Notes
-	(
-		Name, Email, Title, PostIp, Content, Password, Encoding, Homepage, Ref, Step,
-		RefOrder, ParentNum, FileName, FileSize
-	)
-	Values
-	(
-		@Name, @Email, @Title, @PostIp, @Content, @Password, @Encoding, @Homepage, @ParentRef, @ParentStep + 1,
-		@MaxRefOrder + @MaxRefAnswerNum + 1, @ParentNum, @FileName, @FileSize
-	)]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[AnswerNum]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@ParentNum]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[RefOrder]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ParentNum]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[RefOrder]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ParentNum]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Ref]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Step]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[PostIp]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Password]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Encoding]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Homepage]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileSize]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@PostIp]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Password]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Encoding]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@Homepage]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ReplyNote].[@FileSize]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Name]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Email]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="100" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Title]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="150" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@PostIp]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="15" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Content]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[ntext]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Password]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="20" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Encoding]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="10" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@Homepage]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="100" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@ParentNum]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@FileName]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="255" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ReplyNote].[@FileSize]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="1404" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_ReplyNote]&#xD;&#xA;&#x9;@Name&#x9;&#x9;&#x9;&#x9;NVarChar(25),&#xD;&#xA;&#x9;@Email&#x9;&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@Title&#x9;&#x9;&#x9;NVarChar(150),&#xD;&#xA;&#x9;@PostIp&#x9;&#x9;&#x9;NVarChar(15),&#xD;&#xA;&#x9;@Content&#x9;&#x9;NText,&#xD;&#xA;&#x9;@Password&#x9;&#x9;NVarChar(20),&#xD;&#xA;&#x9;@Encoding&#x9;&#x9;NVarChar(10),&#xD;&#xA;&#x9;@Homepage&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@ParentNum&#x9;Int,&#xD;&#xA;&#x9;@FileName&#x9;&#x9;NVarChar(255),&#xD;&#xA;&#x9;@FileSize&#x9;&#x9;Int&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_SearchNoteCount]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Set @SearchQuery = '%' + @SearchQuery + '%'
-
-	SELECT Count(*)
-	From Notes
-	Where
-	(
-		Case @SearchField
-			When 'Name' Then [Name]
-			When 'Tltle' Then Title
-			When 'Content' Then Content
-			Else @SearchQuery
-		End
-	)
-	Like
-	@SearchQuery]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References Name="[dbo].[DNN_SearchNoteCount].[@SearchQuery]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_SearchNoteCount].[@SearchField]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Content]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_SearchNoteCount].[@SearchField]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_SearchNoteCount].[@SearchQuery]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="360" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_SearchNoteCount]&#xD;&#xA;&#x9;@SearchField NVarChar(25),&#xD;&#xA;&#x9;@SearchQuery NVarChar(25)&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_SearchNotes]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	With DotNetNoteOrderedLists
-	As
-	(
-		Select
-			[Id], [Name], [Email], [Title], [PostDate], [ReadCount], [Ref], [Step], [RefOrder],
-			[AnswerNum], [ParentNum], [CommentCount], [FileName], [FileSize], [DownCount],
-			ROW_NUMBER() Over (Order By Ref Desc, RefOrder Asc)
-			As 'RowNumber'
-			From Notes
-			Where
-			(
-				Case @SearchField
-					When 'Name' Then [Name]
-					When 'Title' Then Title
-					When 'Content' Then Content
-					Else
-					@SearchQuery
-				End
-			)
-			Like '%' + @SearchQuery + '%'
-		)
-		Select
-			[Id], [Name], [Email], [Title], [PostDate], [ReadCount], [Ref], [Step], [RefOrder],
-			[AnswerNum], [ParentNum], [CommentCount], [FileName], [FileSize], [DownCount], [RowNumber]
-		From DotNetNoteOrderedLists
-		Where RowNumber Between @Page * 10 + 1 And (@Page + 1) * 10
-		Order By Id Desc]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[PostDate]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ReadCount]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Ref]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Step]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[RefOrder]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[AnswerNum]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ParentNum]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[CommentCount]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileSize]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[DownCount]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_SearchNotes].[@SearchField]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_SearchNotes].[@SearchQuery]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_SearchNotes].[@Page]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="DynamicObjects">
-				<Entry>
-					<Element Type="SqlDynamicColumnSource" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists]">
-						<Relationship Name="Columns">
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Id]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[Id]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Name]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[Name]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Email]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[Email]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Title]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[Title]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[PostDate]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[PostDate]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[ReadCount]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[ReadCount]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Ref]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[Ref]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Step]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[Step]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[RefOrder]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[RefOrder]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[AnswerNum]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[AnswerNum]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[ParentNum]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[ParentNum]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[CommentCount]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[CommentCount]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[FileName]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[FileName]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[FileSize]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[FileSize]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[DownCount]">
-									<Relationship Name="ExpressionDependencies">
-										<Entry>
-											<References Name="[dbo].[Notes].[DownCount]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-							<Entry>
-								<Element Type="SqlComputedColumn" Name="[dbo].[DNN_SearchNotes].[CTE1].[DotNetNoteOrderedLists].[RowNumber]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_SearchNotes].[@Page]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_SearchNotes].[@SearchField]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_SearchNotes].[@SearchQuery]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="948" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_SearchNotes]&#xD;&#xA;&#x9;@Page Int,&#xD;&#xA;&#x9;@SearchField NVarChar(25),&#xD;&#xA;&#x9;@SearchQuery NVarChar(25)&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_ViewNote]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Update Notes Set ReadCount = ReadCount + 1 Where Id = @Id
-
-	Select * From Notes Where Id = @Id]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[ReadCount]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_ViewNote].[@Id]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_ViewNote].[@Id]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="150" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_ViewNote]&#xD;&#xA;&#x9;@Id Int&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[DNN_WriteNote]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Declare @MaxRef Int
-	SELECT @MaxRef = Max(Ref) From Notes
-	If @MaxRef is Null
-		Set @MaxRef = 1
-	Else
-		Set @MaxRef = @MaxRef+1
-
-	Insert Notes
-	(
-		Name, Email, Title, PostIp, Content, Password, Encoding, Homepage, Ref, FileName, FileSize
-	)
-	Values
-	(
-		@Name, @Email, @Title, @PostIp, @Content, @Password, @Encoding, @Homepage, @MaxRef, @FileName, @FileSize
-	)]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[int]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Ref]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[PostIp]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Password]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Encoding]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[Homepage]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Notes].[FileSize]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@PostIp]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Content]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Password]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Encoding]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@Homepage]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@FileName]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[DNN_WriteNote].[@FileSize]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Parameters">
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Name]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="25" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Email]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="100" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Title]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="150" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@PostIp]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="15" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Content]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[ntext]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Password]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="20" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Encoding]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="10" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@Homepage]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="100" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@FileName]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="255" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[DNN_WriteNote].[@FileSize]">
-						<Relationship Name="Type">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="660" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DNN_WriteNote]&#xD;&#xA;&#x9;@Name&#x9;&#x9;&#x9;NVarChar(25),&#xD;&#xA;&#x9;@Email&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@Title&#x9;&#x9;NVarChar(150),&#xD;&#xA;&#x9;@PostIp&#x9;&#x9;NVarChar(15),&#xD;&#xA;&#x9;@Content&#x9;NText,&#xD;&#xA;&#x9;@Password&#x9;NVarChar(20),&#xD;&#xA;&#x9;@Encoding&#x9;NVarChar(10),&#xD;&#xA;&#x9;@Homepage&#x9;NVarChar(100),&#xD;&#xA;&#x9;@FileName&#x9;NVarChar(255),&#xD;&#xA;&#x9;@FileSize&#x9;Int&#xD;&#xA;AS" />
-			</Annotation>
-		</Element>
-		<Element Type="SqlProcedure" Name="[dbo].[ListMemo]">
-			<Property Name="BodyScript">
-				<Value><![CDATA[
-	Select Num, Name, Email, Title, PostDate, PostIP
-	From Memos Order By Num Desc]]></Value>
-			</Property>
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="BodyDependencies">
-				<Entry>
-					<References Name="[dbo].[Memos]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Memos].[Num]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Memos].[Name]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Memos].[Email]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Memos].[Title]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Memos].[PostDate]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Memos].[PostIP]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="CreateOffset" Value="20" />
-				<Property Name="Length" Value="130" />
-				<Property Name="StartLine" Value="1" />
-				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 출력용 저장 프로시저&#xD;&#xA;Create Proc dbo.ListMemo&#xD;&#xA;As" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ListNotes]&#xD;&#xA;&#x9;@Page Int&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[ListUsers]">
@@ -2319,7 +984,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="3" />
+						<AttachedAnnotation Disambiguator="13" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2344,7 +1009,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="15" />
+			<AttachedAnnotation Disambiguator="17" />
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[ModifyMemo]">
 			<Property Name="BodyScript">
@@ -2466,6 +1131,299 @@ Commit Transaction]]></Value>
 				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 데이터 수정용 저장 프로시저&#xD;&#xA;Create Proc dbo.ModifyMemo&#xD;&#xA;(&#xD;&#xA;&#x9;@Name NVarChar(25),&#xD;&#xA;&#x9;@Email NVarChar(100),&#xD;&#xA;&#x9;@Title NVarChar(150),&#xD;&#xA;&#x9;@Num Int&#xD;&#xA;)&#xD;&#xA;As" />
 			</Annotation>
 		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ModifyNote]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Declare @cnt Int
+
+	Select @cnt = Count(*) From Notes
+	Where Id = @Id And Password = @Password
+
+	If @cnt > 0
+	Begin
+		Update Notes
+		Set
+			Name = @Name,
+			Email = @Email,
+			Title = @Title,
+			ModifyIp = @ModifyIp,
+			ModifyDate = GetDate(),
+			Content = @Content,
+			Encoding = @Encoding,
+			Homepage = @Homepage,
+			FileName = @FileName,
+			FileSize = @FileSize
+		Where Id = @Id
+		Select '1'
+	End
+	Else
+		Select '0']]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Password]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Password]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ModifyIp]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@ModifyIp]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ModifyDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Encoding]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Encoding]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Homepage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@Homepage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ModifyNote].[@FileSize]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Email]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Title]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@ModifyIp]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="15" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Content]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[ntext]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Password]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Encoding]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Homepage]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@FileName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@FileSize]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ModifyNote].[@Id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="748" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ModifyNote]&#xD;&#xA;&#x9;@Name&#x9;&#x9;&#x9;&#x9;NVarChar(25),&#xD;&#xA;&#x9;@Email&#x9;&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@Title&#x9;&#x9;&#x9;NVarChar(150),&#xD;&#xA;&#x9;@ModifyIp&#x9;&#x9;NVarChar(15),&#xD;&#xA;&#x9;@Content&#x9;&#x9;NText,&#xD;&#xA;&#x9;@Password&#x9;&#x9;NVarChar(30),&#xD;&#xA;&#x9;@Encoding&#x9;&#x9;NVarChar(10),&#xD;&#xA;&#x9;@Homepage&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@FileName&#x9;&#x9;NVarChar(255),&#xD;&#xA;&#x9;@FileSize&#x9;&#x9;Int,&#xD;&#xA;&#x9;@Id&#x9;&#x9;&#x9;&#x9;&#x9;Int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[ModifyUsers]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
@@ -2581,7 +1539,6 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="17" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2663,7 +1620,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="13" />
+						<AttachedAnnotation Disambiguator="12" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2689,6 +1646,7 @@ Commit Transaction]]></Value>
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
+			<AttachedAnnotation Disambiguator="15" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[Notes]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2708,7 +1666,6 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="16" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2775,7 +1732,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="4" />
+						<AttachedAnnotation Disambiguator="3" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2839,7 +1796,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="5" />
+						<AttachedAnnotation Disambiguator="4" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2935,7 +1892,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="6" />
+						<AttachedAnnotation Disambiguator="5" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2951,7 +1908,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
+						<AttachedAnnotation Disambiguator="6" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2983,7 +1940,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="8" />
+						<AttachedAnnotation Disambiguator="7" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2999,7 +1956,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="9" />
+						<AttachedAnnotation Disambiguator="8" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -3015,7 +1972,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="10" />
+						<AttachedAnnotation Disambiguator="9" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -3031,7 +1988,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="11" />
+						<AttachedAnnotation Disambiguator="10" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -3047,7 +2004,7 @@ Commit Transaction]]></Value>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="12" />
+						<AttachedAnnotation Disambiguator="11" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -3072,6 +2029,348 @@ Commit Transaction]]></Value>
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
+			<AttachedAnnotation Disambiguator="14" />
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ReplyNote]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Declare @MaxRefOrder Int
+	Declare @MaxRefAnswerNum Int
+	Declare @ParentRef Int
+	Declare @ParentStep Int
+	Declare @ParentRefOrder Int
+
+	Update Notes Set AnswerNum = AnswerNum + 1 Where Id = @ParentNum
+
+	Select @MaxRefOrder = RefOrder, @MaxRefAnswerNum = AnswerNum From Notes
+	Where
+		ParentNum = @ParentNum And
+		RefOrder = (Select Max(RefOrder) From Notes Where ParentNum = @ParentNum)
+
+	If @MaxRefOrder Is Null
+	Begin
+		Select @MaxRefOrder = RefOrder From Notes Where Id = @ParentNum
+		Set @MaxRefAnswerNum = 0
+	End
+
+	Select
+		@ParentRef = Ref, @ParentStep = Step
+	From Notes Where Id = @ParentNum
+
+	Update Notes
+	Set
+		RefOrder = RefOrder + 1
+	Where
+		Ref = @ParentRef And RefOrder > (@MaxRefOrder + @MaxRefAnswerNum)
+
+	Insert Notes
+	(
+		Name, Email, Title, PostIp, Content, Password, Encoding, Homepage, Ref, Step,
+		RefOrder, ParentNum, FileName, FileSize
+	)
+	Values
+	(
+		@Name, @Email, @Title, @PostIp, @Content, @Password, @Encoding, @Homepage, @ParentRef, @ParentStep + 1,
+		@MaxRefOrder + @MaxRefAnswerNum + 1, @ParentNum, @FileName, @FileSize
+	)]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[AnswerNum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@ParentNum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[RefOrder]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ParentNum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[RefOrder]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ParentNum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Ref]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Step]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[PostIp]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Password]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Encoding]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Homepage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@PostIp]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Password]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Encoding]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@Homepage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ReplyNote].[@FileSize]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Email]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Title]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@PostIp]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="15" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Content]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[ntext]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Password]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Encoding]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@Homepage]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@ParentNum]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@FileName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ReplyNote].[@FileSize]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1400" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ReplyNote]&#xD;&#xA;&#x9;@Name&#x9;&#x9;&#x9;&#x9;NVarChar(25),&#xD;&#xA;&#x9;@Email&#x9;&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@Title&#x9;&#x9;&#x9;NVarChar(150),&#xD;&#xA;&#x9;@PostIp&#x9;&#x9;&#x9;NVarChar(15),&#xD;&#xA;&#x9;@Content&#x9;&#x9;NText,&#xD;&#xA;&#x9;@Password&#x9;&#x9;NVarChar(20),&#xD;&#xA;&#x9;@Encoding&#x9;&#x9;NVarChar(10),&#xD;&#xA;&#x9;@Homepage&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@ParentNum&#x9;Int,&#xD;&#xA;&#x9;@FileName&#x9;&#x9;NVarChar(255),&#xD;&#xA;&#x9;@FileSize&#x9;&#x9;Int&#xD;&#xA;AS" />
+			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[SearchMemo]">
 			<Property Name="BodyScript">
@@ -3145,6 +2444,393 @@ Commit Transaction]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 데이터 검색용 저장 프로시저(동적 SQL 사용)&#xD;&#xA;Create Proc dbo.SearchMemo&#xD;&#xA;(&#xD;&#xA;&#x9;@SearchField NVarChar(10),&#xD;&#xA;&#x9;@SearchQuery NVarChar(50)&#xD;&#xA;)&#xD;&#xA;--With Encryption -- 현재 SP문 암호화&#xD;&#xA;As" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SearchNoteCount]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Set @SearchQuery = '%' + @SearchQuery + '%'
+
+	SELECT Count(*)
+	From Notes
+	Where
+	(
+		Case @SearchField
+			When 'Name' Then [Name]
+			When 'Tltle' Then Title
+			When 'Content' Then Content
+			Else @SearchQuery
+		End
+	)
+	Like
+	@SearchQuery]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[SearchNoteCount].[@SearchQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SearchNoteCount].[@SearchField]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Content]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SearchNoteCount].[@SearchField]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SearchNoteCount].[@SearchQuery]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="356" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SearchNoteCount]&#xD;&#xA;&#x9;@SearchField NVarChar(25),&#xD;&#xA;&#x9;@SearchQuery NVarChar(25)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SearchNotes]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	With DotNetNoteOrderedLists
+	As
+	(
+		Select
+			[Id], [Name], [Email], [Title], [PostDate], [ReadCount], [Ref], [Step], [RefOrder],
+			[AnswerNum], [ParentNum], [CommentCount], [FileName], [FileSize], [DownCount],
+			ROW_NUMBER() Over (Order By Ref Desc, RefOrder Asc)
+			As 'RowNumber'
+			From Notes
+			Where
+			(
+				Case @SearchField
+					When 'Name' Then [Name]
+					When 'Title' Then Title
+					When 'Content' Then Content
+					Else
+					@SearchQuery
+				End
+			)
+			Like '%' + @SearchQuery + '%'
+		)
+		Select
+			[Id], [Name], [Email], [Title], [PostDate], [ReadCount], [Ref], [Step], [RefOrder],
+			[AnswerNum], [ParentNum], [CommentCount], [FileName], [FileSize], [DownCount], [RowNumber]
+		From DotNetNoteOrderedLists
+		Where RowNumber Between @Page * 10 + 1 And (@Page + 1) * 10
+		Order By Id Desc]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[PostDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ReadCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Ref]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Step]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[RefOrder]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[AnswerNum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ParentNum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[CommentCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[DownCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SearchNotes].[@SearchField]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SearchNotes].[@SearchQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SearchNotes].[@Page]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Id]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[Id]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Name]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[Name]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Email]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[Email]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Title]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[Title]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[PostDate]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[PostDate]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[ReadCount]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[ReadCount]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Ref]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[Ref]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[Step]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[Step]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[RefOrder]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[RefOrder]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[AnswerNum]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[AnswerNum]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[ParentNum]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[ParentNum]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[CommentCount]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[CommentCount]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[FileName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[FileName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[FileSize]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[FileSize]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[DownCount]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Notes].[DownCount]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[SearchNotes].[CTE1].[DotNetNoteOrderedLists].[RowNumber]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SearchNotes].[@Page]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SearchNotes].[@SearchField]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SearchNotes].[@SearchQuery]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="944" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SearchNotes]&#xD;&#xA;&#x9;@Page Int,&#xD;&#xA;&#x9;@SearchField NVarChar(25),&#xD;&#xA;&#x9;@SearchQuery NVarChar(25)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[SearchUsers]">
@@ -3277,7 +2963,7 @@ Commit Transaction]]></Value>
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="14" />
+			<AttachedAnnotation Disambiguator="16" />
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[ViewMemo]">
 			<Property Name="BodyScript">
@@ -3341,6 +3027,57 @@ Commit Transaction]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 상세보기용 저장 프로시저&#xD;&#xA;Create Proc dbo.ViewMemo&#xD;&#xA;(&#xD;&#xA;&#x9;@Num Int&#xD;&#xA;)&#xD;&#xA;As" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ViewNote]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Update Notes Set ReadCount = ReadCount + 1 Where Id = @Id
+
+	Select * From Notes Where Id = @Id]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[ReadCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ViewNote].[@Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ViewNote].[@Id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="146" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ViewNote]&#xD;&#xA;&#x9;@Id Int&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[ViewUser]">
@@ -3509,6 +3246,269 @@ Commit Transaction]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="&#xD;&#xA;--메모 입력용 저장 프로시저&#xD;&#xA;Create Procedure dbo.WriteMemo&#xD;&#xA;(&#xD;&#xA;&#x9;@Name NVarChar(25),&#xD;&#xA;&#x9;@Email NVarChar(100),&#xD;&#xA;&#x9;@Title NVarChar(150),&#xD;&#xA;&#x9;@PostIP NVarChar(15)&#xD;&#xA;)&#xD;&#xA;As" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[WriteNote]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	Declare @MaxRef Int
+	SELECT @MaxRef = Max(Ref) From Notes
+	If @MaxRef is Null
+		Set @MaxRef = 1
+	Else
+		Set @MaxRef = @MaxRef+1
+
+	Insert Notes
+	(
+		Name, Email, Title, PostIp, Content, Password, Encoding, Homepage, Ref, FileName, FileSize
+	)
+	Values
+	(
+		@Name, @Email, @Title, @PostIp, @Content, @Password, @Encoding, @Homepage, @MaxRef, @FileName, @FileSize
+	)]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Ref]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[PostIp]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Password]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Encoding]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[Homepage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Notes].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@PostIp]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Password]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Encoding]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@Homepage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WriteNote].[@FileSize]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Email]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Title]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@PostIp]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="15" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Content]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[ntext]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Password]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Encoding]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@Homepage]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@FileName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[WriteNote].[@FileSize]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="656" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[WriteNote]&#xD;&#xA;&#x9;@Name&#x9;&#x9;&#x9;NVarChar(25),&#xD;&#xA;&#x9;@Email&#x9;&#x9;NVarChar(100),&#xD;&#xA;&#x9;@Title&#x9;&#x9;NVarChar(150),&#xD;&#xA;&#x9;@PostIp&#x9;&#x9;NVarChar(15),&#xD;&#xA;&#x9;@Content&#x9;NText,&#xD;&#xA;&#x9;@Password&#x9;NVarChar(20),&#xD;&#xA;&#x9;@Encoding&#x9;NVarChar(10),&#xD;&#xA;&#x9;@Homepage&#x9;NVarChar(100),&#xD;&#xA;&#x9;@FileName&#x9;NVarChar(255),&#xD;&#xA;&#x9;@FileSize&#x9;Int&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[WriteUsers]">
