@@ -1,0 +1,16 @@
+D:\csPractice\DotNetCore\bin\Debug\net5.0\DotNetCore.exe
+D:\csPractice\DotNetCore\bin\Debug\net5.0\DotNetCore.deps.json
+D:\csPractice\DotNetCore\bin\Debug\net5.0\DotNetCore.runtimeconfig.json
+D:\csPractice\DotNetCore\bin\Debug\net5.0\DotNetCore.runtimeconfig.dev.json
+D:\csPractice\DotNetCore\bin\Debug\net5.0\DotNetCore.dll
+D:\csPractice\DotNetCore\bin\Debug\net5.0\ref\DotNetCore.dll
+D:\csPractice\DotNetCore\bin\Debug\net5.0\DotNetCore.pdb
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.csprojAssemblyReference.cache
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.AssemblyInfoInputs.cache
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.AssemblyInfo.cs
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.csproj.CoreCompileInputs.cache
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.dll
+D:\csPractice\DotNetCore\obj\Debug\net5.0\ref\DotNetCore.dll
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.pdb
+D:\csPractice\DotNetCore\obj\Debug\net5.0\DotNetCore.genruntimeconfig.cache
