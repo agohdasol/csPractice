@@ -63,7 +63,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<html>\r\n");
             EndContext();
             BeginContext(68, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6856c32dcbb04cc1b4e3a0ee165f296b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d882268cfee9452a92664fd576fb6d13", async() => {
                 BeginContext(74, 27, true);
                 WriteLiteral("\r\n  <title>영화 리스트</title>\r\n");
                 EndContext();
@@ -83,7 +83,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(110, 318, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c155e4d426da44f9b8eaf4959c3ec5c3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3ddf7efc40648d98a8d8246cc688cf5", async() => {
                 BeginContext(116, 127, true);
                 WriteLiteral("\r\n  <h1>영화 리스트</h1>\r\n  <table id=\"movieLists\">\r\n    <tr>\r\n      <th>번호</th>\r\n      <th>제목</th>\r\n      <th>개봉일</th>\r\n    </tr>\r\n");
                 EndContext();

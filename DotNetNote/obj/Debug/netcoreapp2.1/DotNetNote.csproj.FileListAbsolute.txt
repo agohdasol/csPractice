@@ -43,3 +43,7 @@ D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewWithModelDemo\I
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewWithListOfDemo\Index.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormPostDemo\Index.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\MovieList\Index.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\FormDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\InputDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\SelectDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\StronglyTypedDemo.cshtml.g.cs
