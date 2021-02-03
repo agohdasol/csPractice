@@ -62,7 +62,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<h2>폼 데이터 전송</h2>\r\n\r\n<h3>HTML 태그로 구현</h3>\r\n");
             EndContext();
             BeginContext(71, 215, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ec7e0f05ee642ada1a2e0366d1e9e25", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30c15fd1950b484795a84befb09e76f2", async() => {
                 BeginContext(120, 159, true);
                 WriteLiteral("\r\n  이름 : <input type=\"text\" name=\"name\" value=\"\" /><br />\r\n  내용 : <input type=\"text\" name=\"content\" value=\"\" /><br />\r\n\r\n  <input type=\"submit\" value=\"전송\" />\r\n");
                 EndContext();

@@ -47,3 +47,11 @@ D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\Fo
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\InputDemo.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\SelectDemo.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\HelperMethodDemo\StronglyTypedDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\Html.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\HtmlProcess.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\Index.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\HelperMethod.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\StronglyTypeView.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\Completed.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\ModelValidation.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\ClientValidation.cshtml.g.cs
