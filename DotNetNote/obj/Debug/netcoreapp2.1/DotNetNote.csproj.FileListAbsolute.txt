@@ -55,3 +55,11 @@ D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\Completed.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\ModelValidation.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\ClientValidation.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\FormValidationDemo\TagHelperValidation.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\EnvironmentDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\Index.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\PrefixDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\MyTagHelperDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\EmailLinkDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\TagHelperDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\TagHelperDemo\PagingHelperDemo.cshtml.g.cs

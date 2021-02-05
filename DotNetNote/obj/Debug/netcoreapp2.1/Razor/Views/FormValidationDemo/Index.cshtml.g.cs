@@ -24,7 +24,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5589871229cb5bb350b71c74355eb22b0b7be4ae", @"/Views/FormValidationDemo/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0daafac8a85ee43e3c34bc74f0c87c74269b2818", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1cb532820678d07923d8a33ab80093736add67a", @"/Views/_ViewImports.cshtml")]
     public class Views_FormValidationDemo_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/FormValidationDemo/HelperMethod"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -68,7 +68,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(28, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3df5afbf4626451882d81e80419466c1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42b2ab9d2f944ec7babe6af48005963c", async() => {
                 BeginContext(34, 29, true);
                 WriteLiteral("\r\n  <title>폼 유효성 검사</title>\r\n");
                 EndContext();
@@ -88,12 +88,12 @@ using DotNetNote.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(74, 599, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0e8e37a165e46c8bd00762b2f969c3f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c4dae48994141a9b4696378f7602633", async() => {
                 BeginContext(80, 135, true);
                 WriteLiteral("\r\n  <h1>폼 유효성 검사</h1>\r\n  <ul>\r\n    <li><a href=\"#\">메인</a></li>\r\n    <li><a href=\"/FormValidationDemo/Html\">HTML 폼 구성</a></li>\r\n    <li>");
                 EndContext();
                 BeginContext(215, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25b7b5268f664642bac2f66530284f84", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdbca79f528c460698e996a861653ade", async() => {
                     BeginContext(259, 9, true);
                     WriteLiteral("헬퍼 메서드 사용");
                     EndContext();
@@ -114,7 +114,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(287, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84a3af1099df4609b5a0fb8cf253b5b8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b29ff841671e4865b801a39c88e776ac", async() => {
                     BeginContext(335, 9, true);
                     WriteLiteral("강력한 형식의 뷰");
                     EndContext();
@@ -135,7 +135,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(363, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c684f2f9f0b74d76bea5ef90b5f6c729", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "030d3f5e02a44f318280d18eb93f17da", async() => {
                     BeginContext(431, 17, true);
                     WriteLiteral("모델 기반 서버 측 유효성 검사");
                     EndContext();
@@ -159,7 +159,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(467, 87, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "648308eea7714d8d9b8aa3d2e1df77bb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ba7cf28749247309b1beb4524260335", async() => {
                     BeginContext(536, 14, true);
                     WriteLiteral("클라이언트 측 유효성 검사");
                     EndContext();
@@ -183,7 +183,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(569, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3095328eebe5405c8a49367f8c2128c3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5170d416b4546318ee08256050df9ab", async() => {
                     BeginContext(641, 5, true);
                     WriteLiteral("태그 헬퍼");
                     EndContext();

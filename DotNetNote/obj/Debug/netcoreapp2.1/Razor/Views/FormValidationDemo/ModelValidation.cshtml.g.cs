@@ -24,7 +24,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0abd43060a5a54d650863c7c6917e6c9f1979a4b", @"/Views/FormValidationDemo/ModelValidation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0daafac8a85ee43e3c34bc74f0c87c74269b2818", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1cb532820678d07923d8a33ab80093736add67a", @"/Views/_ViewImports.cshtml")]
     public class Views_FormValidationDemo_ModelValidation : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<DotNetNote.Models.MaximModel>
     {
         #line hidden
@@ -60,7 +60,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
             BeginContext(65, 140, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "955204fad6034b9f879b8198e73b4e97", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d7e4718dbd54149b289888b6ba6c3c5", async() => {
                 BeginContext(71, 127, true);
                 WriteLiteral("\r\n  <title>모델 기반 서버측 유효성 검사</title>\r\n  <style>\r\n    .input-validation-error{\r\n      border: 1px solid red;\r\n    }\r\n  </style>\r\n");
                 EndContext();
@@ -80,7 +80,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(207, 454, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "042fe1915db8467db3c74ee311142fa3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8804d354993349a3bbd23227992fb8b9", async() => {
                 BeginContext(213, 31, true);
                 WriteLiteral("\r\n  <h2>모델 기반 서버측 유효성 검사</h2>\r\n");
                 EndContext();

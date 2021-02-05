@@ -24,7 +24,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01d2fab14824e6ce94e5e7faae8ed9f1bf240b1a", @"/Views/MovieList/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0daafac8a85ee43e3c34bc74f0c87c74269b2818", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1cb532820678d07923d8a33ab80093736add67a", @"/Views/_ViewImports.cshtml")]
     public class Views_MovieList_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<MovieViewModel>>
     {
         #line hidden
@@ -63,7 +63,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<html>\r\n");
             EndContext();
             BeginContext(68, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7740440b9324f28bc4004f22e0608da", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7124a914f33c49fca6bec74a43f1c66f", async() => {
                 BeginContext(74, 27, true);
                 WriteLiteral("\r\n  <title>영화 리스트</title>\r\n");
                 EndContext();
@@ -83,7 +83,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(110, 318, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c6e65dfdf3c49a69ddaf2f1ccbfca9c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83a63b6d72b84bb4b86ed47504dd894d", async() => {
                 BeginContext(116, 127, true);
                 WriteLiteral("\r\n  <h1>영화 리스트</h1>\r\n  <table id=\"movieLists\">\r\n    <tr>\r\n      <th>번호</th>\r\n      <th>제목</th>\r\n      <th>개봉일</th>\r\n    </tr>\r\n");
                 EndContext();

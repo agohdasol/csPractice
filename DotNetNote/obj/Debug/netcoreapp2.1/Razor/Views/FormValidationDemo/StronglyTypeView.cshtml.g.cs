@@ -24,7 +24,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1518dca933c84a179d9260d5e79c4e6843d468a0", @"/Views/FormValidationDemo/StronglyTypeView.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0daafac8a85ee43e3c34bc74f0c87c74269b2818", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1cb532820678d07923d8a33ab80093736add67a", @"/Views/_ViewImports.cshtml")]
     public class Views_FormValidationDemo_StronglyTypeView : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<DotNetNote.Models.MaximModel>
     {
         #line hidden
@@ -60,7 +60,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
             BeginContext(66, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd9ba9dcad6a433eade795fccfb9821c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "870e9dc7d19d4d14b7d3c48268236d8a", async() => {
                 BeginContext(72, 30, true);
                 WriteLiteral("\r\n  <title>강력한 형식의 뷰</title>\r\n");
                 EndContext();
@@ -80,7 +80,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(111, 314, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19c9423d7f9b48d2af7d823d24843360", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04c1d40cf7f24747a42e3f9e8b93fff5", async() => {
                 BeginContext(117, 26, true);
                 WriteLiteral("\r\n  <h2>강력한 형식의 뷰</h2>\r\n\r\n");
                 EndContext();

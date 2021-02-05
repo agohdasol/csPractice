@@ -24,7 +24,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e7bb7da45db72e3e6345d5cd184a67829b9f1f49", @"/Views/FormPostDemo/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0daafac8a85ee43e3c34bc74f0c87c74269b2818", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1cb532820678d07923d8a33ab80093736add67a", @"/Views/_ViewImports.cshtml")]
     public class Views_FormPostDemo_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("/FormPostDemo/Index"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,7 +62,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<h2>폼 데이터 전송</h2>\r\n\r\n<h3>HTML 태그로 구현</h3>\r\n");
             EndContext();
             BeginContext(71, 215, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30c15fd1950b484795a84befb09e76f2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00d57636216c4c6aa0c15097eaabb9ee", async() => {
                 BeginContext(120, 159, true);
                 WriteLiteral("\r\n  이름 : <input type=\"text\" name=\"name\" value=\"\" /><br />\r\n  내용 : <input type=\"text\" name=\"content\" value=\"\" /><br />\r\n\r\n  <input type=\"submit\" value=\"전송\" />\r\n");
                 EndContext();
