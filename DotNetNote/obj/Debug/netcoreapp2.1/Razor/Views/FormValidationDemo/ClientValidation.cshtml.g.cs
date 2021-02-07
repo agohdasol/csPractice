@@ -64,7 +64,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
             BeginContext(65, 146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb03a4d839a846399719e20c9c4b187d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93a6f7ca4f0c49c890dd7809b532d503", async() => {
                 BeginContext(71, 133, true);
                 WriteLiteral("\r\n  <title>jQurey 기반 클라이언트측 유효성 검사</title>\r\n  <style>\r\n    .input-validation-error{\r\n      border:1px solid red;\r\n    }\r\n  </style>\r\n");
                 EndContext();
@@ -84,7 +84,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(213, 680, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68c4db81875e4861931ded46da8554d7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c66c797727cb4b6a8f813a4a9179c95e", async() => {
                 BeginContext(219, 38, true);
                 WriteLiteral("\r\n  <h2>jQurey 기반 클라이언트측 유효성 검사</h2>\r\n");
                 EndContext();
@@ -168,7 +168,7 @@ Write(Html.ValidationMessageFor(n => n.Content));
                 WriteLiteral("  ");
                 EndContext();
                 BeginContext(669, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b39653c93f73421897dc2a5fed02979b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dabdcbf99824b56a5bd60652938e476", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -186,7 +186,7 @@ Write(Html.ValidationMessageFor(n => n.Content));
                 WriteLiteral("\r\n  ");
                 EndContext();
                 BeginContext(724, 66, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99f60751d9124e35b9f21c5be70c257a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03e9ce9cf9c240cdb9a0f055cb1f053c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -204,7 +204,7 @@ Write(Html.ValidationMessageFor(n => n.Content));
                 WriteLiteral("\r\n  ");
                 EndContext();
                 BeginContext(794, 90, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26783e46cd17462ea55d4af75d94681a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55730c22fc81499089b25e01f76cb149", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

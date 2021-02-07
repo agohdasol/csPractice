@@ -61,7 +61,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(28, 78, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca64642d2f6147e9afe1517c88d347c0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "409c0fdb3d704eaa80219a2f2167ebd8", async() => {
                 BeginContext(61, 31, true);
                 WriteLiteral("\r\n  <h3>현재 페이지는 개발환경입니다.</h3>\r\n");
                 EndContext();
@@ -83,7 +83,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(108, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c32508148bd48d5bd4e336271f9ebc6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37680a92897f4cca8bb6aa5ba8ba293f", async() => {
                 BeginContext(148, 31, true);
                 WriteLiteral("\r\n  <h3>현재 페이지는 운영환경입니다.</h3>\r\n");
                 EndContext();

@@ -65,7 +65,7 @@ using DotNetNote.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(51, 419, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "514545c6afb54a0ebc2e8fff8e1d220e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79a9dc48f2dc4b55a4cc441a52957e39", async() => {
                 BeginContext(57, 406, true);
                 WriteLiteral(@"
   <title>순수 HTML</title>
@@ -100,12 +100,12 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(472, 344, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aee0df9603df4e0d9c6e520786b0bc18", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e4c33f5d53e4cbc93f7b851b0df3a86", async() => {
                 BeginContext(478, 30, true);
                 WriteLiteral("\r\n  <h2>HTML 태그로 폼 구성</h2>\r\n  ");
                 EndContext();
                 BeginContext(508, 299, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "104bcaaa7bae4c4d9f38c215508b4eff", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a38a63cc1ed44ebb290845dfb01dc43", async() => {
                     BeginContext(600, 200, true);
                     WriteLiteral("\r\n    이름 : <input type=\"text\" name=\"txtName\" id=\"txtName\" value=\"\" /><br />\r\n    내용 : <input type=\"text\" name=\"txtContent\" id=\"txtContent\" value=\"\" /><br />\r\n    <input type=\"submit\" value=\"입력\" />\r\n  ");
                     EndContext();
