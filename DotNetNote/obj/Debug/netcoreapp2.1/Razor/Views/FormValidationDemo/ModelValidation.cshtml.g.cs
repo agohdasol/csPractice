@@ -60,7 +60,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
             BeginContext(65, 140, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "882f5c53616a47a484dec18bb9a5c2b2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af942b42f0ec4f30bb6ee6a42bd381d1", async() => {
                 BeginContext(71, 127, true);
                 WriteLiteral("\r\n  <title>모델 기반 서버측 유효성 검사</title>\r\n  <style>\r\n    .input-validation-error{\r\n      border: 1px solid red;\r\n    }\r\n  </style>\r\n");
                 EndContext();
@@ -80,7 +80,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(207, 454, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82cfb52cf6ab4ca281b402abb5ac2afd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bfab8e8de16e4a2e825d2eb2425e7766", async() => {
                 BeginContext(213, 31, true);
                 WriteLiteral("\r\n  <h2>모델 기반 서버측 유효성 검사</h2>\r\n");
                 EndContext();

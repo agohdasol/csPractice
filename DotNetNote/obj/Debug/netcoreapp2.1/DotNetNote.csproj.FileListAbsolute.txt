@@ -67,3 +67,12 @@ D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\SingletonDemo\Index
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DependencyInjectionDemo\Index.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DependencyInjectionDemo\About.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DependencyInjectionDemo\AtInjectionDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\bin\Debug\netcoreapp2.1\Settings\DotNetNoteSettings.json
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Copyright\Default.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewComponentDemo\CopyrightDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Copyright\Details.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TechList\Default.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewComponentDemo\TechListDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SiteList\Default.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SiteList\Index.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewComponentDemo\SiteListDemo.cshtml.g.cs

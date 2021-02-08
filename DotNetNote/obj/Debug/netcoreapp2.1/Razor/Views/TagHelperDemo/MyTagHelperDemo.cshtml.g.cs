@@ -62,7 +62,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<h3>직접태그작성</h3>\r\n<strong><u>볼드체 언더라인</u></strong>\r\n\r\n<h3>사용자정의태그헬퍼</h3>\r\n");
             EndContext();
             BeginContext(133, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("strong-underline", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36d76a0a34db44b496b996933ca165b4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("strong-underline", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c04389c57e244061a5efc2712dfe13cb", async() => {
                 BeginContext(151, 8, true);
                 WriteLiteral("볼드체 언더라인");
                 EndContext();
