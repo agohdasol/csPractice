@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using DotNetNote.Services;
 using DotNetNote.Settings;
+using DotNetNote.Models;
 
 namespace DotNetNote
 {
@@ -36,6 +37,8 @@ namespace DotNetNote
       services.AddSingleton<InfoService>();
       services.AddTransient<IInfoService, InfoService>();
       services.AddSingleton<CopyrightService>();
+      services.AddSingleton<IConfiguration>(Configuration);
+      services.AddTransient<ITeachRepository, TeachRepository>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

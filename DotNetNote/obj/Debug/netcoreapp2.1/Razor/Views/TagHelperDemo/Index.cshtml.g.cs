@@ -61,7 +61,7 @@ using DotNetNote.Models;
             WriteLiteral("<h3>순수 HTML로 링크 만들기</h3>\r\n<ul>\r\n  <li><a href=\"/TagHelperDemo/EnvironmentDemo\">태그</a></li>\r\n</ul>\r\n\r\n<h3>태그헬터로 링크 만들기</h3>\r\n<ul>\r\n  <li>");
             EndContext();
             BeginContext(162, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa02a5f881b84a52ab7375f42822abe0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "459e892e05844b60b038d7e86fa7dd54", async() => {
                 BeginContext(194, 2, true);
                 WriteLiteral("액션");
                 EndContext();
@@ -83,7 +83,7 @@ using DotNetNote.Models;
             WriteLiteral("</li>\r\n  <li>");
             EndContext();
             BeginContext(213, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3571e353e314ad195c7624c01cb3e2c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca22a8a06f514e04958c51e467cc304f", async() => {
                 BeginContext(276, 2, true);
                 WriteLiteral("액션");
                 EndContext();

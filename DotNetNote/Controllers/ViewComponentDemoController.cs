@@ -16,7 +16,7 @@ namespace DotNetNote.Controllers
     {
       return View();
     }
-    public IActionResult TechListDemo()
+    public IActionResult TeachListDemo()
     {
       return View();
     }

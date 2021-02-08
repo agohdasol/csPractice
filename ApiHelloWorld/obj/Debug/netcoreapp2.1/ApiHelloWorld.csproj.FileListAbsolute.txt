@@ -1,0 +1,17 @@
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\appsettings.json
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\ApiHelloWorld.deps.json
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\ApiHelloWorld.runtimeconfig.json
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\ApiHelloWorld.runtimeconfig.dev.json
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\ApiHelloWorld.dll
+D:\csPractice\ApiHelloWorld\bin\Debug\netcoreapp2.1\ApiHelloWorld.pdb
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.csprojAssemblyReference.cache
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.AssemblyInfoInputs.cache
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.AssemblyInfo.cs
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.csproj.CoreCompileInputs.cache
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.RazorAssemblyInfo.cache
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.RazorAssemblyInfo.cs
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.RazorTargetAssemblyInfo.cache
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.dll
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.pdb
+D:\csPractice\ApiHelloWorld\obj\Debug\netcoreapp2.1\ApiHelloWorld.genruntimeconfig.cache
