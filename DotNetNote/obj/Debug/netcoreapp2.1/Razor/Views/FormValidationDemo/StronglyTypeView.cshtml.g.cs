@@ -60,7 +60,7 @@ using DotNetNote.Models;
 #line default
 #line hidden
             BeginContext(66, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d8ace01dfb046a6979620b6bc0e5639", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a27ae568c63c4f58be8dac2f3cb3d192", async() => {
                 BeginContext(72, 30, true);
                 WriteLiteral("\r\n  <title>강력한 형식의 뷰</title>\r\n");
                 EndContext();
@@ -80,7 +80,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(111, 314, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c8d7276acb44e52ac05505cfccde8c0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54edd923f478419f9bdec1efc9d1a8fd", async() => {
                 BeginContext(117, 26, true);
                 WriteLiteral("\r\n  <h2>강력한 형식의 뷰</h2>\r\n\r\n");
                 EndContext();

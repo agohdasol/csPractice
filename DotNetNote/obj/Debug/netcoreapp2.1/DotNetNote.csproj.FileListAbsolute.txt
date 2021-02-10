@@ -76,3 +76,7 @@ D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewComponentDemo\T
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SiteList\Default.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SiteList\Index.cshtml.g.cs
 D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\ViewComponentDemo\SiteListDemo.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\CommunityCamp\ComCampAdmin.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\CommunityCamp\Create.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\CommunityCamp\Delete.cshtml.g.cs
+D:\csPractice\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\CommunityCamp\Index.cshtml.g.cs

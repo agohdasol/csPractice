@@ -58,10 +58,19 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo" />
+    <Folder Include="dbo\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Tasks.sql" />
     <Build Include="dbo\Tables\Maxims.sql" />
     <Build Include="dbo\Tables\Teaches.sql" />
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteMemo.sql" />
+    <Build Include="dbo\Stored Procedures\ListMemo.sql" />
+    <Build Include="dbo\Stored Procedures\ModifyMemo.sql" />
+    <Build Include="dbo\Stored Procedures\SearchMemo.sql" />
+    <Build Include="dbo\Stored Procedures\Users_Procedures.sql" />
+    <Build Include="dbo\Stored Procedures\ViewMemo.sql" />
+    <Build Include="dbo\Stored Procedures\WriteMemo.sql" />
   </ItemGroup>
 </Project>

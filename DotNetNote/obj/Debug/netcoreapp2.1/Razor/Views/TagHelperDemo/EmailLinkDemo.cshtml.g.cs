@@ -53,7 +53,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<h3>이메일링크</h3> \r\n");
             EndContext();
             BeginContext(48, 13, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("el", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c9c7602b9d544c7a9d3620664be474e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("el", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8688e7b297b64d80a05b7829bdfd752d", async() => {
                 BeginContext(52, 4, true);
                 WriteLiteral("help");
                 EndContext();
@@ -73,7 +73,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(63, 12, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("el", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "915d5ec36fed4070952f605396c3b320", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("el", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7f32e2515eb47c680a5d146a02e29ec", async() => {
                 BeginContext(67, 3, true);
                 WriteLiteral("ceo");
                 EndContext();
