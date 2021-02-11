@@ -55,7 +55,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<h3>페이징 헬퍼 테스트</h3>\r\n\r\n");
             EndContext();
             BeginContext(54, 344, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("dnn-paging-helper", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c27979c1254049369e1b7ae0f7ee2f75", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("dnn-paging-helper", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f7f4e036ee740a9ace0c74a09534b5a", async() => {
                 BeginContext(374, 4, true);
                 WriteLiteral("\r\n\r\n");
                 EndContext();
@@ -112,7 +112,7 @@ __DotNetNote_TagHelpers_DnnPagingHelperTagHelper.SearchMode = false;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(402, 342, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("dnn-paging-helper", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db36d2b3e00742e6b9f9c9060f4169bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("dnn-paging-helper", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a3a18ba7c5241c6a0296aca5ca1a9db", async() => {
                 BeginContext(720, 4, true);
                 WriteLiteral("\r\n\r\n");
                 EndContext();

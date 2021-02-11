@@ -60,7 +60,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(28, 418, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4639fc7e36d14dc28689420ca2f9083c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b80ebf12fc9c44dba86683d5caa3ffea", async() => {
                 BeginContext(34, 405, true);
                 WriteLiteral(@"
   <title>헬퍼 메서드</title>
@@ -95,7 +95,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(448, 488, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb61f43d972c464bbc11c6a0afcb9d91", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b20206b90a2643f4b87efdd4e2072071", async() => {
                 BeginContext(454, 29, true);
                 WriteLiteral("\r\n  <h2>헬퍼 메서드로 폼 구성</h2>\r\n\r\n");
                 EndContext();

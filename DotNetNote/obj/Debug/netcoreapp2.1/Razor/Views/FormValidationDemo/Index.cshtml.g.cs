@@ -68,7 +68,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(28, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8add49402aa49e8ac1f0a433e88007d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d08b698a12e4a7195752b6e08a3a5d2", async() => {
                 BeginContext(34, 29, true);
                 WriteLiteral("\r\n  <title>폼 유효성 검사</title>\r\n");
                 EndContext();
@@ -88,12 +88,12 @@ using DotNetNote.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(74, 599, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d449203bc09f4c0783ef913bda232e9c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d242aaf88a25415fa66b1751be9e9337", async() => {
                 BeginContext(80, 135, true);
                 WriteLiteral("\r\n  <h1>폼 유효성 검사</h1>\r\n  <ul>\r\n    <li><a href=\"#\">메인</a></li>\r\n    <li><a href=\"/FormValidationDemo/Html\">HTML 폼 구성</a></li>\r\n    <li>");
                 EndContext();
                 BeginContext(215, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52ae8b283264455db617b779e5e1e83c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5001cfb9611f46dd933e30672b6020d2", async() => {
                     BeginContext(259, 9, true);
                     WriteLiteral("헬퍼 메서드 사용");
                     EndContext();
@@ -114,7 +114,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(287, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c400affc0404c418b5bcf7d1db98743", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b8f744f631c4f99be97007d738bb9e8", async() => {
                     BeginContext(335, 9, true);
                     WriteLiteral("강력한 형식의 뷰");
                     EndContext();
@@ -135,7 +135,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(363, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c928bfd8d72640b99c8f7d09e2640a66", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7e0b38867a446b0ad1b2c6ac7ddd0ee", async() => {
                     BeginContext(431, 17, true);
                     WriteLiteral("모델 기반 서버 측 유효성 검사");
                     EndContext();
@@ -159,7 +159,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(467, 87, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f864d1adc3e040eab79f4fbe117cf2c5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a5f1dd27a95418fa9c838fe812ced3e", async() => {
                     BeginContext(536, 14, true);
                     WriteLiteral("클라이언트 측 유효성 검사");
                     EndContext();
@@ -183,7 +183,7 @@ using DotNetNote.Models;
                 WriteLiteral("</li>\r\n    <li>");
                 EndContext();
                 BeginContext(569, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b02da4c9ef924c3cbab023c3d1651328", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d28bb82e511448e99465a4c98cf00d45", async() => {
                     BeginContext(641, 5, true);
                     WriteLiteral("태그 헬퍼");
                     EndContext();

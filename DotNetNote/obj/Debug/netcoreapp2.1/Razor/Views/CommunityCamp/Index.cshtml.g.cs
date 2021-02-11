@@ -70,7 +70,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n<h1>커뮤니티 캠프 테스트</h1> \r\n<h2>참가자 리스트</h2>\r\n");
             EndContext();
             BeginContext(154, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35a8b4681b72427abd1f0fdbb431de85", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e4e5f9ed1284eea8377f73233f70a9b", async() => {
                 BeginContext(229, 7, true);
                 WriteLiteral("참가 등록하기");
                 EndContext();
@@ -114,7 +114,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(633, 146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5afec56f611b4bfcae2d93748d03369d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ed916bee29d494194ea38e88419f462", async() => {
                 BeginContext(698, 77, true);
                 WriteLiteral("\r\n              <i class=\"glyphicon glyphicon-remove-sign\"></i>\r\n            ");
                 EndContext();
@@ -166,7 +166,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1209, 146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7e1fccbb02349e39b34748317b7bc0b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cb90516e09448f0b7f1dc9a46d5c6fb", async() => {
                 BeginContext(1274, 77, true);
                 WriteLiteral("\r\n              <i class=\"glyphicon glyphicon-remove-sign\"></i>\r\n            ");
                 EndContext();
@@ -228,7 +228,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1968, 146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4035b9ab9d1a4c8d820ef4e5e50aef16", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee804d6795ee40f2ae6c8e53cf7ef75c", async() => {
                 BeginContext(2033, 77, true);
                 WriteLiteral("\r\n              <i class=\"glyphicon glyphicon-remove-sign\"></i>\r\n            ");
                 EndContext();
@@ -290,7 +290,7 @@ using DotNetNote.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(2726, 146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a81078f6d70247228e857790bddec1dd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb12ace88d4f4c11a34735f33ab193ed", async() => {
                 BeginContext(2791, 77, true);
                 WriteLiteral("\r\n              <i class=\"glyphicon glyphicon-remove-sign\"></i>\r\n            ");
                 EndContext();

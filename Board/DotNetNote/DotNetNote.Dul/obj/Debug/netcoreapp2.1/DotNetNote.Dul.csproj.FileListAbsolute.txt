@@ -1,0 +1,9 @@
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\bin\Debug\netcoreapp2.1\DotNetNote.Dul.deps.json
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\bin\Debug\netcoreapp2.1\DotNetNote.Dul.dll
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\bin\Debug\netcoreapp2.1\DotNetNote.Dul.pdb
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\obj\Debug\netcoreapp2.1\DotNetNote.Dul.csprojAssemblyReference.cache
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\obj\Debug\netcoreapp2.1\DotNetNote.Dul.AssemblyInfoInputs.cache
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\obj\Debug\netcoreapp2.1\DotNetNote.Dul.AssemblyInfo.cs
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\obj\Debug\netcoreapp2.1\DotNetNote.Dul.csproj.CoreCompileInputs.cache
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\obj\Debug\netcoreapp2.1\DotNetNote.Dul.dll
+D:\csPractice\Board\DotNetNote\DotNetNote.Dul\obj\Debug\netcoreapp2.1\DotNetNote.Dul.pdb

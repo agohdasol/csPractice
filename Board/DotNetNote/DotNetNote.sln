@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote", "DotNetNote\DotNetNote.csproj", "{BFEF06F9-0FED-441B-B6EB-59BECC2DB851}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote.Dul", "DotNetNote.Dul\DotNetNote.Dul.csproj", "{8C74A1F5-F3FB-4FA9-9D4B-A63978453F46}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DotNetNote.Database", "..\..\AspNetPractice\DotNetNote.Database\DotNetNote.Database.sqlproj", "{028214FC-BD3C-47B1-A131-CD277119BB05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFEF06F9-0FED-441B-B6EB-59BECC2DB851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEF06F9-0FED-441B-B6EB-59BECC2DB851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEF06F9-0FED-441B-B6EB-59BECC2DB851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEF06F9-0FED-441B-B6EB-59BECC2DB851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C74A1F5-F3FB-4FA9-9D4B-A63978453F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C74A1F5-F3FB-4FA9-9D4B-A63978453F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C74A1F5-F3FB-4FA9-9D4B-A63978453F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C74A1F5-F3FB-4FA9-9D4B-A63978453F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028214FC-BD3C-47B1-A131-CD277119BB05}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83B81C67-A57C-44EA-A648-029BADB1C035}
+	EndGlobalSection
+EndGlobal
