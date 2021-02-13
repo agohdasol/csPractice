@@ -14,8 +14,4 @@
     <ProjectReference Include="..\DotNetNote.Dul\DotNetNote.Dul.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\DotNetNote\" />
-  </ItemGroup>
-
 </Project>
