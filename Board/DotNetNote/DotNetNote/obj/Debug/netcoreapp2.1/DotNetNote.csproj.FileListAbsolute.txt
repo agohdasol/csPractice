@@ -35,3 +35,7 @@ D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\DotNetNote.csp
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\DotNetNote.dll
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\DotNetNote.pdb
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\DotNetNote.genruntimeconfig.cache
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Index.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_SearchForm.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Create.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_BoardEditorForm.cshtml.g.cs

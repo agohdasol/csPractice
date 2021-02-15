@@ -460,7 +460,7 @@ namespace DotNetNote.Controllers
     }
 
     [HttpGet]
-    [Authorize("Administrators")]
+    //[Authorize("Administrators")]
     public IActionResult Pinned(int id)
     {
       _repository.Pinned(id);
