@@ -3,7 +3,4 @@ D:\csPractice\AspNetPractice\DotNetNote.Database\bin\Debug\DotNetNote.Database.d
 D:\csPractice\AspNetPractice\DotNetNote.Database\bin\Debug\DotNetNote.Database.pdb
 D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\DotNetNote.Database.dll
 D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\DotNetNote.Database.pdb
-D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\Model.xml
-D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\refactor.xml
-D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\postdeploy.sql
-D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\predeploy.sql
+D:\csPractice\AspNetPractice\DotNetNote.Database\obj\Debug\DotNetNote.Database.sqlprojAssemblyReference.cache

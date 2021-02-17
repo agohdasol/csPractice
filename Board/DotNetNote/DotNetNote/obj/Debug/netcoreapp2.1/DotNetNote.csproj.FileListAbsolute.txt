@@ -39,3 +39,5 @@ D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Do
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_SearchForm.cshtml.g.cs
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Create.cshtml.g.cs
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_BoardEditorForm.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Details.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_BoardCommentControl.cshtml.g.cs

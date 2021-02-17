@@ -168,7 +168,7 @@ using DotNetNote.Dul;
             WriteLiteral("\r\n          </th>\r\n        </tr>\r\n\r\n        ");
             EndContext();
             BeginContext(1414, 1433, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("cache", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "819cff9be82b41e3802497e123fa35b5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("cache", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d9258a7aad7443293873bb8a24d3adf", async() => {
                 BeginContext(1421, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();
@@ -192,7 +192,7 @@ using DotNetNote.Dul;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1796, 224, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d272099bf24428b96224da9a5271759", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64d4912f4cba4c4f95b416e64973e9f5", async() => {
                     BeginContext(1872, 50, true);
                     WriteLiteral("\r\n                  <strong>\r\n                    ");
                     EndContext();
@@ -383,7 +383,7 @@ using DotNetNote.Dul;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(3358, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2ff82df798047dcb6af26b69eb85449", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ed7b2e39e7a4bef8758ea9eaf8000fd", async() => {
                 BeginContext(3434, 20, true);
                 WriteLiteral("\r\n                  ");
                 EndContext();
@@ -504,7 +504,7 @@ using DotNetNote.Dul;
             WriteLiteral("      </table>\r\n    </td>\r\n  </tr>\r\n  <tr>\r\n    <td style=\"text-align:center;\">\r\n      ");
             EndContext();
             BeginContext(4432, 414, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("dnn-paging-helper", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "860761781d6f43a39db358ae61789951", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("dnn-paging-helper", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8032c87fa2843e2a28d564f617de375", async() => {
                 BeginContext(4818, 8, true);
                 WriteLiteral("\r\n      ");
                 EndContext();
@@ -575,7 +575,7 @@ __DotNetNote_TagHelpers_DnnPagingHelperTagHelper.SearchMode = Convert.ToBoolean(
             WriteLiteral("\r\n    </td>\r\n  </tr>\r\n  <tr>\r\n    <td style=\"text-align:right;\">\r\n      ");
             EndContext();
             BeginContext(4918, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc6e8444b9b24dd995580983a74d2b40", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ea165f1031e457b929e032d69f0dbd0", async() => {
                 BeginContext(4965, 3, true);
                 WriteLiteral("글쓰기");
                 EndContext();
@@ -601,7 +601,7 @@ __DotNetNote_TagHelpers_DnnPagingHelperTagHelper.SearchMode = Convert.ToBoolean(
             WriteLiteral("      ");
             EndContext();
             BeginContext(5085, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a0ca5ca37a174f39bd5b42d3304f0020", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d9d5e2f995e745b1a509bd046907c0c1", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -629,7 +629,7 @@ __DotNetNote_TagHelpers_DnnPagingHelperTagHelper.SearchMode = Convert.ToBoolean(
             WriteLiteral("        ");
             EndContext();
             BeginContext(5180, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "daf09b12ae234ee49118bb0c6eb12a2b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7b4f1e62308479ebd13465d90d5f6ae", async() => {
                 BeginContext(5254, 5, true);
                 WriteLiteral("검색 완료");
                 EndContext();
@@ -675,7 +675,7 @@ __DotNetNote_TagHelpers_DnnPagingHelperTagHelper.SearchMode = Convert.ToBoolean(
                 WriteLiteral("    ");
                 EndContext();
                 BeginContext(5371, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "da4db5f5421648e9b28f32647df68025", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "98086a753b7840bdaa87e8fcc40ad012", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -694,7 +694,7 @@ __DotNetNote_TagHelpers_DnnPagingHelperTagHelper.SearchMode = Convert.ToBoolean(
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(5426, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5c6105b680d44688d953a8ce4999a38", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ca418e8435b4a9bb68c56adadb80104", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
