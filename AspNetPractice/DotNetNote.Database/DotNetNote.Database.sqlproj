@@ -59,10 +59,21 @@
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Stored Procedures\DotNetNote" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\NoteComments.sql" />
     <Build Include="dbo\Tables\Notes.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_DeleteNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_GetCountNotes.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ModifyNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ReplyNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_SearchNoteCount.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_SearchNotes.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ViewNote.sql" />
+    <Build Include="dbo\Stored Procedures\Users_Procedures.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_WriteNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ListNotes.sql" />
   </ItemGroup>
 </Project>

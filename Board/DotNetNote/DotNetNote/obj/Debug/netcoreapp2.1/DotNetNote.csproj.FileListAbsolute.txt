@@ -41,3 +41,8 @@ D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\Do
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_BoardEditorForm.cshtml.g.cs
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Details.cshtml.g.cs
 D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\_BoardCommentControl.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\CommentDelete.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Delete.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\DeleteCompleted.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Edit.cshtml.g.cs
+D:\csPractice\Board\DotNetNote\DotNetNote\obj\Debug\netcoreapp2.1\Razor\Views\DotNetNote\Reply.cshtml.g.cs

@@ -101,7 +101,8 @@ namespace DotNetNote.Models
       try
       {
         var parameters = new DynamicParameters(new { Page = page });
-        return con.Query<Note>("ListNotes", parameters, commandType: CommandType.StoredProcedure).ToList();
+        var result = con.Query<Note>("ListNotes", parameters, commandType: CommandType.StoredProcedure).ToList();
+        return result;
       }
       catch (System.Exception ex)
       {
